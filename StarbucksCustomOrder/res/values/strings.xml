@@ -1,5 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">スタバで呪文</string>
+    <string name="title_activity_main">MainActivity</string>
 
+    <!-- タブ -->
+    <string name="tab_like">お好み</string>
+    <string name="tab_menu">メニュー</string>
+    <string name="tab_ranking">ランキング</string>
 </resources>
