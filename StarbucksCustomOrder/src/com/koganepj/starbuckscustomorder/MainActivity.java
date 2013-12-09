@@ -2,10 +2,12 @@ package com.koganepj.starbuckscustomorder;
 
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
-import android.app.ActionBar.TabListener;
 import android.app.Activity;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
+
+import com.koganepj.starbuckscustomorder.tablistener.LikeTabListener;
+import com.koganepj.starbuckscustomorder.tablistener.MenuTabListener;
+import com.koganepj.starbuckscustomorder.tablistener.RankingTabListener;
 
 public class MainActivity extends Activity {
 
@@ -22,22 +24,9 @@ public class MainActivity extends Activity {
         Tab menuTab = actionBar.newTab().setText(R.string.tab_menu);
         Tab rankTab = actionBar.newTab().setText(R.string.tab_ranking);
         
-        //↓temp
-        TabListener emptyListener = new TabListener() {
-            @Override
-            public void onTabUnselected(Tab tab, FragmentTransaction ft) {
-            }
-            @Override
-            public void onTabSelected(Tab tab, FragmentTransaction ft) {
-            }
-            @Override
-            public void onTabReselected(Tab tab, FragmentTransaction ft) {
-            }
-        };
-        likeTab.setTabListener(emptyListener);
-        menuTab.setTabListener(emptyListener);
-        rankTab.setTabListener(emptyListener);
-        //↑temp
+        likeTab.setTabListener(new LikeTabListener(actionBar));
+        menuTab.setTabListener(new MenuTabListener(actionBar));
+        rankTab.setTabListener(new RankingTabListener(actionBar));
         
         actionBar.addTab(likeTab);
         actionBar.addTab(menuTab);
