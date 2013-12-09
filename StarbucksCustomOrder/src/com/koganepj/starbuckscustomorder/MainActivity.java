@@ -1,6 +1,7 @@
 package com.koganepj.starbuckscustomorder;
 
 import android.app.ActionBar;
+import android.app.FragmentManager;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.os.Bundle;
@@ -16,7 +17,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        //タブの初期設定
+        //タブの初期設定-------------
         ActionBar actionBar =  getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         
@@ -24,12 +25,16 @@ public class MainActivity extends Activity {
         Tab menuTab = actionBar.newTab().setText(R.string.tab_menu);
         Tab rankTab = actionBar.newTab().setText(R.string.tab_ranking);
         
-        likeTab.setTabListener(new LikeTabListener(actionBar));
-        menuTab.setTabListener(new MenuTabListener(actionBar));
-        rankTab.setTabListener(new RankingTabListener(actionBar));
+        FragmentManager fragmentManager= getFragmentManager();
+        int rootViewId = R.id.LayoutContainer;
+        
+        likeTab.setTabListener(new LikeTabListener(actionBar, fragmentManager, rootViewId));
+        menuTab.setTabListener(new MenuTabListener(actionBar, fragmentManager, rootViewId));
+        rankTab.setTabListener(new RankingTabListener(actionBar, fragmentManager, rootViewId));
         
         actionBar.addTab(likeTab);
         actionBar.addTab(menuTab);
         actionBar.addTab(rankTab);
+        //--------------------------
     }
 }
