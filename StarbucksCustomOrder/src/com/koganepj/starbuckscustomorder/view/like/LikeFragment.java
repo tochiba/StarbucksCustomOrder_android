@@ -1,4 +1,4 @@
-package com.koganepj.starbuckscustomorder.view.LikeFragment;
+package com.koganepj.starbuckscustomorder.view.like;
 
 import com.koganepj.starbuckscustomorder.R;
 

@@ -5,7 +5,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 
 import com.koganepj.starbuckscustomorder.R;
-import com.koganepj.starbuckscustomorder.view.LikeFragment.LikeFragment;
+import com.koganepj.starbuckscustomorder.view.like.LikeFragment;
 
 public class LikeTabListener extends AbstractTabListener {
 
