@@ -6,13 +6,11 @@
     android:gravity="center_horizontal"
     android:orientation="vertical" >
     
-    <ImageView
-        android:src="@drawable/okonomi_background_matrix"
+    <com.koganepj.starbuckscustomorder.view.like.matrix.MatrixSelectorLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@null"
         />
-    
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
