@@ -5,10 +5,10 @@
     >
     
     <ImageView
-        android:src="@drawable/okonomi_background_matrix"
+        android:src="@drawable/matrix_selector_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@null"
         />
-
+    
 </merge>

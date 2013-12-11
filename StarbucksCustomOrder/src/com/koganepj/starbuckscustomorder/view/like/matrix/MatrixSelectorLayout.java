@@ -1,13 +1,13 @@
 package com.koganepj.starbuckscustomorder.view.like.matrix;
 
-import com.koganepj.starbuckscustomorder.R;
-
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.widget.LinearLayout;
+import android.widget.FrameLayout;
 
-public class MatrixSelectorLayout extends LinearLayout {
+import com.koganepj.starbuckscustomorder.R;
+
+public class MatrixSelectorLayout extends FrameLayout {
 
     public MatrixSelectorLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
