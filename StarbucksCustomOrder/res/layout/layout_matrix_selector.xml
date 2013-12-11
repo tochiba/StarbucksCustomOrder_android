@@ -10,5 +10,12 @@
         android:layout_height="wrap_content"
         android:contentDescription="@null"
         />
+
+    <ImageView
+        android:src="@drawable/matrix_selector_icon_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        />
     
 </merge>
