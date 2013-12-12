@@ -1,7 +1,6 @@
 package com.koganepj.starbuckscustomorder;
 
 import android.app.ActionBar;
-import android.app.FragmentManager;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.os.Bundle;
@@ -25,12 +24,11 @@ public class MainActivity extends Activity {
         Tab menuTab = actionBar.newTab().setText(R.string.tab_menu);
         Tab rankTab = actionBar.newTab().setText(R.string.tab_ranking);
         
-        FragmentManager fragmentManager= getFragmentManager();
         int rootViewId = R.id.LayoutContainer;
         
-        likeTab.setTabListener(new LikeTabListener(actionBar, fragmentManager, rootViewId));
-        menuTab.setTabListener(new MenuTabListener(actionBar, fragmentManager, rootViewId));
-        rankTab.setTabListener(new RankingTabListener(actionBar, fragmentManager, rootViewId));
+        likeTab.setTabListener(new LikeTabListener(actionBar, rootViewId));
+        menuTab.setTabListener(new MenuTabListener(actionBar, rootViewId));
+        rankTab.setTabListener(new RankingTabListener(actionBar, rootViewId));
         
         actionBar.addTab(likeTab);
         actionBar.addTab(menuTab);
