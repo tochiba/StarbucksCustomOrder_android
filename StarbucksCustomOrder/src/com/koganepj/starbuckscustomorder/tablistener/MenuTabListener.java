@@ -2,14 +2,15 @@ package com.koganepj.starbuckscustomorder.tablistener;
 
 import android.app.ActionBar;
 import android.app.Fragment;
-import android.app.FragmentManager;
 
 import com.koganepj.starbuckscustomorder.R;
 
 public class MenuTabListener extends AbstractTabListener {
 
-    public MenuTabListener(ActionBar actionBar, FragmentManager fragmentManager, int rootViewId) {
-        super(actionBar, fragmentManager, rootViewId);
+    private Fragment mFragmnet = null;
+    
+    public MenuTabListener(ActionBar actionBar, int rootViewId) {
+        super(actionBar, rootViewId);
     }
 
     @Override
@@ -19,7 +20,10 @@ public class MenuTabListener extends AbstractTabListener {
 
     @Override
     Fragment getFragment() {
-        return new Fragment();
+        if (mFragmnet == null) {
+            mFragmnet = new Fragment();
+        }
+        return mFragmnet;
     }
     
 }

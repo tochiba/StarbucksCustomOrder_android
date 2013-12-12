@@ -1,15 +1,16 @@
 package com.koganepj.starbuckscustomorder.tablistener;
 
-import com.koganepj.starbuckscustomorder.R;
-
 import android.app.ActionBar;
 import android.app.Fragment;
-import android.app.FragmentManager;
+
+import com.koganepj.starbuckscustomorder.R;
 
 public class RankingTabListener extends AbstractTabListener {
+    
+    private Fragment mFragment;
 
-    public RankingTabListener(ActionBar actionBar, FragmentManager fragmentManager, int rootViewId) {
-        super(actionBar, fragmentManager, rootViewId);
+    public RankingTabListener(ActionBar actionBar, int rootViewId) {
+        super(actionBar, rootViewId);
     }
 
     @Override
@@ -19,7 +20,10 @@ public class RankingTabListener extends AbstractTabListener {
 
     @Override
     Fragment getFragment() {
-        return new Fragment();
+        if (mFragment == null) {
+            mFragment = new Fragment();
+        }
+        return mFragment;
     }
 
 }
