@@ -6,16 +6,21 @@ import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.koganepj.starbuckscustomorder.parse.PlistProvider;
 import com.koganepj.starbuckscustomorder.tablistener.LikeTabListener;
 import com.koganepj.starbuckscustomorder.tablistener.MenuTabListener;
 import com.koganepj.starbuckscustomorder.tablistener.RankingTabListener;
 
 public class MainActivity extends Activity {
+	
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        // Plistのパース処理
+        PlistProvider.parse(getApplicationContext()); 
         
         //タブの初期設定-------------
         ActionBar actionBar =  getActionBar();
