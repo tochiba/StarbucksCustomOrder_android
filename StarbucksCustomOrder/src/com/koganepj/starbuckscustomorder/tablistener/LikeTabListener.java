@@ -8,8 +8,6 @@ import com.koganepj.starbuckscustomorder.view.like.LikeFragment;
 
 public class LikeTabListener extends AbstractTabListener {
     
-    private LikeFragment mLikeFragment = null;
-    
     public LikeTabListener(ActionBar actionBar, int rootViewId) {
         super(actionBar, rootViewId);
     }
@@ -20,10 +18,7 @@ public class LikeTabListener extends AbstractTabListener {
     }
 
     @Override
-    Fragment getFragment() {
-        if (mLikeFragment == null) {
-            mLikeFragment = new LikeFragment();
-        }
-        return mLikeFragment;
+    Fragment createFragment() {
+        return new LikeFragment();
     }
 }

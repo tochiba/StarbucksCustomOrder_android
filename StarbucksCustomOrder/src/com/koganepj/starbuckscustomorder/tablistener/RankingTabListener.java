@@ -6,8 +6,6 @@ import android.app.Fragment;
 import com.koganepj.starbuckscustomorder.R;
 
 public class RankingTabListener extends AbstractTabListener {
-    
-    private Fragment mFragment;
 
     public RankingTabListener(ActionBar actionBar, int rootViewId) {
         super(actionBar, rootViewId);
@@ -19,11 +17,8 @@ public class RankingTabListener extends AbstractTabListener {
     }
 
     @Override
-    Fragment getFragment() {
-        if (mFragment == null) {
-            mFragment = new Fragment();
-        }
-        return mFragment;
+    Fragment createFragment() {
+        return new Fragment();
     }
 
 }

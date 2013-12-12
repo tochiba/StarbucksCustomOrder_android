@@ -11,6 +11,8 @@ public abstract class AbstractTabListener implements TabListener {
     private ActionBar mActionBar;
     private int mRootViewId;
     
+    private Fragment mFragment;
+    
     public AbstractTabListener(ActionBar actionBar, int rootViewId) {
         mActionBar = actionBar;
         mRootViewId = rootViewId;
@@ -32,7 +34,14 @@ public abstract class AbstractTabListener implements TabListener {
     
     @Override public void onTabReselected(Tab tab, FragmentTransaction ft) { }
     
+    private Fragment getFragment() {
+        if (mFragment == null) {
+            mFragment = createFragment();
+        }
+        return mFragment;
+    }
+    
     abstract int getTitleStrId();
-    abstract Fragment getFragment();
+    abstract Fragment createFragment();
     
 }

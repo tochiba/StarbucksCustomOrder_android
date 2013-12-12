@@ -7,8 +7,6 @@ import com.koganepj.starbuckscustomorder.R;
 
 public class MenuTabListener extends AbstractTabListener {
 
-    private Fragment mFragmnet = null;
-    
     public MenuTabListener(ActionBar actionBar, int rootViewId) {
         super(actionBar, rootViewId);
     }
@@ -19,11 +17,8 @@ public class MenuTabListener extends AbstractTabListener {
     }
 
     @Override
-    Fragment getFragment() {
-        if (mFragmnet == null) {
-            mFragmnet = new Fragment();
-        }
-        return mFragmnet;
+    Fragment createFragment() {
+        return new Fragment();
     }
     
 }
