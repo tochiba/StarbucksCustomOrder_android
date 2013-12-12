@@ -7,8 +7,8 @@ import android.view.View.OnTouchListener;
 public class OnMatrixIconTouchListener implements OnTouchListener {
 
     private View mBackgroundView;
-    private int mMatrixWidth;
-    private int mMatrixHeight;
+    private int mMatrixWidth = -1;
+    private int mMatrixHeight = -1;
     
     public OnMatrixIconTouchListener(View backgroundView) {
         mBackgroundView = backgroundView;
@@ -16,7 +16,7 @@ public class OnMatrixIconTouchListener implements OnTouchListener {
 
     @Override
     public boolean onTouch(View view, MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN && (mMatrixHeight == -1 || mMatrixWidth == -1)) {
             mMatrixHeight = mBackgroundView.getHeight();
             mMatrixWidth = mBackgroundView.getWidth();
         } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
