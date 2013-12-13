@@ -4,8 +4,10 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import com.koganepj.starbuckscustomorder.parse.PlistProvider;
 import com.koganepj.starbuckscustomorder.tablistener.LikeTabListener;
@@ -48,5 +50,13 @@ public class MainActivity extends Activity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return true;
+    }
+    
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+        if (item.getItemId() == R.id.menu_setting) {
+            Log.d("test", "touch setting menu");
+        }
+        return super.onMenuItemSelected(featureId, item);
     }
 }
