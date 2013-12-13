@@ -3,6 +3,9 @@
 
     <string name="app_name">スタバで呪文</string>
     <string name="title_activity_main">MainActivity</string>
+    
+    <!-- アクションバー -->
+    <string name="actionbar_setting">設定</string>
 
     <!-- タブ -->
     <string name="tab_like">お好み</string>

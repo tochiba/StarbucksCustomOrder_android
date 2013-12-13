@@ -4,6 +4,8 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import com.koganepj.starbuckscustomorder.parse.PlistProvider;
 import com.koganepj.starbuckscustomorder.tablistener.LikeTabListener;
@@ -39,5 +41,12 @@ public class MainActivity extends Activity {
         actionBar.addTab(menuTab);
         actionBar.addTab(rankTab);
         //--------------------------
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
 }
