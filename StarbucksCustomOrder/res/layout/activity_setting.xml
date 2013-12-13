@@ -20,55 +20,45 @@
         >
         
         <TextView
+            style="@style/Setting.Item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dip"
-            android:paddingBottom="20dip"
-            android:background="@android:color/white"
             android:text="@string/setting_support_page"
             />
         
         <include layout="@layout/layout_horizontal_border"/>
         
         <TextView
+            style="@style/Setting.Item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dip"
-            android:paddingBottom="20dip"
-            android:background="@android:color/white"
             android:text="@string/setting_mail"
             />
         
         <include layout="@layout/layout_horizontal_border"/>
         
         <TextView
+            style="@style/Setting.Item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dip"
-            android:paddingBottom="20dip"
-            android:background="@android:color/white"
             android:text="@string/setting_dev_team"
             />
 
         <include layout="@layout/layout_horizontal_border"/>
         
         <TextView
+            style="@style/Setting.Item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dip"
-            android:paddingBottom="20dip"
-            android:background="@android:color/white"
             android:text="@string/setting_history"
             />
 
         <include layout="@layout/layout_horizontal_border"/>
         
         <TextView
+            style="@style/Setting.Item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dip"
-            android:paddingBottom="20dip"
-            android:background="@android:color/white"
             android:text="@string/setting_report_that_trouble"
             />
     </LinearLayout>
