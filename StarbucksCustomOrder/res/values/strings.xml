@@ -3,9 +3,18 @@
 
     <string name="app_name">スタバで呪文</string>
     <string name="title_activity_main">MainActivity</string>
+    
+    <!-- アクションバー -->
+    <string name="actionbar_setting">設定</string>
 
     <!-- タブ -->
     <string name="tab_like">お好み</string>
     <string name="tab_menu">メニュー</string>
     <string name="tab_ranking">ランキング</string>
+    
+    <!-- 設定画面 -->
+    <string name="setting_support_page">サポートページ</string>
+    <string name="setting_mail">メールで問い合わせる</string>
+    <string name="setting_dev_team">開発チーム</string>
+    <string name="setting_history">このアプリが出来るまで</string>
 </resources>
