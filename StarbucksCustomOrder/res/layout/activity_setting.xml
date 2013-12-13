@@ -63,17 +63,6 @@
             android:paddingLeft="10dip"
             />
 
-        <include layout="@layout/layout_horizontal_border"/>
-        
-        <TextView
-            android:id="@+id/TextReportThatTrouble"
-            style="@style/Setting.Item"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/setting_report_that_trouble"
-            android:paddingRight="10dip"
-            android:paddingLeft="10dip"
-            />
     </LinearLayout>
 
     <include layout="@layout/layout_horizontal_border"/>

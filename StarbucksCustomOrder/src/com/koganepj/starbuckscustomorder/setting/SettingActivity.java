@@ -17,14 +17,12 @@ public class SettingActivity extends Activity implements OnClickListener {
     private static final String SUPPORT_URL = "http://www1415uo.sakura.ne.jp/jumon.html";
     private static final String DEV_TEAM_URL = "http://www1415uo.sakura.ne.jp/member/index.html";
     private static final String HISTORY_URL = "http://koganepj.hatenablog.com/entry/2013/11/09/010910";
-    private static final String REPORT_THAT_TROUBLE_URL = "http://koganepj.hatenablog.com/entry/2013/12/07/014301";
     
     private static SparseArray<String> sIdUrlMap = new SparseArray<String>();
     static {
         sIdUrlMap.put(R.id.TextDevTeam, DEV_TEAM_URL);
         sIdUrlMap.put(R.id.TextHistory, HISTORY_URL);
         sIdUrlMap.put(R.id.TextMail, KOGANEPJ_MAIL);
-        sIdUrlMap.put(R.id.TextReportThatTrouble, REPORT_THAT_TROUBLE_URL);
         sIdUrlMap.put(R.id.TextSupportPage, SUPPORT_URL);
     }
 
@@ -36,7 +34,6 @@ public class SettingActivity extends Activity implements OnClickListener {
         findViewById(R.id.TextDevTeam).setOnClickListener(this);
         findViewById(R.id.TextHistory).setOnClickListener(this);
         findViewById(R.id.TextMail).setOnClickListener(this);
-        findViewById(R.id.TextReportThatTrouble).setOnClickListener(this);
         findViewById(R.id.TextSupportPage).setOnClickListener(this);
         findViewById(R.id.TextSupportPage).setOnClickListener(this);
     }
