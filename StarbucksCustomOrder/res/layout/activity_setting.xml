@@ -19,14 +19,13 @@
         android:background="@android:color/white"
         >
         
-        
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="20dip"
             android:paddingBottom="20dip"
             android:background="@android:color/white"
-            android:text="hogehoge"
+            android:text="サポートページ"
             />
         
         <include layout="@layout/layout_horizontal_border"/>
@@ -37,7 +36,7 @@
             android:paddingTop="20dip"
             android:paddingBottom="20dip"
             android:background="@android:color/white"
-            android:text="hogehoge"
+            android:text="メールで問い合わせる"
             />
         
         <include layout="@layout/layout_horizontal_border"/>
@@ -48,7 +47,29 @@
             android:paddingTop="20dip"
             android:paddingBottom="20dip"
             android:background="@android:color/white"
-            android:text="hogehoge"
+            android:text="開発チーム"
+            />
+
+        <include layout="@layout/layout_horizontal_border"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dip"
+            android:paddingBottom="20dip"
+            android:background="@android:color/white"
+            android:text="このアプリが出来るまで"
+            />
+
+        <include layout="@layout/layout_horizontal_border"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dip"
+            android:paddingBottom="20dip"
+            android:background="@android:color/white"
+            android:text="あの時何が"
             />
     </LinearLayout>
 
