@@ -14,8 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingRight="10dip"
-        android:paddingLeft="10dip"
         android:background="@android:color/white"
         >
         
@@ -24,6 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/setting_support_page"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
             />
         
         <include layout="@layout/layout_horizontal_border"/>
@@ -33,6 +33,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/setting_mail"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
             />
         
         <include layout="@layout/layout_horizontal_border"/>
@@ -42,6 +44,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/setting_dev_team"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
             />
 
         <include layout="@layout/layout_horizontal_border"/>
@@ -51,6 +55,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/setting_history"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
             />
 
         <include layout="@layout/layout_horizontal_border"/>
@@ -60,6 +66,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/setting_report_that_trouble"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
             />
     </LinearLayout>
 
