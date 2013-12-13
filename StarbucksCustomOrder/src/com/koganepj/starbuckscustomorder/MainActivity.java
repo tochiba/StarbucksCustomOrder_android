@@ -3,13 +3,14 @@ package com.koganepj.starbuckscustomorder;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.koganepj.starbuckscustomorder.parse.PlistProvider;
+import com.koganepj.starbuckscustomorder.setting.SettingActivity;
 import com.koganepj.starbuckscustomorder.tablistener.LikeTabListener;
 import com.koganepj.starbuckscustomorder.tablistener.MenuTabListener;
 import com.koganepj.starbuckscustomorder.tablistener.RankingTabListener;
@@ -55,7 +56,8 @@ public class MainActivity extends Activity {
     @Override
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
         if (item.getItemId() == R.id.menu_setting) {
-            Log.d("test", "touch setting menu");
+            Intent intent = new Intent(this, SettingActivity.class);
+            startActivity(intent);
         }
         return super.onMenuItemSelected(featureId, item);
     }
