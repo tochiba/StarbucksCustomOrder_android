@@ -1,6 +1,7 @@
 package com.koganepj.starbuckscustomorder.view.like.matrix;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +22,9 @@ public class MatrixSelectorLayout extends FrameLayout {
         View backgroundView = findViewById(R.id.ImageMatrixSelectorBackground);
         View iconView = findViewById(R.id.ImageMatrixSelectorIcon);
         iconView.setOnTouchListener(new OnMatrixIconTouchListener(backgroundView));
+        
+        //表示サイズの動的調整
+        getViewTreeObserver().addOnGlobalLayoutListener(new ExpandBackgroundSizeOnGlobalLayoutListener(this));
     }
 
 }
