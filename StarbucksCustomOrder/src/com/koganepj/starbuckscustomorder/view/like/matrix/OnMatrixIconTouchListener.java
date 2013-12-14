@@ -34,28 +34,32 @@ public class OnMatrixIconTouchListener implements OnTouchListener {
             int nextRight = nextLeft + view.getWidth();
             int nextBottom = nextTop + view.getHeight();
             
+            //中心位置を計算
+            int nextCenterX = nextLeft + ((nextRight - nextLeft) / 2);
+            int nextCenterY = nextTop + ((nextBottom - nextTop) / 2);
+            
             //左端に出ないようにする
-            if (nextLeft <= 0) {
-                nextLeft = 0;
-                nextRight = view.getWidth();
+            if (nextCenterX <= 0) {
+                nextLeft = 0 - (view.getWidth() / 2);
+                nextRight = (view.getWidth() / 2);
             }
             
             //上端に出ないようにする
-            if (nextTop <= 0) {
-                nextTop = 0;
-                nextBottom = view.getHeight();
+            if (nextCenterY <= 0) {
+                nextTop = 0 - (view.getHeight() / 2);
+                nextBottom = (view.getHeight() / 2);
             }
             
             //右端に出ないようにする
-            if (mMatrixWidth <= nextRight) {
-                nextRight = mMatrixWidth;
-                nextLeft = mMatrixWidth - view.getWidth();
+            if (mMatrixWidth <= nextCenterX) {
+                nextRight = mMatrixWidth + (view.getWidth() / 2);
+                nextLeft = mMatrixWidth - (view.getWidth() / 2);
             }
             
             //下端に出ないようにする
-            if (mMatrixHeight <= nextBottom) {
-                nextBottom = mMatrixHeight;
-                nextTop = mMatrixHeight - view.getHeight();
+            if (mMatrixHeight <= nextCenterY) {
+                nextBottom = mMatrixHeight + (view.getHeight() / 2);
+                nextTop = mMatrixHeight - (view.getHeight() / 2);
             }
             
             //画像を移動する
