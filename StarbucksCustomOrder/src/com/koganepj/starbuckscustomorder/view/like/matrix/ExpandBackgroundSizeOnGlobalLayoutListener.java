@@ -22,7 +22,12 @@ class ExpandBackgroundSizeOnGlobalLayoutListener implements OnGlobalLayoutListen
         View dragView = mLayout.findViewById(R.id.ImageMatrixSelectorIcon);
         int halfWidth = dragView.getWidth() / 2;
         int halfHeight = dragView.getHeight() / 2;
-        mLayout.setPadding(halfWidth, halfHeight, halfWidth, halfHeight);
+        mLayout.layout(
+            mLayout.getLeft() - halfWidth,
+            mLayout.getTop() - halfHeight,
+            mLayout.getRight() + halfWidth,
+            mLayout.getBottom() + halfHeight
+        );
     }
     
 }
