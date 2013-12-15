@@ -35,6 +35,10 @@ public class MainActivity extends Activity {
         Tab menuTab = actionBar.newTab().setText(R.string.tab_menu);
         Tab rankTab = actionBar.newTab().setText(R.string.tab_ranking);
         
+        likeTab.setIcon(R.drawable.tab_icon_matrix);
+        menuTab.setIcon(R.drawable.tab_icon_menu);
+        rankTab.setIcon(R.drawable.tab_icon_ranking);
+        
         int rootViewId = R.id.LayoutContainer;
         
         likeTab.setTabListener(new LikeTabListener(actionBar, rootViewId));
