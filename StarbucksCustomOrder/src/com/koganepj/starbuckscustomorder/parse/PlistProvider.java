@@ -1,6 +1,7 @@
 package com.koganepj.starbuckscustomorder.parse;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -23,6 +24,8 @@ public class PlistProvider {
 	
 	private static Context mContext;
 	private static ArrayList<ItemModel> sItemModelArray;
+	private static HashMap<String, Integer> sTemperatureMap;
+	private static HashMap<String, Integer> sSweetnessMap;
 	
 	/**
 	 * Plistをパースする
@@ -33,6 +36,8 @@ public class PlistProvider {
 		mContext = context;
 		final NSDictionary rootDict = returnRootDictionary();
 		sItemModelArray = ItemArrayParser.parse(rootDict);
+		sTemperatureMap = TemperatureDicParser.parse(rootDict);
+		sSweetnessMap = SweetnessDicParser.parse(rootDict);
 	}
 	
 	/**
@@ -43,7 +48,25 @@ public class PlistProvider {
 	public static ArrayList<ItemModel> getItemModelList() {
 		return sItemModelArray;
 	}
-
+	
+	/**
+	 * 温度のHashMapを返す
+	 * 
+	 * @return HaspMap<商品名, 温度(0~4)>
+	 */
+	public static HashMap<String, Integer> getTemperatureMap() {
+		return sTemperatureMap;
+	}
+	
+	/**
+	 * 甘さのHashMapを返す
+	 * 
+	 * @return HashMap<表品名, 甘さ(0~4)>
+	 */
+	public static HashMap<String, Integer> getSweetnessMap() {
+		return sSweetnessMap;
+	}
+	
 	/**
 	 * RootのDictionaryを返す
 	 * 
