@@ -21,6 +21,9 @@ public class MatrixSelectorLayout extends FrameLayout {
         View backgroundView = findViewById(R.id.ImageMatrixSelectorBackground);
         View iconView = findViewById(R.id.ImageMatrixSelectorIcon);
         iconView.setOnTouchListener(new OnMatrixIconTouchListener(backgroundView));
+        
+        //表示サイズの動的調整
+        getViewTreeObserver().addOnGlobalLayoutListener(new ExpandBackgroundSizeOnGlobalLayoutListener(this));
     }
 
 }

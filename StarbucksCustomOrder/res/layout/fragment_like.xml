@@ -9,6 +9,7 @@
     <com.koganepj.starbuckscustomorder.view.like.matrix.MatrixSelectorLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
         />
 
     <Button

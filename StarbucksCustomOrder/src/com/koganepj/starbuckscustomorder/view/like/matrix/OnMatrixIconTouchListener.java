@@ -7,8 +7,12 @@ import android.view.View.OnTouchListener;
 public class OnMatrixIconTouchListener implements OnTouchListener {
 
     private View mBackgroundView;
-    private int mMatrixWidth = -1;
-    private int mMatrixHeight = -1;
+    
+    //背景のマトリックス画像の位置を保持
+    private int mMatrixLeft = -1;
+    private int mMatrixRight = -1;
+    private int mMatrixTop = -1;
+    private int mMatrixBottom = -1;
     
     public OnMatrixIconTouchListener(View backgroundView) {
         mBackgroundView = backgroundView;
@@ -16,9 +20,11 @@ public class OnMatrixIconTouchListener implements OnTouchListener {
 
     @Override
     public boolean onTouch(View view, MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_DOWN && (mMatrixHeight == -1 || mMatrixWidth == -1)) {
-            mMatrixHeight = mBackgroundView.getHeight();
-            mMatrixWidth = mBackgroundView.getWidth();
+        if (event.getAction() == MotionEvent.ACTION_DOWN && mMatrixLeft == -1/*チェックを簡略化*/) {
+            mMatrixLeft = mBackgroundView.getLeft();
+            mMatrixRight = mBackgroundView.getRight();
+            mMatrixTop = mBackgroundView.getTop();
+            mMatrixBottom = mBackgroundView.getBottom();
         } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
             //現在の座標を取得
             int currentLeft = view.getLeft();
@@ -34,28 +40,32 @@ public class OnMatrixIconTouchListener implements OnTouchListener {
             int nextRight = nextLeft + view.getWidth();
             int nextBottom = nextTop + view.getHeight();
             
+            //中心位置を計算
+            int nextCenterX = nextLeft + ((nextRight - nextLeft) / 2);
+            int nextCenterY = nextTop + ((nextBottom - nextTop) / 2);
+            
             //左端に出ないようにする
-            if (nextLeft <= 0) {
-                nextLeft = 0;
-                nextRight = view.getWidth();
+            if (nextCenterX <= mMatrixLeft) {
+                nextLeft = mMatrixLeft - (view.getWidth() / 2);
+                nextRight = mMatrixLeft + (view.getWidth() / 2);
             }
             
             //上端に出ないようにする
-            if (nextTop <= 0) {
-                nextTop = 0;
-                nextBottom = view.getHeight();
+            if (nextCenterY <= mMatrixTop) {
+                nextTop = mMatrixTop - (view.getHeight() / 2);
+                nextBottom = mMatrixTop + (view.getHeight() / 2);
             }
             
             //右端に出ないようにする
-            if (mMatrixWidth <= nextRight) {
-                nextRight = mMatrixWidth;
-                nextLeft = mMatrixWidth - view.getWidth();
+            if (mMatrixRight <= nextCenterX) {
+                nextRight = mMatrixRight + (view.getWidth() / 2);
+                nextLeft = mMatrixRight - (view.getWidth() / 2);
             }
             
             //下端に出ないようにする
-            if (mMatrixHeight <= nextBottom) {
-                nextBottom = mMatrixHeight;
-                nextTop = mMatrixHeight - view.getHeight();
+            if (mMatrixBottom <= nextCenterY) {
+                nextBottom = mMatrixBottom + (view.getHeight() / 2);
+                nextTop = mMatrixBottom - (view.getHeight() / 2);
             }
             
             //画像を移動する
