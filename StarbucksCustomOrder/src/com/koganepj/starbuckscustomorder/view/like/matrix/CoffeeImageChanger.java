@@ -1,7 +1,5 @@
 package com.koganepj.starbuckscustomorder.view.like.matrix;
 
-import android.graphics.BitmapFactory;
-import android.util.Log;
 import android.widget.ImageView;
 
 import com.koganepj.starbuckscustomorder.R;
