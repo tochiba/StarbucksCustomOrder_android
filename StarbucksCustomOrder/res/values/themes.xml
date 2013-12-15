@@ -3,12 +3,19 @@
     <!-- テーマ -->
     <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionBarTabBarStyle">@style/ActionBarTabBar</item>
         <item name="android:actionBarTabStyle">@style/ActionBarTabs</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
     
     <!-- アクションバー自体のスタイル -->
     <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/starbucks_green</item>
+    </style>
+    
+    <!-- タブバーのスタイル -->
+    <style name="ActionBarTabBar" parent="@android:style/Widget.Holo.Light.ActionBar.TabBar">
+        <item name="android:divider">@null</item>
     </style>
     
     <!-- タブのスタイル -->
