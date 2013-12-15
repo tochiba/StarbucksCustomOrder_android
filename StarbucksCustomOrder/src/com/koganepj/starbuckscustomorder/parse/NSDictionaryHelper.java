@@ -1,6 +1,7 @@
 package com.koganepj.starbuckscustomorder.parse;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.dd.plist.NSArray;
 import com.dd.plist.NSDictionary;
@@ -65,5 +66,21 @@ public class NSDictionaryHelper {
 			list.add(Integer.parseInt(element.toString()));
 		}
 		return list;
+	}
+
+	/**
+	 * KeyがString,ValueがIntegerのHashMapを返す
+	 * 
+	 * @param dict
+	 * @return HashMap<String, Intenger>
+	 */
+	public static HashMap<String, Integer> nsDictToIntHashMap(NSDictionary dict) {
+		final HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
+		final String[] allKeys = dict.allKeys();
+
+		for (String key : allKeys) {
+			hashMap.put(key, intForKey(dict, key));
+		}
+		return hashMap;
 	}
 }
