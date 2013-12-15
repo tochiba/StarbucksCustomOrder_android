@@ -7,6 +7,7 @@ import android.view.View.OnTouchListener;
 public class OnMatrixIconTouchListener implements OnTouchListener {
 
     private View mBackgroundView;
+    private CoffeeImageChanger mChanger;
     
     //背景のマトリックス画像の位置を保持
     private int mMatrixLeft = -1;
@@ -14,8 +15,9 @@ public class OnMatrixIconTouchListener implements OnTouchListener {
     private int mMatrixTop = -1;
     private int mMatrixBottom = -1;
     
-    public OnMatrixIconTouchListener(View backgroundView) {
+    public OnMatrixIconTouchListener(View backgroundView, CoffeeImageChanger changer) {
         mBackgroundView = backgroundView;
+        mChanger = changer;
     }
 
     @Override
@@ -67,6 +69,13 @@ public class OnMatrixIconTouchListener implements OnTouchListener {
                 nextBottom = mMatrixBottom + (view.getHeight() / 2);
                 nextTop = mMatrixBottom - (view.getHeight() / 2);
             }
+            
+            //再度中心位置を計算
+            nextCenterX = nextLeft + ((nextRight - nextLeft) / 2);
+            nextCenterY = nextTop + ((nextBottom - nextTop) / 2);
+            
+            //画像を変更する
+            mChanger.changeImage(mMatrixLeft, mMatrixRight, nextCenterX);
             
             //画像を移動する
             view.layout(nextLeft, nextTop, nextRight, nextBottom);

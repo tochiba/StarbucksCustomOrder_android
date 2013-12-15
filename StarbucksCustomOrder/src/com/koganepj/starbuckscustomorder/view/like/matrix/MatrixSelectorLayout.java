@@ -5,6 +5,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 import com.koganepj.starbuckscustomorder.R;
 
@@ -19,8 +20,9 @@ public class MatrixSelectorLayout extends FrameLayout {
         
         //ドラッグアンドドロップの設定
         View backgroundView = findViewById(R.id.ImageMatrixSelectorBackground);
-        View iconView = findViewById(R.id.ImageMatrixSelectorIcon);
-        iconView.setOnTouchListener(new OnMatrixIconTouchListener(backgroundView));
+        ImageView iconView = (ImageView)findViewById(R.id.ImageMatrixSelectorIcon);
+        CoffeeImageChanger changer = new CoffeeImageChanger(iconView);
+        iconView.setOnTouchListener(new OnMatrixIconTouchListener(backgroundView, changer));
         
         //表示サイズの動的調整
         getViewTreeObserver().addOnGlobalLayoutListener(new ExpandBackgroundSizeOnGlobalLayoutListener(this));
