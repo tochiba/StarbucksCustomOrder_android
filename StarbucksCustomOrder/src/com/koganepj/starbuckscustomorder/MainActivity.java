@@ -29,8 +29,6 @@ public class MainActivity extends Activity {
         //アクションバーの設定
         ActionBar actionBar =  getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-        actionBar.setDisplayShowTitleEnabled(false);
-        actionBar.setDisplayShowHomeEnabled(false);
         
         //タブの初期設定-------------
         Tab likeTab = actionBar.newTab().setText(R.string.tab_like);
