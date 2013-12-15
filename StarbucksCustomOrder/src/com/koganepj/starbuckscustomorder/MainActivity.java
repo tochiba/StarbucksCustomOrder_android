@@ -26,10 +26,13 @@ public class MainActivity extends Activity {
         // Plistのパース処理
         PlistProvider.parse(getApplicationContext()); 
         
-        //タブの初期設定-------------
+        //アクションバーの設定
         ActionBar actionBar =  getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayShowHomeEnabled(false);
         
+        //タブの初期設定-------------
         Tab likeTab = actionBar.newTab().setText(R.string.tab_like);
         Tab menuTab = actionBar.newTab().setText(R.string.tab_menu);
         Tab rankTab = actionBar.newTab().setText(R.string.tab_ranking);
