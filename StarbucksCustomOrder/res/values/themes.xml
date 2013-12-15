@@ -6,6 +6,7 @@
         <item name="android:actionBarTabBarStyle">@style/ActionBarTabBar</item>
         <item name="android:actionBarTabStyle">@style/ActionBarTabs</item>
         <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabsText</item>
     </style>
     
     <!-- アクションバー自体のスタイル -->
@@ -20,6 +21,12 @@
     
     <!-- タブのスタイル -->
     <style name="ActionBarTabs" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
-        <item name="android:background">@drawable/selector_actionbar_tab</item>
+        <item name="android:background">@color/starbucks_green</item>
+    </style>
+    
+    <!-- タブ文字のスタイル -->
+    <style name="ActionBarTabsText">
+        <item name="android:textColor">@drawable/selector_actionbar_tab_text</item>
+        <item name="android:textSize">12sp</item>
     </style>
 </resources>
