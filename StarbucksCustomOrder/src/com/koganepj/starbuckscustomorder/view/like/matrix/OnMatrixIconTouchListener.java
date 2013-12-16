@@ -1,6 +1,5 @@
 package com.koganepj.starbuckscustomorder.view.like.matrix;
 
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
