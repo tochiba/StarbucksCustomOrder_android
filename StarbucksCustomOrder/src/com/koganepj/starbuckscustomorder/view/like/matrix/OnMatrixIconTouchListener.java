@@ -1,5 +1,6 @@
 package com.koganepj.starbuckscustomorder.view.like.matrix;
 
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -29,8 +30,8 @@ public class OnMatrixIconTouchListener implements OnTouchListener {
             mMatrixBottom = mBackgroundView.getBottom();
         } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
             //現在の座標を取得
-            int currentLeft = view.getLeft();
-            int currentTop = view.getTop();
+            int currentLeft = (int)view.getX();
+            int currentTop = (int)view.getY();
             
             //ドラッグ移動分を取得
             int x = (int)event.getX();
@@ -78,7 +79,8 @@ public class OnMatrixIconTouchListener implements OnTouchListener {
             mChanger.changeImage(mMatrixLeft, mMatrixRight, nextCenterX);
             
             //画像を移動する
-            view.layout(nextLeft, nextTop, nextRight, nextBottom);
+            view.setX(nextLeft);
+            view.setY(nextTop);
         }
         return true;
     }
