@@ -12,7 +12,7 @@
         android:textColor="@android:color/white"
         android:layout_alignParentTop="true"
         android:gravity="center"
-        android:text="メニューなんちゃら"
+        android:text="ランキングなんちゃら"
         android:textAlignment="center"
         />
     
