@@ -50,8 +50,8 @@ public class OnMatrixTouchListener implements OnTouchListener {
             mIconView.setX(x);
             mIconView.setY(y);
 
-//            //画像を変更する
-//            mChanger.changeImage(mMatrixLeft, mMatrixRight, nextCenterX);
+            //画像を変更する
+            mChanger.changeImage(matrix.getWidth() ,x);
             
 //            //ドラッグ後の座標を計算
 //            int nextLeft = (currentLeft + x) - (mIconView.getWidth() / 2);
