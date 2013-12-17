@@ -2,13 +2,17 @@ package com.koganepj.starbuckscustomorder.parse;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.util.Log;
 
 import com.dd.plist.NSDictionary;
 import com.dd.plist.PropertyListParser;
 import com.koganepj.starbuckscustomorder.model.ItemModel;
+import com.koganepj.starbuckscustomorder.model.ItemName;
+import com.koganepj.starbuckscustomorder.model.Sweetness;
 
 /**
  * パース処理には下記ライブラリを使用
@@ -25,7 +29,7 @@ public class PlistProvider {
 	private static Context mContext;
 	private static ArrayList<ItemModel> sItemModelArray;
 	private static HashMap<String, Integer> sTemperatureMap;
-	private static HashMap<String, Integer> sSweetnessMap;
+	private static HashMap<ItemName, Sweetness> sSweetnessMap;
 	
 	/**
 	 * Plistをパースする
@@ -63,7 +67,7 @@ public class PlistProvider {
 	 * 
 	 * @return HashMap<表品名, 甘さ(0~4)>
 	 */
-	public static HashMap<String, Integer> getSweetnessMap() {
+	public static HashMap<ItemName, Sweetness> getSweetnessMap() {
 		return sSweetnessMap;
 	}
 	

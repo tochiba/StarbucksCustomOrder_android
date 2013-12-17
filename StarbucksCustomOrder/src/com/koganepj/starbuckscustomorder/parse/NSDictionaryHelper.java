@@ -21,6 +21,11 @@ public class NSDictionaryHelper {
 		return ((NSString) dict.objectForKey(key)).getContent();
 	}
 
+	@SuppressWarnings("unchecked")
+	public static <V, K> V valueForKey(NSDictionary dict, K key) {
+		return (V) (dict.objectForKey((String) key)).toJavaObject();
+	}
+
 	/**
 	 * NSDictionaryから指定されたKeyの整数値を返す
 	 * 
@@ -81,6 +86,18 @@ public class NSDictionaryHelper {
 		for (String key : allKeys) {
 			hashMap.put(key, intForKey(dict, key));
 		}
+		return hashMap;
+	}
+
+	@SuppressWarnings("unchecked")
+	public static <K, V> HashMap<K, V> nsDictToHashMap(NSDictionary dict) {
+		final HashMap<K, V> hashMap = new HashMap<K, V>();
+		final String[] allKeys = dict.allKeys();
+
+		for (String key : allKeys) {
+			hashMap.put((K)key, (V) valueForKey(dict, key));
+		}
+		
 		return hashMap;
 	}
 }

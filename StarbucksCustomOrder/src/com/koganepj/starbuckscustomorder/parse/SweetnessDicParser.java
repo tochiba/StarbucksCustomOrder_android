@@ -3,6 +3,8 @@ package com.koganepj.starbuckscustomorder.parse;
 import java.util.HashMap;
 
 import com.dd.plist.NSDictionary;
+import com.koganepj.starbuckscustomorder.model.ItemName;
+import com.koganepj.starbuckscustomorder.model.Sweetness;
 
 public class SweetnessDicParser {
 	private static final String SWEETNESS_DIC = "SweetnessDic";
@@ -13,12 +15,12 @@ public class SweetnessDicParser {
 	 * @param  rootDict 
 	 * @return HashMap<商品名, 甘さ(0~4)>
 	 */
-	public static HashMap<String, Integer> parse(NSDictionary rootDict) {
+	public static HashMap<ItemName, Sweetness> parse(NSDictionary rootDict) {
 		final NSDictionary sweetnessNSDict = (NSDictionary) (rootDict
 				.objectForKey(SWEETNESS_DIC));
 
-		final HashMap<String, Integer> sweetnessDic = NSDictionaryHelper
-				.nsDictToIntHashMap(sweetnessNSDict);
+		final HashMap<ItemName, Sweetness> sweetnessDic = NSDictionaryHelper
+				.nsDictToHashMap(sweetnessNSDict);
 
 		return sweetnessDic;
 	}
