@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.view.menu.MenuFragment;
 
 public class MenuTabListener extends AbstractTabListener {
 
@@ -18,7 +19,7 @@ public class MenuTabListener extends AbstractTabListener {
 
     @Override
     Fragment createFragment() {
-        return new Fragment();
+        return new MenuFragment();
     }
     
 }
