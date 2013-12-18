@@ -22,7 +22,7 @@ public class MatrixSelectorLayout extends FrameLayout {
         View backgroundView = findViewById(R.id.ImageMatrixSelectorBackground);
         ImageView iconView = (ImageView)findViewById(R.id.ImageMatrixSelectorIcon);
         CoffeeImageChanger changer = new CoffeeImageChanger(iconView);
-        iconView.setOnTouchListener(new OnMatrixIconTouchListener(backgroundView, changer));
+        backgroundView.setOnTouchListener(new OnMatrixTouchListener(iconView, changer));
         
         //表示サイズの動的調整
         getViewTreeObserver().addOnGlobalLayoutListener(new ExpandBackgroundSizeOnGlobalLayoutListener(this));

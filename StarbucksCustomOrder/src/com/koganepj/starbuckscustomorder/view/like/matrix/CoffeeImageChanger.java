@@ -28,12 +28,10 @@ class CoffeeImageChanger {
     
     private int mCurrentIndex = -1;
     
-    void changeImage(int backgroundLeft, int backgroundRight, int nextCenterX) {
-        int width = backgroundRight - backgroundLeft;
-        int division = width / IMAGE_ARRAY.length;
-        int fixedNextCenterX = nextCenterX - backgroundLeft;
+    void changeImage(int backgroundWidth, int nextX) {
+        int division = backgroundWidth / IMAGE_ARRAY.length;
         
-        int index = fixedNextCenterX / division;
+        int index = nextX / division;
         if (IMAGE_ARRAY.length <= index) {
             index = IMAGE_ARRAY.length - 1;
         }
