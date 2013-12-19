@@ -3,6 +3,7 @@ package com.koganepj.starbuckscustomorder.view.like.matrix;
 import com.koganepj.starbuckscustomorder.R;
 
 import android.content.Context;
+import android.graphics.drawable.AnimationDrawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
@@ -22,6 +23,11 @@ public class CoffeeIcon extends LinearLayout {
         
         mCoffeeImageView = (ImageView)findViewById(R.id.ImageMatrixSelectorIcon);
         mSteamImageView = (ImageView)findViewById(R.id.ImageMatrixSelectorIconSteam);
+        
+        //アニメーションの開始
+        mSteamImageView.setBackgroundResource(R.drawable.animation_matrix_coffee_steam);
+        AnimationDrawable animationDrawable = (AnimationDrawable)mSteamImageView.getBackground();
+        animationDrawable.start();
     }
     
     public int getCoffeeIconHeight() {
