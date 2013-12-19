@@ -10,7 +10,8 @@ import android.widget.LinearLayout;
 
 public class CoffeeIcon extends LinearLayout {
     
-    private ImageView mImageView;
+    private ImageView mCoffeeImageView;
+    private ImageView mSteamImageView;
     
     public CoffeeIcon(Context context, AttributeSet attributeSet) {
         super(context);
@@ -19,11 +20,18 @@ public class CoffeeIcon extends LinearLayout {
         LayoutInflater inflater = LayoutInflater.from(context);
         inflater.inflate(R.layout.layout_matrix_coffee_icon, this, true);
         
-        mImageView = (ImageView)findViewById(R.id.ImageMatrixSelectorIcon);
+        mCoffeeImageView = (ImageView)findViewById(R.id.ImageMatrixSelectorIcon);
+        mSteamImageView = (ImageView)findViewById(R.id.ImageMatrixSelectorIconSteam);
     }
     
     public void setCoffeeImage(int drawable) {
-        mImageView.setImageResource(drawable);
+        mCoffeeImageView.setImageResource(drawable);
+    }
+    
+    @Override
+    public void setY(float y) {
+        //中心はコーピーカップの位置のため、煙の高さを無視する
+        super.setY(y - mSteamImageView.getHeight());
     }
 
 }
