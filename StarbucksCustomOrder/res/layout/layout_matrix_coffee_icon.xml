@@ -4,11 +4,21 @@
     android:layout_height="wrap_content"><!-- android:idがつけれない！ -->
     
     <ImageView
+        android:id="@+id/ImageMatrixSelectorIconSteam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/matrix_selector_steam_1"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        />
+    
+    <ImageView
         android:id="@+id/ImageMatrixSelectorIcon"
         android:src="@drawable/matrix_selector_icon_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@null"
+        android:layout_gravity="center"
         />
 
 </merge>

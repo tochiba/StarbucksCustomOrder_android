@@ -14,6 +14,7 @@ public class CoffeeIcon extends LinearLayout {
     
     public CoffeeIcon(Context context, AttributeSet attributeSet) {
         super(context);
+        setOrientation(VERTICAL);
         
         LayoutInflater inflater = LayoutInflater.from(context);
         inflater.inflate(R.layout.layout_matrix_coffee_icon, this, true);
