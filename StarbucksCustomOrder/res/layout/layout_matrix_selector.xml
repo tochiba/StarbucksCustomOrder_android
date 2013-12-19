@@ -13,14 +13,10 @@
         android:contentDescription="@null"
         />
 
-    <ImageView
-        android:id="@+id/ImageMatrixSelectorIcon"
-        android:src="@drawable/matrix_selector_icon_4"
+    <com.koganepj.starbuckscustomorder.view.like.matrix.CoffeeIcon
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@null"
         android:layout_gravity="center_horizontal|bottom"
         android:layout_marginBottom="45dip"
         />
-    
 </merge>
