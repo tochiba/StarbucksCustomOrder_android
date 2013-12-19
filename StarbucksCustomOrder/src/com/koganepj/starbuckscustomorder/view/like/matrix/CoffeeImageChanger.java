@@ -1,7 +1,5 @@
 package com.koganepj.starbuckscustomorder.view.like.matrix;
 
-import android.widget.ImageView;
-
 import com.koganepj.starbuckscustomorder.R;
 
 /**
@@ -20,10 +18,10 @@ class CoffeeImageChanger {
         R.drawable.matrix_selector_icon_7
     };
     
-    private ImageView mImageView;
+    private CoffeeIcon mCoffeeIcon;
     
-    public CoffeeImageChanger(ImageView imageView) {
-        mImageView = imageView;
+    public CoffeeImageChanger(CoffeeIcon coffeeIcon) {
+        mCoffeeIcon = coffeeIcon;
     }
     
     private int mCurrentIndex = -1;
@@ -39,7 +37,7 @@ class CoffeeImageChanger {
             return;
         }
 
-        mImageView.setImageResource(IMAGE_ARRAY[index]);
+        mCoffeeIcon.setCoffeeImage(IMAGE_ARRAY[index]);
         mCurrentIndex = index;
     }
     
