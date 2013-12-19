@@ -1,9 +1,6 @@
 package com.koganepj.starbuckscustomorder.view.like.matrix;
 
-import android.view.View;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
-
-import com.koganepj.starbuckscustomorder.R;
 
 /**
  * ドラッグする画像のサイズに合わせて背景サイズの拡張を行うクラスです
@@ -12,21 +9,22 @@ import com.koganepj.starbuckscustomorder.R;
 class ExpandBackgroundSizeOnGlobalLayoutListener implements OnGlobalLayoutListener {
     
     private MatrixSelectorLayout mLayout;
+    private CoffeeIcon mCoffeeIcon;
     
-    public ExpandBackgroundSizeOnGlobalLayoutListener(MatrixSelectorLayout layout) {
+    public ExpandBackgroundSizeOnGlobalLayoutListener(MatrixSelectorLayout layout, CoffeeIcon coffeeIcon) {
         mLayout = layout;
+        mCoffeeIcon = coffeeIcon;
     }
     
     @Override
     public void onGlobalLayout() {
-        View dragView = mLayout.findViewById(R.id.ImageMatrixSelectorIcon);
-        int halfWidth = dragView.getWidth() / 2;
-        int halfHeight = dragView.getHeight() / 2;
+        int halfWidth = mCoffeeIcon.getCoffeeIconWidth() / 2;
+        int halfHeight = mCoffeeIcon.getCoffeeIconHeight() / 2;
         mLayout.layout(
             mLayout.getLeft() - halfWidth,
-            mLayout.getTop() - halfHeight,
+            mLayout.getTop() - halfHeight - mCoffeeIcon.getSteamHeight(),//高さは煙を考慮する
             mLayout.getRight() + halfWidth,
-            mLayout.getBottom() + halfHeight
+            mLayout.getBottom() + halfHeight + mCoffeeIcon.getSteamHeight()
         );
     }
     

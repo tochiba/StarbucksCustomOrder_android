@@ -24,14 +24,26 @@ public class CoffeeIcon extends LinearLayout {
         mSteamImageView = (ImageView)findViewById(R.id.ImageMatrixSelectorIconSteam);
     }
     
+    public int getCoffeeIconHeight() {
+        return mCoffeeImageView.getHeight();
+    }
+    
+    public int getCoffeeIconWidth() {
+        return mCoffeeImageView.getWidth();
+    }
+    
+    public int getSteamHeight() {
+        return mSteamImageView.getHeight();
+    }
+    
     public void setCoffeeImage(int drawable) {
         mCoffeeImageView.setImageResource(drawable);
     }
     
-    @Override
-    public void setY(float y) {
-        //中心はコーピーカップの位置のため、煙の高さを無視する
-        super.setY(y - mSteamImageView.getHeight());
-    }
+//    @Override
+//    public void setY(float y) {
+//        //中心はコーピーカップの位置のため、煙の高さを無視する
+//        super.setY(y - mSteamImageView.getHeight());
+//    }
 
 }

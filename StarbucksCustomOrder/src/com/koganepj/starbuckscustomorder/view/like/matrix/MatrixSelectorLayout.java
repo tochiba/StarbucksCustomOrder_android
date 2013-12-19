@@ -24,7 +24,7 @@ public class MatrixSelectorLayout extends FrameLayout {
         backgroundView.setOnTouchListener(new OnMatrixTouchListener(coffeeIcon, changer));
         
         //表示サイズの動的調整
-        getViewTreeObserver().addOnGlobalLayoutListener(new ExpandBackgroundSizeOnGlobalLayoutListener(this));
+        getViewTreeObserver().addOnGlobalLayoutListener(new ExpandBackgroundSizeOnGlobalLayoutListener(this, coffeeIcon));
     }
 
 }
