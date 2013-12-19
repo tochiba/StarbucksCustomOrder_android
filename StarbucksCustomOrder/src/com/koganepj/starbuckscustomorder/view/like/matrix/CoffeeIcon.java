@@ -46,10 +46,12 @@ public class CoffeeIcon extends LinearLayout {
         mCoffeeImageView.setImageResource(drawable);
     }
     
-//    @Override
-//    public void setY(float y) {
-//        //中心はコーピーカップの位置のため、煙の高さを無視する
-//        super.setY(y - mSteamImageView.getHeight());
-//    }
-
+    public void startSteamAnimation() {
+        mSteamImageView.setVisibility(VISIBLE);
+    }
+    
+    public void stopSteamAnimation() {
+        mSteamImageView.setVisibility(INVISIBLE);
+    }
+    
 }

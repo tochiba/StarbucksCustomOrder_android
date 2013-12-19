@@ -20,8 +20,9 @@ public class MatrixSelectorLayout extends FrameLayout {
         //ドラッグアンドドロップの設定
         View backgroundView = findViewById(R.id.ImageMatrixSelectorBackground);
         CoffeeIcon coffeeIcon = (CoffeeIcon)getChildAt(1);//IDでひけないのでしかたなく。
-        CoffeeImageChanger changer = new CoffeeImageChanger(coffeeIcon);
-        backgroundView.setOnTouchListener(new OnMatrixTouchListener(coffeeIcon, changer));
+        CoffeeImageChanger coffeeImageChanger = new CoffeeImageChanger(coffeeIcon);
+        CoffeeSteamVisibilityChanger coffeeSteamVisibilityChanger = new CoffeeSteamVisibilityChanger(coffeeIcon);
+        backgroundView.setOnTouchListener(new OnMatrixTouchListener(coffeeIcon, coffeeImageChanger, coffeeSteamVisibilityChanger));
         
         //表示サイズの動的調整
         getViewTreeObserver().addOnGlobalLayoutListener(new ExpandBackgroundSizeOnGlobalLayoutListener(this, coffeeIcon));
