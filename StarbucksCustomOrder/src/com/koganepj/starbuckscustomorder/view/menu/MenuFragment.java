@@ -1,6 +1,7 @@
 package com.koganepj.starbuckscustomorder.view.menu;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.view.menu.visual.VisualAdapter;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -17,10 +18,10 @@ public class MenuFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_menu, null);
 
         ListView listView = (ListView)view.findViewById(R.id.ListMenu);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1);
+        ArrayAdapter<String> adapter = new VisualAdapter(getActivity());
         listView.setAdapter(adapter);
         for (int i = 0; i < 100; i++) {
-            adapter.add("number:" + (i + 1));
+            adapter.add("number:" + (i + 1) + " (from visualadapter)");
         }
 
         return view;
