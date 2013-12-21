@@ -11,6 +11,7 @@
         android:background="@color/starbucks_green"
         >
         <RadioGroup
+            android:id="@+id/RadioGroupMenuShowType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -18,11 +19,13 @@
             >
             <RadioButton
                 android:text="Visual"
+                android:id="@+id/RadioVisual"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
             <RadioButton
                 android:text="Simple"
+                android:id="@+id/RadioSimple"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
