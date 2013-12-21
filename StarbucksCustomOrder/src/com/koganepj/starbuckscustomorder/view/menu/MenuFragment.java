@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.view.menu.simple.SimpleAdapter;
 import com.koganepj.starbuckscustomorder.view.menu.visual.VisualAdapter;
 
 public class MenuFragment extends Fragment {
@@ -27,8 +28,8 @@ public class MenuFragment extends Fragment {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.RadioSimple) {
-                    ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1);
-                    for (int i = 0; i < 30; i++) {
+                    ArrayAdapter<String> arrayAdapter = new SimpleAdapter(getActivity());
+                    for (int i = 0; i < 100; i++) {
                         arrayAdapter.add("count : " + i);
                     }
                     listView.setAdapter(arrayAdapter);
