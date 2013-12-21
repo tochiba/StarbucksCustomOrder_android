@@ -10,15 +10,24 @@
         android:id="@+id/ImageCoffeePicture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/btn_default"
+        android:adjustViewBounds="true"
+        android:src="@drawable/CafeMist"
         />
     
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="2dip"
+        android:paddingBottom="2dip"
         android:text="スターバックスラテ"
+        android:textSize="15sp"
         android:gravity="center"
         android:layout_alignBottom="@id/ImageCoffeePicture"
+        android:textColor="@android:color/white"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:background="#BBFFFFFF"
         />
     
 </RelativeLayout>
