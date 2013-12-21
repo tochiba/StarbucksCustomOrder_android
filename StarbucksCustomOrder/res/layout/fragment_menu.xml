@@ -14,13 +14,13 @@
         android:gravity="center"
         >
         <RadioButton
-            android:text="Visual"
+            android:text="@string/menu_view_mode_visual"
             android:id="@+id/RadioVisual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
         <RadioButton
-            android:text="Simple"
+            android:text="@string/menu_view_mode_simple"
             android:id="@+id/RadioSimple"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
