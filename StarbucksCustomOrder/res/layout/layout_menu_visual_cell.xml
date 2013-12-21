@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/CafeMist"
+        android:src="@drawable/cafemist"
         />
     
     <TextView
@@ -27,6 +27,7 @@
         android:shadowColor="@android:color/black"
         android:shadowDx="1.5"
         android:shadowDy="1.5"
+        android:shadowRadius="1.5"
         android:background="#BBFFFFFF"
         />
     
