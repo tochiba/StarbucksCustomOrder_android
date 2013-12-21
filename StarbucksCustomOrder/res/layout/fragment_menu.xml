@@ -11,19 +11,35 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
         android:gravity="center"
+        android:background="@color/starbucks_green"
         >
         <RadioButton
             android:text="@string/menu_view_mode_visual"
             android:id="@+id/RadioVisual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@null"
+            android:background="@drawable/selector_menu_type_radio_background"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
             />
         <RadioButton
             android:text="@string/menu_view_mode_simple"
             android:id="@+id/RadioSimple"
+            android:background="@drawable/selector_menu_type_radio_background"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:button="@null"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
             />
     </RadioGroup>
     
