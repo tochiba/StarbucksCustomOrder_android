@@ -28,6 +28,7 @@
             android:paddingBottom="5dip"
             android:paddingRight="10dip"
             android:paddingLeft="10dip"
+            android:textColor="@drawable/selector_menu_type_radio_textcolro"
             />
         <RadioButton
             android:text="@string/menu_view_mode_simple"
@@ -40,6 +41,7 @@
             android:paddingBottom="5dip"
             android:paddingRight="10dip"
             android:paddingLeft="10dip"
+            android:textColor="@drawable/selector_menu_type_radio_textcolro"
             />
     </RadioGroup>
     
