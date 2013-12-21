@@ -13,11 +13,10 @@
         />
 
     <Button
+        android:layout_marginTop="30dip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dip"
-        android:paddingRight="20dip"
-        android:text="決定"
+        android:background="@drawable/matrix_button"
         />
     
 
