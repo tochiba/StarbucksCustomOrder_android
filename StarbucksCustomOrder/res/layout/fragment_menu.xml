@@ -1,27 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    android:orientation="vertical" >
+    >
     
-    <ListView
-        android:id="@+id/ListMenu"
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/starbucks_green"
+        >
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:text="Visual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <RadioButton
+                android:text="Simple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RadioGroup>
+    </FrameLayout>
+    
+    <RelativeLayout 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="@null"
-        ></ListView>
-    
-    <TextView
-        android:id="@+id/TextMenuVisualTitle"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:background="#aa000000"
-        android:textColor="@android:color/white"
-        android:layout_alignParentTop="true"
-        android:gravity="center"
-        android:text="メニューなんちゃら"
-        android:textAlignment="center"
-        />
-    
-</RelativeLayout>
+        android:background="@color/background"
+        android:orientation="vertical" >
+        
+        <ListView
+            android:id="@+id/ListMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            ></ListView>
+        
+        <TextView
+            android:id="@+id/TextMenuVisualTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="#aa000000"
+            android:textColor="@android:color/white"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="メニューなんちゃら"
+            android:textAlignment="center"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
