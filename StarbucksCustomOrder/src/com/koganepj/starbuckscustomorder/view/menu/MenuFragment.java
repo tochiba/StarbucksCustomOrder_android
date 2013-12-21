@@ -1,6 +1,8 @@
 package com.koganepj.starbuckscustomorder.view.menu;
 
 import android.app.Fragment;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +35,8 @@ public class MenuFragment extends Fragment {
                         arrayAdapter.add("count : " + i);
                     }
                     listView.setAdapter(arrayAdapter);
+                    listView.setDivider(new ColorDrawable(getResources().getColor(android.R.color.black)));
+                    listView.setDividerHeight(1);
                     return;
                 }
                 
@@ -43,6 +47,7 @@ public class MenuFragment extends Fragment {
                     for (int i = 0; i < 100; i++) {
                         adapter.add("number:" + (i + 1) + " (from visualadapter)");
                     }
+                    listView.setDivider(null);
                     listView.setAdapter(adapter);
                 }
             }
