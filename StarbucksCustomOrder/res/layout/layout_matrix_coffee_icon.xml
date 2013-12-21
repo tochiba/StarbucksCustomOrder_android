@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="wrap_content"><!-- android:idがつけれない！ -->
     
     <ImageView
-        android:id="@+id/ImageMatrixSelectorBackground"
-        android:src="@drawable/matrix_selector_background"
+        android:id="@+id/ImageMatrixSelectorIconSteam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:contentDescription="@null"
+        android:visibility="invisible"
         />
-
-    <com.koganepj.starbuckscustomorder.view.like.matrix.CoffeeIcon
+    
+    <ImageView
+        android:id="@+id/ImageMatrixSelectorIcon"
+        android:src="@drawable/matrix_selector_icon_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginBottom="45dip"
+        android:contentDescription="@null"
+        android:layout_gravity="center"
         />
+
 </merge>
