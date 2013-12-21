@@ -5,32 +5,27 @@
     android:layout_height="match_parent"
     >
     
-    <FrameLayout
+    <RadioGroup
+        android:id="@+id/RadioGroupMenuShowType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/starbucks_green"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center"
         >
-        <RadioGroup
-            android:id="@+id/RadioGroupMenuShowType"
+        <RadioButton
+            android:text="Visual"
+            android:id="@+id/RadioVisual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            >
-            <RadioButton
-                android:text="Visual"
-                android:id="@+id/RadioVisual"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
-            <RadioButton
-                android:text="Simple"
-                android:id="@+id/RadioSimple"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
-        </RadioGroup>
-    </FrameLayout>
+            />
+        <RadioButton
+            android:text="Simple"
+            android:id="@+id/RadioSimple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RadioGroup>
     
     <RelativeLayout 
         android:layout_width="match_parent"
