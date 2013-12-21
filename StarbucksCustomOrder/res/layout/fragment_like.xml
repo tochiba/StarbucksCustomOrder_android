@@ -16,10 +16,9 @@
         android:layout_marginTop="30dip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/matrix_button"
+        android:background="@drawable/selector_matrix_button"
         android:minHeight="0dip"
         android:minWidth="0dip"
         />
-    
 
 </LinearLayout>
