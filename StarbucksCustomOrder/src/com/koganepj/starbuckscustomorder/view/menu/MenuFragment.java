@@ -1,5 +1,7 @@
 package com.koganepj.starbuckscustomorder.view.menu;
 
+import java.util.ArrayList;
+
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,6 +14,8 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.model.CoffeeListModel;
+import com.koganepj.starbuckscustomorder.parse.CoffeeListParser;
 import com.koganepj.starbuckscustomorder.view.menu.simple.SimpleAdapter;
 import com.koganepj.starbuckscustomorder.view.menu.visual.VisualAdapter;
 
@@ -24,6 +28,10 @@ public class MenuFragment extends Fragment {
 //        final ListView listView = (ListView)view.findViewById(R.id.ListMenu);
         final FrameLayout frameLayout = (FrameLayout)view.findViewById(R.id.ListFrame);
         RadioGroup modeRadioGroup = (RadioGroup)view.findViewById(R.id.RadioGroupMenuShowType);
+        
+        // Plistから商品一覧を取得する処理
+        final CoffeeListParser coffeeListParser = new CoffeeListParser(getActivity());
+        final ArrayList<CoffeeListModel> coffeeList = coffeeListParser.getCoffeeList();
         
         //モード切り替えを仮実装
         modeRadioGroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {

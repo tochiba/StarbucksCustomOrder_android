@@ -23,9 +23,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        // Plistのパース処理
-        PlistProvider.parse(getApplicationContext()); 
-        
         //アクションバーの設定
         ActionBar actionBar =  getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
