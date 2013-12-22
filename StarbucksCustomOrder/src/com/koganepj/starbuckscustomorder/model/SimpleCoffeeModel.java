@@ -1,6 +1,6 @@
 package com.koganepj.starbuckscustomorder.model;
 
-public class CoffeeListModel {
+public class SimpleCoffeeModel {
 	public Type type;
 	public CoffeeName coffeeName;
 	public Photo photo;

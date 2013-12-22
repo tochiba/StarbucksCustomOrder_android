@@ -8,7 +8,7 @@ import com.dd.plist.NSArray;
 import com.dd.plist.NSDictionary;
 import com.dd.plist.NSObject;
 import com.koganepj.starbuckscustomorder.model.Calorie;
-import com.koganepj.starbuckscustomorder.model.CoffeeListModel;
+import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Photo;
 import com.koganepj.starbuckscustomorder.model.Price;
@@ -21,7 +21,7 @@ public class CoffeeListParser {
 	private static final String ITEM_ARRAY = "ItemArray";
 
 	private NSDictionary mRootNSDictionary;
-	private ArrayList<CoffeeListModel> mCoffeeList;
+	private ArrayList<SimpleCoffeeModel> mCoffeeList;
 
 	public CoffeeListParser(Context context) {
 		mRootNSDictionary = NSDictionaryHelper.returnRootDictionary(context);
@@ -32,7 +32,7 @@ public class CoffeeListParser {
 	 * 
 	 * @return
 	 */
-	public ArrayList<CoffeeListModel> getCoffeeList() {
+	public ArrayList<SimpleCoffeeModel> getCoffeeList() {
 		if (mCoffeeList == null) {
 			mCoffeeList = parse();
 		}
@@ -45,8 +45,8 @@ public class CoffeeListParser {
 	 * 
 	 * @return
 	 */
-	private ArrayList<CoffeeListModel> parse() {
-		final ArrayList<CoffeeListModel> coffeeList = new ArrayList<CoffeeListModel>();
+	private ArrayList<SimpleCoffeeModel> parse() {
+		final ArrayList<SimpleCoffeeModel> coffeeList = new ArrayList<SimpleCoffeeModel>();
 		final NSArray itemNSArray = (NSArray) (mRootNSDictionary
 				.objectForKey(ITEM_ARRAY));
 
@@ -63,7 +63,7 @@ public class CoffeeListParser {
 			final int price = NSDictionaryHelper.intForKey(dict,
 					Price.ITEM_PRICE);
 
-			final CoffeeListModel model = new CoffeeListModel();
+			final SimpleCoffeeModel model = new SimpleCoffeeModel();
 			model.type = new Type(type);
 			model.coffeeName = new CoffeeName(name);
 			model.photo = new Photo(photo);
