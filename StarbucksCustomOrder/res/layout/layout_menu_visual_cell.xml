@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip"
+    android:gravity="center_vertical"
+    >
+    
+    <ImageView
+        android:id="@+id/ImageCoffeePicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cafemist"
+        android:contentDescription="@null"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dip"
+        android:paddingBottom="2dip"
+        android:text="スターバックスラテ"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_alignBottom="@id/ImageCoffeePicture"
+        android:textColor="@android:color/white"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="1.5"
+        android:background="#BBFFFFFF"
+        />
+    
+</RelativeLayout>

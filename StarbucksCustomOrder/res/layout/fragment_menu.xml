@@ -1,25 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    >
     
-    <TextView
-        android:id="@+id/TextMenuVisualTitle"
-        android:layout_height="wrap_content"
+    <RadioGroup
+        android:id="@+id/RadioGroupMenuShowType"
         android:layout_width="match_parent"
-        android:background="#aa000000"
-        android:textColor="@android:color/white"
-        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
         android:gravity="center"
-        android:text="メニューなんちゃら"
-        android:textAlignment="center"
-        />
+        android:background="@color/starbucks_green"
+        >
+        <RadioButton
+            android:text="@string/menu_view_mode_visual"
+            android:id="@+id/RadioVisual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@null"
+            android:background="@drawable/selector_menu_type_radio_background_left"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
+            android:textColor="@drawable/selector_menu_type_radio_textcolor"
+            />
+        <RadioButton
+            android:text="@string/menu_view_mode_simple"
+            android:id="@+id/RadioSimple"
+            android:background="@drawable/selector_menu_type_radio_background_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
+            android:textColor="@drawable/selector_menu_type_radio_textcolor"
+            />
+    </RadioGroup>
     
-    <ListView
-        android:id="@+id/ListMenu"
+    <RelativeLayout 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        ></ListView>
-    
-</RelativeLayout>
+        android:background="@color/background"
+        android:orientation="vertical" >
+        
+        <!-- リストの挿入部分 -->
+        <FrameLayout
+            android:id="@+id/ListFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></FrameLayout>
+        
+        <TextView
+            android:id="@+id/TextMenuVisualTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="#aa000000"
+            android:textColor="@android:color/white"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="メニューなんちゃら"
+            android:textAlignment="center"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
