@@ -3,12 +3,33 @@ package com.koganepj.starbuckscustomorder.parse;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import android.content.Context;
+import android.content.res.AssetManager;
+
 import com.dd.plist.NSArray;
 import com.dd.plist.NSDictionary;
 import com.dd.plist.NSObject;
 import com.dd.plist.NSString;
+import com.dd.plist.PropertyListParser;
 
 public class NSDictionaryHelper {
+	private static final String PLIST_NAME = "StarbucksCustomList.plist";
+	
+	/**
+	 * RootのDictionaryを返す
+	 * 
+	 * @return NSDictionary
+	 */
+	public static NSDictionary returnRootDictionary(Context context) {
+		try {
+			final AssetManager manager = context.getAssets();
+			return (NSDictionary) PropertyListParser.parse(manager
+					.open(PLIST_NAME));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 
 	/**
 	 * NSDictionaryから指定されたKeyの文字列を返す
