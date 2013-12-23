@@ -10,12 +10,11 @@
         android:layout_width="60dip"
         android:layout_height="60dip"
         android:scaleType="centerCrop"
-        android:src="@drawable/cafemist"
+        android:contentDescription="@null"
         />
     
      <TextView
         android:id="@+id/TextCoffeeName"
-        android:text="カフェミスト"
         android:layout_marginLeft="10dip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

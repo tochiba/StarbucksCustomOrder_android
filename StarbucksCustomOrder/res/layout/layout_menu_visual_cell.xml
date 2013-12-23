@@ -11,16 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
-        android:src="@drawable/cafemist"
         android:contentDescription="@null"
         />
     
     <TextView
+        android:id="@+id/TextCoffeeName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="2dip"
         android:paddingBottom="2dip"
-        android:text="スターバックスラテ"
         android:textSize="15sp"
         android:gravity="center"
         android:layout_alignBottom="@id/ImageCoffeePicture"

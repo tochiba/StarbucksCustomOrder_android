@@ -58,11 +58,8 @@ class ModeChangeListener implements OnCheckedChangeListener {
             mFrameLayout.addView(listView);
 
             //仮データを入れておく
-            ArrayAdapter<String> adapter = new VisualAdapter(mContext);
-            listView.setAdapter(adapter);
-            for (int i = 0; i < 100; i++) {
-                adapter.add("number:" + (i + 1) + " (from visualadapter)");
-            }
+            ArrayAdapter<SimpleCoffeeModel> adapter = new VisualAdapter(mContext);
+            adapter.addAll(mCoffeeModelList);
             listView.setAdapter(adapter);
             return;
         }
