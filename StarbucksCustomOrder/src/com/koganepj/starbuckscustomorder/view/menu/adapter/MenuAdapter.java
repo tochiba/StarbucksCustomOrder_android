@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -26,11 +27,13 @@ public class MenuAdapter extends ArrayAdapter<MenuCellModel> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (getItem(position).isType()) {
-            return new View(getContext());
+            Button button = new Button(getContext());
+            button.setText(getItem(position).toType().getType());
+            return button;
         }
         
         View view = convertView;
-        if (convertView == null || convertView.getClass() == View.class) {
+        if (convertView == null || convertView.getClass() == Button.class) {
             view = createCellView();
             
             //各Viewをキャッシュしておくことで高速化
