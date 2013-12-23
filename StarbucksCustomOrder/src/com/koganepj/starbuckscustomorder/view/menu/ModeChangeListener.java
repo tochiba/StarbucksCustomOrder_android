@@ -1,20 +1,16 @@
 package com.koganepj.starbuckscustomorder.view.menu;
 
-import java.util.ArrayList;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.koganepj.starbuckscustomorder.R;
-import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.parse.CoffeeListParser;
-import com.koganepj.starbuckscustomorder.view.menu.simple.SimpleAdapter;
-import com.koganepj.starbuckscustomorder.view.menu.visual.VisualAdapter;
+import com.koganepj.starbuckscustomorder.view.menu.adapter.MenuAdapter;
+import com.koganepj.starbuckscustomorder.view.menu.adapter.MenuMode;
 
 class ModeChangeListener implements OnCheckedChangeListener {
     
@@ -22,19 +18,20 @@ class ModeChangeListener implements OnCheckedChangeListener {
     private ViewGroup mFrameLayout;
     private LayoutInflater mInflater;
     
-    private ArrayList<SimpleCoffeeModel> mCoffeeModelList;
+    private MenuAdapter mMenuAdapter;
     
     public ModeChangeListener(Context context, ViewGroup frameLayout) {
         mContext = context;
         mFrameLayout = frameLayout;
         mInflater = LayoutInflater.from(context);
         
-        prepareCoffeeData();
+        prepareAdapter();
     }
     
-    void prepareCoffeeData() { // Plistから商品一覧を取得する処理
+    void prepareAdapter() {
+        mMenuAdapter = new MenuAdapter(mContext);
         CoffeeListParser coffeeListParser = new CoffeeListParser(mContext);
-        mCoffeeModelList = coffeeListParser.getCoffeeList();
+        mMenuAdapter.addAll(coffeeListParser.getCoffeeList());
     }
     
     @Override
@@ -45,9 +42,8 @@ class ModeChangeListener implements OnCheckedChangeListener {
             ListView listView = (ListView)mInflater.inflate(R.layout.layout_menu_list_simple, null);
             mFrameLayout.addView(listView);
             
-            ArrayAdapter<SimpleCoffeeModel> arrayAdapter = new SimpleAdapter(mContext);
-            arrayAdapter.addAll(mCoffeeModelList);
-            listView.setAdapter(arrayAdapter);
+            mMenuAdapter.setModeTo(MenuMode.SIMPLE);
+            listView.setAdapter(mMenuAdapter);
             return;
         }
         
@@ -57,10 +53,8 @@ class ModeChangeListener implements OnCheckedChangeListener {
             ListView listView = (ListView)mInflater.inflate(R.layout.layout_menu_list_visual, null);
             mFrameLayout.addView(listView);
 
-            //仮データを入れておく
-            ArrayAdapter<SimpleCoffeeModel> adapter = new VisualAdapter(mContext);
-            adapter.addAll(mCoffeeModelList);
-            listView.setAdapter(adapter);
+            mMenuAdapter.setModeTo(MenuMode.VISUAL);
+            listView.setAdapter(mMenuAdapter);
             return;
         }
 
