@@ -24,14 +24,23 @@ public class MenuAdapter extends ArrayAdapter<SimpleCoffeeModel> {
     
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view = createCellView();
-        
-        ImageView imageView = (ImageView)view.findViewById(R.id.ImageCoffeePicture);
-        TextView textView = (TextView)view.findViewById(R.id.TextCoffeeName);
+        View view = convertView;
+        if (convertView == null) {
+            view = createCellView();
+            
+            //各Viewをキャッシュしておくことで高速化
+            MenuCellViewHolder holder = new MenuCellViewHolder();
+            holder.imageView = (ImageView)view.findViewById(R.id.ImageCoffeePicture);
+            holder.textView = (TextView)view.findViewById(R.id.TextCoffeeName);
+            view.setTag(holder);
+        }
         
         SimpleCoffeeModel coffeeModel = getItem(position);
-        imageView.setImageResource(coffeeModel.photo.getPhoto());
-        textView.setText(coffeeModel.coffeeName.getCoffeeName());
+        
+        //キャッシュを取り出して表示設定する
+        MenuCellViewHolder holder = (MenuCellViewHolder)view.getTag();
+        holder.imageView.setImageResource(coffeeModel.photo.getPhoto());
+        holder.textView.setText(coffeeModel.coffeeName.getCoffeeName());
         
         return view;
     }
