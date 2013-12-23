@@ -10,8 +10,9 @@ import android.widget.TextView;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
+import com.koganepj.starbuckscustomorder.view.menu.adapter.modelwrapper.MenuCellModel;
 
-public class MenuAdapter extends ArrayAdapter<SimpleCoffeeModel> {
+public class MenuAdapter extends ArrayAdapter<MenuCellModel> {
     
     private LayoutInflater mInflater;
     
@@ -24,8 +25,12 @@ public class MenuAdapter extends ArrayAdapter<SimpleCoffeeModel> {
     
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        if (getItem(position).isType()) {
+            return new View(getContext());
+        }
+        
         View view = convertView;
-        if (convertView == null) {
+        if (convertView == null || convertView.getClass() == View.class) {
             view = createCellView();
             
             //各Viewをキャッシュしておくことで高速化
@@ -35,7 +40,7 @@ public class MenuAdapter extends ArrayAdapter<SimpleCoffeeModel> {
             view.setTag(holder);
         }
         
-        SimpleCoffeeModel coffeeModel = getItem(position);
+        SimpleCoffeeModel coffeeModel = getItem(position).toSimpleCoffeeModel();
         
         //キャッシュを取り出して表示設定する
         MenuCellViewHolder holder = (MenuCellViewHolder)view.getTag();
@@ -55,6 +60,11 @@ public class MenuAdapter extends ArrayAdapter<SimpleCoffeeModel> {
     
     public void setModeTo(MenuMode menuMode) {
         mCurrentMenuMode = menuMode;
+    }
+    
+    @Override
+    public boolean isEnabled(int position) {
+        return getItem(position).isType() == false;//タイプ「ではない」場合がタップ可能
     }
 
 }

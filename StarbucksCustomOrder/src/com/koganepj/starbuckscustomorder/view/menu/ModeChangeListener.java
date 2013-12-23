@@ -1,5 +1,7 @@
 package com.koganepj.starbuckscustomorder.view.menu;
 
+import java.util.ArrayList;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -8,9 +10,12 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.parse.CoffeeListParser;
 import com.koganepj.starbuckscustomorder.view.menu.adapter.MenuAdapter;
 import com.koganepj.starbuckscustomorder.view.menu.adapter.MenuMode;
+import com.koganepj.starbuckscustomorder.view.menu.adapter.modelwrapper.MenuCellModel;
+import com.koganepj.starbuckscustomorder.view.menu.adapter.modelwrapper.MenuCellModelListFactory;
 
 class ModeChangeListener implements OnCheckedChangeListener {
     
@@ -31,7 +36,11 @@ class ModeChangeListener implements OnCheckedChangeListener {
     void prepareAdapter() {
         mMenuAdapter = new MenuAdapter(mContext);
         CoffeeListParser coffeeListParser = new CoffeeListParser(mContext);
-        mMenuAdapter.addAll(coffeeListParser.getCoffeeList());
+        ArrayList<SimpleCoffeeModel> coffeeList = coffeeListParser.getCoffeeList();
+        
+        MenuCellModelListFactory factory = new MenuCellModelListFactory();
+        ArrayList<MenuCellModel> cellModelList = factory.create(coffeeList);;
+        mMenuAdapter.addAll(cellModelList);
     }
     
     @Override
