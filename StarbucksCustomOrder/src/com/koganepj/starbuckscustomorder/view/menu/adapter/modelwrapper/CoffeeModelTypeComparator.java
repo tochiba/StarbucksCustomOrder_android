@@ -8,7 +8,7 @@ public class CoffeeModelTypeComparator implements Comparator<SimpleCoffeeModel> 
 
     @Override
     public int compare(SimpleCoffeeModel lhs, SimpleCoffeeModel rhs) {
-        return lhs.type.toString().compareTo(rhs.type.toString());
+        return lhs.type.getType().compareTo(rhs.type.getType());
     }
 
 }
