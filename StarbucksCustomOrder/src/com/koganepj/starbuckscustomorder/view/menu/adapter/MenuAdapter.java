@@ -55,9 +55,9 @@ public class MenuAdapter extends ArrayAdapter<MenuCellModel> {
     
     private View createCellView() {
         if (mCurrentMenuMode == MenuMode.SIMPLE) {
-            return mInflater.inflate(R.layout.layout_menu_simple_cell, null);
+            return mInflater.inflate(R.layout.layout_menu_list_simple_cell, null);
         } else {
-            return mInflater.inflate(R.layout.layout_menu_visual_cell, null);
+            return mInflater.inflate(R.layout.layout_menu_list_visual_cell, null);
         }
     }
     
