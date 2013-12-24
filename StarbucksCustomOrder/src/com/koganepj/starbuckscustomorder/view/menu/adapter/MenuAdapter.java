@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,7 +15,6 @@ import com.koganepj.starbuckscustomorder.view.menu.adapter.modelwrapper.MenuCell
 public class MenuAdapter extends ArrayAdapter<MenuCellModel> {
     
     private LayoutInflater mInflater;
-    
     private MenuMode mCurrentMenuMode;
 
     public MenuAdapter(Context context) {
@@ -26,14 +24,16 @@ public class MenuAdapter extends ArrayAdapter<MenuCellModel> {
     
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if (getItem(position).isType()) {
-            Button button = new Button(getContext());
-            button.setText(getItem(position).toType().getType());
-            return button;
+        MenuCellModel cellModel = getItem(position);
+        
+        if (cellModel.isType()) {
+            TextView sectionView = (TextView)mInflater.inflate(R.layout.layout_menu_section_type, null);
+            sectionView.setText(cellModel.toType().getType());
+            return sectionView;
         }
         
         View view = convertView;
-        if (convertView == null || convertView.getClass() == Button.class) {
+        if (convertView == null || convertView.getClass() == TextView.class) {
             view = createCellView();
             
             //各Viewをキャッシュしておくことで高速化
@@ -43,7 +43,7 @@ public class MenuAdapter extends ArrayAdapter<MenuCellModel> {
             view.setTag(holder);
         }
         
-        SimpleCoffeeModel coffeeModel = getItem(position).toSimpleCoffeeModel();
+        SimpleCoffeeModel coffeeModel = cellModel.toSimpleCoffeeModel();
         
         //キャッシュを取り出して表示設定する
         MenuCellViewHolder holder = (MenuCellViewHolder)view.getTag();
