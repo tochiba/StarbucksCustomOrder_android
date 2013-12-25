@@ -2,7 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dip"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:paddingRight="20dip"
+    android:paddingLeft="20dip"
     android:gravity="center_vertical"
     >
     
@@ -11,16 +14,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
-        android:src="@drawable/cafemist"
         android:contentDescription="@null"
+        android:scaleType="centerCrop"
         />
     
     <TextView
+        android:id="@+id/TextCoffeeName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="2dip"
         android:paddingBottom="2dip"
-        android:text="スターバックスラテ"
         android:textSize="15sp"
         android:gravity="center"
         android:layout_alignBottom="@id/ImageCoffeePicture"

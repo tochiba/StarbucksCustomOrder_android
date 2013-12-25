@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.koganepj.starbuckscustomorder.parse.PlistProvider;
 import com.koganepj.starbuckscustomorder.setting.SettingActivity;
 import com.koganepj.starbuckscustomorder.tablistener.LikeTabListener;
 import com.koganepj.starbuckscustomorder.tablistener.MenuTabListener;
