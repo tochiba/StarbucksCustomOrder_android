@@ -1,6 +1,5 @@
 package com.koganepj.starbuckscustomorder.tablistener;
 
-import android.app.ActionBar;
 import android.app.Fragment;
 
 import com.koganepj.starbuckscustomorder.R;
@@ -8,8 +7,8 @@ import com.koganepj.starbuckscustomorder.view.menu.MenuFragment;
 
 public class MenuTabListener extends AbstractTabListener {
 
-    public MenuTabListener(ActionBar actionBar, int rootViewId) {
-        super(actionBar, rootViewId);
+    public MenuTabListener(int rootViewId) {
+        super(rootViewId);
     }
 
     @Override
