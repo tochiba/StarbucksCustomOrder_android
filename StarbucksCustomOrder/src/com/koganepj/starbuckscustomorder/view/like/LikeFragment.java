@@ -12,7 +12,12 @@ public class LikeFragment extends Fragment {
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_like, null);
+        View view = inflater.inflate(R.layout.fragment_like, null);
+        
+        View settingIcon = view.findViewById(R.id.ImageSettingIcon);
+        settingIcon.setOnClickListener(new SettingIconClickListener(getActivity()));
+        
+        return view;
     }
     
 }

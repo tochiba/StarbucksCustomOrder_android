@@ -27,6 +27,7 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/ImageSettingIcon"
         android:src="@drawable/icon_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
