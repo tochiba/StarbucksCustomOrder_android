@@ -47,7 +47,7 @@ public class MenuAdapter extends ArrayAdapter<MenuCellModel> {
         
         //キャッシュを取り出して表示設定する
         MenuCellViewHolder holder = (MenuCellViewHolder)view.getTag();
-        holder.imageView.setImageResource(coffeeModel.photo.getPhoto());
+        holder.imageView.setImageResource(coffeeModel.photo.getPhoto()); //TODO ここのパフォーマンスを改善する
         holder.textView.setText(coffeeModel.coffeeName.getCoffeeName());
         
         return view;
