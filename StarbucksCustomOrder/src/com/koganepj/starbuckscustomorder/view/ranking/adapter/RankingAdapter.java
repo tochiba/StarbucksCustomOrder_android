@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
@@ -20,7 +22,16 @@ public class RankingAdapter extends ArrayAdapter<SimpleCoffeeModel> {
     
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return mInflater.inflate(R.layout.layout_ranking_cell, null);
+        View view = mInflater.inflate(R.layout.layout_ranking_cell, null);
+        
+        ImageView imageView = (ImageView)view.findViewById(R.id.ImageCoffee);
+        TextView textView = (TextView)view.findViewById(R.id.TextCoffeeName);
+        
+        SimpleCoffeeModel coffeeModel = getItem(position);
+        imageView.setImageResource(coffeeModel.photo.getPhoto());
+        textView.setText(coffeeModel.coffeeName.getCoffeeName());
+        
+        return view;
     }
 
 }
