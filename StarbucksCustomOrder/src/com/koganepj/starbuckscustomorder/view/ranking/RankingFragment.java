@@ -1,14 +1,15 @@
 package com.koganepj.starbuckscustomorder.view.ranking;
 
-import com.koganepj.starbuckscustomorder.R;
-
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
+import com.koganepj.starbuckscustomorder.view.ranking.adapter.RankingAdapter;
 
 public class RankingFragment extends Fragment {
     
@@ -17,12 +18,12 @@ public class RankingFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_ranking, null);
 
         ListView listView = (ListView)view.findViewById(R.id.ListMenu);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1);
+        RankingAdapter adapter = new RankingAdapter(getActivity());
         listView.setAdapter(adapter);
         for (int i = 0; i < 100; i++) {
-            adapter.add("number:" + (i + 1));
+            adapter.add(new SimpleCoffeeModel());
         }
-
+        
         return view;
     }
     
