@@ -24,14 +24,15 @@ public class RankingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_ranking, null);
         
-        //リストを読み込み
+        //データを読み込み
         CoffeeListParser parser = new CoffeeListParser(getActivity());
         ArrayList<SimpleCoffeeModel> coffeeList = parser.getCoffeeList();
         
-        //アダプターをセット
+        //ListViewの初期設定
         ListView listView = (ListView)view.findViewById(R.id.ListMenu);
         RankingAdapter adapter = new RankingAdapter(getActivity());
         listView.setAdapter(adapter);
+        listView.setEmptyView(view.findViewById(R.id.empty));
         
         //ソーシャルランキングの読み込みを行っておく
         SocialRankingLoaderCallback callback = new SocialRankingLoaderCallback(getActivity());
