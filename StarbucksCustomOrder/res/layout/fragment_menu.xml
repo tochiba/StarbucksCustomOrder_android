@@ -24,11 +24,7 @@
             android:checked="true"
             android:button="@null"
             android:background="@drawable/selector_menu_type_radio_background_left"
-            android:paddingTop="5dip"
-            android:paddingBottom="5dip"
-            android:paddingRight="10dip"
-            android:paddingLeft="10dip"
-            android:textColor="@drawable/selector_menu_type_radio_textcolor"
+            style="@style/ViewModeTab"
             />
         <RadioButton
             android:text="@string/menu_view_mode_simple"
@@ -37,11 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:button="@null"
-            android:paddingTop="5dip"
-            android:paddingBottom="5dip"
-            android:paddingRight="10dip"
-            android:paddingLeft="10dip"
-            android:textColor="@drawable/selector_menu_type_radio_textcolor"
+            style="@style/ViewModeTab"
             />
     </RadioGroup>
     
