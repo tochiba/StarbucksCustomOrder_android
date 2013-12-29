@@ -15,21 +15,12 @@ public class SweetnessParser {
 	private static final String SWEETNESS_DIC = "SweetnessDic";
 
 	/**
-	 * Plistから甘さをパースしHashMapとして返す
+	 * 指定された甘さからコーヒー名をArrayListで返す
 	 * 
 	 * @param rootDict
-	 * @return HashMap<商品名, 甘さ(0~4)>
+	 * @param sweetness
+	 * @return
 	 */
-	public static HashMap<String, Integer> parse(NSDictionary rootDict) {
-		final NSDictionary sweetnessNSDict = (NSDictionary) (rootDict
-				.objectForKey(SWEETNESS_DIC));
-
-		final HashMap<String, Integer> sweetnessDic = NSDictionaryHelper
-				.nsDictToIntHashMap(sweetnessNSDict);
-
-		return sweetnessDic;
-	}
-
 	public static ArrayList<CoffeeName> find(NSDictionary rootDict,
 			Sweetness sweetness) {
 		final NSDictionary sweetnessNSDict = (NSDictionary) (rootDict
