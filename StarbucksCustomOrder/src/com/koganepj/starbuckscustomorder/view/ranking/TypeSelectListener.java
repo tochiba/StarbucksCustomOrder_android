@@ -10,7 +10,7 @@ import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.view.ranking.adapter.RankingAdapter;
 
-public class TypeSelectListener implements OnCheckedChangeListener {
+class TypeSelectListener implements OnCheckedChangeListener {
     
     private RankingAdapter mAdapter;
     private ArrayList<SimpleCoffeeModel> mCoffeeModels;
