@@ -3,7 +3,6 @@ package com.koganepj.starbuckscustomorder.parse;
 import java.util.ArrayList;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.dd.plist.NSDictionary;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
