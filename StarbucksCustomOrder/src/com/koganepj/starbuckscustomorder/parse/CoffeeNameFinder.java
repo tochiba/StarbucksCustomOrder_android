@@ -10,10 +10,10 @@ import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Hotness;
 import com.koganepj.starbuckscustomorder.model.Sweetness;
 
-public class CoffeeFinder {
+public class CoffeeNameFinder {
 	private Context mContext;
 
-	public CoffeeFinder(Context context) {
+	public CoffeeNameFinder(Context context) {
 		mContext = context;
 	}
 
@@ -26,7 +26,7 @@ public class CoffeeFinder {
 	 *            温かさ
 	 * @return 該当するコーヒーの名前 該当しない場合はnullを返す
 	 */
-	public CoffeeName find(Sweetness sweetness, Hotness hotness) {
+	public CoffeeName findName(Sweetness sweetness, Hotness hotness) {
 		final NSDictionary rootDict = NSDictionaryHelper
 				.returnRootDictionary(mContext);
 		final ArrayList<CoffeeName> hotnessList = HotnessParser.find(rootDict,
