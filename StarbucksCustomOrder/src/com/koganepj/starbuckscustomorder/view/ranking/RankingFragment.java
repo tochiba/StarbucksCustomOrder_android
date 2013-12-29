@@ -35,6 +35,7 @@ public class RankingFragment extends Fragment {
         listView.setEmptyView(view.findViewById(R.id.empty));
         
         //ソーシャルランキングの読み込みを行っておく
+        //TODO コードが整理されてきたらActivity読み込みの時点に移動！
         SocialRankingLoaderCallback callback = new SocialRankingLoaderCallback(getActivity());
         Loader<ArrayList<SocialRankingModel>> loader = getLoaderManager().initLoader(0, null, callback);
         loader.forceLoad();
