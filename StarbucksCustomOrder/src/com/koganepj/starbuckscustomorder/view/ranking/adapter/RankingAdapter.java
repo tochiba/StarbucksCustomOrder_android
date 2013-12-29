@@ -14,10 +14,12 @@ import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 public class RankingAdapter extends ArrayAdapter<SimpleCoffeeModel> {
     
     private LayoutInflater mInflater;
+    private ImageLoader mImageLoader;
     
     public RankingAdapter(Context context) {
         super(context, 0);
         mInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        mImageLoader = new ImageLoader(context);
     }
     
     @Override
@@ -28,10 +30,10 @@ public class RankingAdapter extends ArrayAdapter<SimpleCoffeeModel> {
         TextView textView = (TextView)view.findViewById(R.id.TextCoffeeName);
         
         SimpleCoffeeModel coffeeModel = getItem(position);
-        imageView.setImageResource(coffeeModel.photo.getPhoto());
+        imageView.setImageBitmap(mImageLoader.getRoundedImage(coffeeModel.photo));
         textView.setText(coffeeModel.coffeeName.getCoffeeName());
         
         return view;
     }
-
+    
 }
