@@ -5,6 +5,7 @@ import java.util.Collections;
 
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
+import android.widget.Toast;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
@@ -43,7 +44,7 @@ class TypeSelectListener implements OnCheckedChangeListener {
         }
 
         if (checkedId == R.id.RadioSocial) {
-
+            Toast.makeText(mAdapter.getContext(), "未実装", Toast.LENGTH_SHORT).show();
             return;
         }
     }
