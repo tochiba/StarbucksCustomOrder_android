@@ -5,14 +5,12 @@ import java.util.Collections;
 
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
-import android.widget.Toast;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.view.ranking.adapter.RankingAdapter;
 import com.koganepj.starbuckscustomorder.view.ranking.social.ModelSearcher;
 import com.koganepj.starbuckscustomorder.view.ranking.social.SocialRankingLoaderCallback;
-import com.koganepj.starbuckscustomorder.view.ranking.social.SocialRankingModel;
 
 class TypeSelectListener implements OnCheckedChangeListener {
     
