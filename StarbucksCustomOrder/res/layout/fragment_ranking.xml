@@ -25,6 +25,7 @@
         android:background="@color/starbucks_green"
         >
         <RadioButton
+            android:id="@+id/RadioPrice"
             android:text="@string/ranking_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,6 +35,7 @@
             style="@style/ViewModeTab"
             />
         <RadioButton
+            android:id="@+id/RadioCalorie"
             android:text="@string/ranking_calorie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,6 +44,7 @@
             style="@style/ViewModeTab"
             />
         <RadioButton
+            android:id="@+id/RadioSocial"
             android:text="@string/ranking_social"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
