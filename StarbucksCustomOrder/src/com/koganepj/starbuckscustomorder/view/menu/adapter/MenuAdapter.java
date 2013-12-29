@@ -1,6 +1,7 @@
 package com.koganepj.starbuckscustomorder.view.menu.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,10 +17,12 @@ public class MenuAdapter extends ArrayAdapter<MenuCellModel> {
     
     private LayoutInflater mInflater;
     private MenuMode mCurrentMenuMode;
+    private CoffeeImageLoader mCoffeeImageLoader;
 
     public MenuAdapter(Context context) {
         super(context, 0);
         mInflater = LayoutInflater.from(context);
+        mCoffeeImageLoader = new CoffeeImageLoader(context.getResources());
     }
     
     @Override
@@ -47,7 +50,8 @@ public class MenuAdapter extends ArrayAdapter<MenuCellModel> {
         
         //キャッシュを取り出して表示設定する
         MenuCellViewHolder holder = (MenuCellViewHolder)view.getTag();
-        holder.imageView.setImageResource(coffeeModel.photo.getPhoto());
+        Bitmap bitmap = mCoffeeImageLoader.loadImage(coffeeModel.photo.getPhoto(), mCurrentMenuMode);
+        holder.imageView.setImageBitmap(bitmap);
         holder.textView.setText(coffeeModel.coffeeName.getCoffeeName());
         
         return view;
