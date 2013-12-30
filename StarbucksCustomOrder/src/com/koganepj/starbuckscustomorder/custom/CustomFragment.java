@@ -4,11 +4,10 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.custom.animation.OnShowSelectToppingViewListener;
 
 public class CustomFragment extends Fragment {
     
@@ -16,13 +15,11 @@ public class CustomFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_custom, null);
         
+        View toppingSelectView = view.findViewById(R.id.LayoutToppingSelect);
+        
+        //トッピング開始
         View toppingView = view.findViewById(R.id.ImageTopping);
-        toppingView.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "Let's Topping!", Toast.LENGTH_SHORT).show();
-            }
-        });
+        toppingView.setOnClickListener(new OnShowSelectToppingViewListener(toppingSelectView));
         
         return view;
     }
