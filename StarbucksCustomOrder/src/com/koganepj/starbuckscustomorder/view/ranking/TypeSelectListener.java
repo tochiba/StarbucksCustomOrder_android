@@ -5,20 +5,23 @@ import java.util.Collections;
 
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
-import android.widget.Toast;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.view.ranking.adapter.RankingAdapter;
+import com.koganepj.starbuckscustomorder.view.ranking.social.ModelSearcher;
+import com.koganepj.starbuckscustomorder.view.ranking.social.SocialRankingLoaderCallback;
 
 class TypeSelectListener implements OnCheckedChangeListener {
     
     private RankingAdapter mAdapter;
     private ArrayList<SimpleCoffeeModel> mCoffeeModels;
+    private SocialRankingLoaderCallback mCallback;
     
-    public TypeSelectListener(RankingAdapter adapter, ArrayList<SimpleCoffeeModel> coffeeModels) {
+    public TypeSelectListener(RankingAdapter adapter, ArrayList<SimpleCoffeeModel> coffeeModels, SocialRankingLoaderCallback callback) {
         mAdapter = adapter;
         mCoffeeModels = coffeeModels;
+        mCallback = callback;
     }
     
     @Override
@@ -44,7 +47,10 @@ class TypeSelectListener implements OnCheckedChangeListener {
         }
 
         if (checkedId == R.id.RadioSocial) {
-            Toast.makeText(mAdapter.getContext(), "未実装", Toast.LENGTH_SHORT).show();
+            mAdapter.clear();
+            ModelSearcher searcher = new ModelSearcher(mCallback.getResult(), mCoffeeModels);
+            ArrayList<SimpleCoffeeModel> list = searcher.getList();
+            mAdapter.addAll(list);
             return;
         }
     }
