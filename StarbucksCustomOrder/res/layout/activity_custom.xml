@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background"
     >
     
     <!-- ヘッダ -->
@@ -35,10 +34,11 @@
     </RelativeLayout>
     
     <!-- 中身 -->
-<!--     <fragment
+    <fragment
+        android:id="@+id/FragmentCustom"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         class="com.koganepj.starbuckscustomorder.custom.CustomFragment"
-        /> -->
+        />
     
 </LinearLayout>
