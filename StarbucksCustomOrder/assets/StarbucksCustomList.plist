@@ -2191,6 +2191,16 @@
 		<string>2</string>
 		<key>ソイ ラテ</key>
 		<string>3</string>
+		<key>ジンジャーブレッドラテ</key>
+		<string>1</string>
+		<key>クラッシュマロンパイフラペチーノ</key>
+		<string>1</string>
+		<key>キャラメルホワイトモカ</key>
+		<string>1</string>
+		<key>抹茶ティーラテ</key>
+		<string>4</string>
+		<key>クラッシュマロンパイラテ</key>
+		<string>2</string>
 	</dict>
 	<key>SweetnessDic</key>
 	<dict>
@@ -2238,6 +2248,16 @@
 		<string>1</string>
 		<key>ソイ ラテ</key>
 		<string>1</string>
+		<key>ジンジャーブレッドラテ</key>
+		<string>0</string>
+		<key>クラッシュマロンパイフラペチーノ</key>
+		<string>2</string>
+		<key>キャラメルホワイトモカ</key>
+		<string>1</string>
+		<key>抹茶ティーラテ</key>
+		<string>3</string>
+		<key>クラッシュマロンパイラテ</key>
+		<string>4</string>
 	</dict>
 	<key>PriceDic</key>
 	<dict>

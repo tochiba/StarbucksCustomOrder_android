@@ -11,6 +11,7 @@ import com.dd.plist.NSDictionary;
 import com.dd.plist.NSObject;
 import com.dd.plist.NSString;
 import com.dd.plist.PropertyListParser;
+import com.koganepj.starbuckscustomorder.model.CoffeeName;
 
 public class NSDictionaryHelper {
 	private static final String PLIST_NAME = "StarbucksCustomList.plist";
@@ -103,5 +104,29 @@ public class NSDictionaryHelper {
 			hashMap.put(key, intForKey(dict, key));
 		}
 		return hashMap;
+	}
+	
+	/**
+	 * 引数で指定されたNSDictionaryからtargetLevelを探し、
+	 * ArrayListとして返す
+	 * 
+	 * @param targetDict
+	 * @param targetLevel
+	 * @return
+	 */
+	public static ArrayList<CoffeeName> coffeeNameListForInt(NSDictionary targetDict, int target) {
+		final ArrayList<CoffeeName> resultList = new ArrayList<CoffeeName>();
+		final String[] allKeys = targetDict.allKeys();
+		for (String key : allKeys) {
+			int level = NSDictionaryHelper.intForKey(targetDict, key);
+
+			if (level != target) {
+				continue;
+			}
+			CoffeeName name = new CoffeeName(key);
+			resultList.add(name);
+		}
+
+		return resultList;
 	}
 }
