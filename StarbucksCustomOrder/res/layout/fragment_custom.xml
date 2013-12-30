@@ -125,6 +125,7 @@
             android:layout_height="wrap_content"
             />
         <ImageView
+            android:id="@+id/ImageTopping"
             android:src="@drawable/custom_icon_topping"
             android:contentDescription="@null"
             android:layout_toRightOf="@id/ButtonMagic"
