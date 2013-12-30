@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+    
+    <!-- ヘッダ -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/starbucks_green"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brown"
+            android:layout_alignParentLeft="true"
+            android:text="@string/custom_back"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:text="@string/custom_title"
+            android:padding="8dip"
+            />
+    </RelativeLayout>
+    
+    <!-- 中身 -->
+<!--     <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.koganepj.starbuckscustomorder.custom.CustomFragment"
+        /> -->
+    
+</LinearLayout>
