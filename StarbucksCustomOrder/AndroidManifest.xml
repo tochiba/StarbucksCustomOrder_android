@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.koganepj.starbuckscustomorder.setting.SettingActivity" />
+        <activity android:name="com.koganepj.starbuckscustomorder.custom.CustomActivity"/>
     </application>
 
 </manifest>
