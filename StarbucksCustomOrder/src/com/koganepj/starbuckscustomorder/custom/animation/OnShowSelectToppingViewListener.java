@@ -9,19 +9,19 @@ import android.view.animation.AnimationUtils;
 
 public class OnShowSelectToppingViewListener implements OnClickListener {
     
-    private View mSelectToppingView;
+    private View mToppingSelectView;
     private View mSizeSelectView;
     
     public OnShowSelectToppingViewListener(View selecToppingView, View sizeSelectView) {
-        mSelectToppingView = selecToppingView;
+        mToppingSelectView = selecToppingView;
         mSizeSelectView = sizeSelectView;
     }
     
     @Override
     public void onClick(View v) {
-        Animation selectToppingAnimation = AnimationUtils.loadAnimation(v.getContext(), R.anim.animation_select_topping_view);
-        mSelectToppingView.setVisibility(View.VISIBLE);
-        mSelectToppingView.startAnimation(selectToppingAnimation);
+        Animation selectToppingAnimation = AnimationUtils.loadAnimation(v.getContext(), R.anim.animation_topping_select_view);
+        mToppingSelectView.setVisibility(View.VISIBLE);
+        mToppingSelectView.startAnimation(selectToppingAnimation);
         
         Animation sizeSelectAnimation = AnimationUtils.loadAnimation(v.getContext(), R.anim.animation_size_select_view);
         mSizeSelectView.startAnimation(sizeSelectAnimation);
