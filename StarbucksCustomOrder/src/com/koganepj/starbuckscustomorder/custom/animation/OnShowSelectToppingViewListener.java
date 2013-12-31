@@ -12,11 +12,13 @@ public class OnShowSelectToppingViewListener implements OnClickListener {
     private View mToppingSelectView;
     private View mSizeSelectView;
     private View mInfoView;
+    private View mImageView;
     
-    public OnShowSelectToppingViewListener(View selecToppingView, View sizeSelectView, View infoView) {
+    public OnShowSelectToppingViewListener(View selecToppingView, View sizeSelectView, View infoView, View imageView) {
         mToppingSelectView = selecToppingView;
         mSizeSelectView = sizeSelectView;
         mInfoView = infoView;
+        mImageView = imageView;
     }
     
     @Override
@@ -30,6 +32,9 @@ public class OnShowSelectToppingViewListener implements OnClickListener {
         
         Animation infoAnimation = AnimationUtils.loadAnimation(v.getContext(), R.anim.animation_info_view);
         mInfoView.startAnimation(infoAnimation);
+        
+        Animation imageAnimation = AnimationUtils.loadAnimation(v.getContext(), R.anim.animation_image_view);
+        mImageView.startAnimation(imageAnimation);
     }
 
 }
