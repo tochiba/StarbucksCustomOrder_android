@@ -26,4 +26,9 @@
     <string name="setting_mail">メールで問い合わせる</string>
     <string name="setting_dev_team">開発チーム</string>
     <string name="setting_history">このアプリが出来るまで</string>
+    
+    <!-- カスタム画面 -->
+    <string name="custom_title">カスタム</string>
+    <string name="custom_back">&lt; 戻る</string>
+    <string name="custom_please_select_topping">好きなカスタマイズを選択</string>
 </resources>
