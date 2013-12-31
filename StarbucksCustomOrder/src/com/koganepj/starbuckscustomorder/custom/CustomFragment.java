@@ -16,10 +16,11 @@ public class CustomFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_custom, null);
         
         View toppingSelectView = view.findViewById(R.id.LayoutToppingSelect);
+        View sizeSelectView = view.findViewById(R.id.LayoutSizeSelect);
         
         //トッピング開始
         View toppingView = view.findViewById(R.id.ImageTopping);
-        toppingView.setOnClickListener(new OnShowSelectToppingViewListener(toppingSelectView));
+        toppingView.setOnClickListener(new OnShowSelectToppingViewListener(toppingSelectView, sizeSelectView));
         
         return view;
     }

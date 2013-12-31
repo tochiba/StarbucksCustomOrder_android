@@ -75,7 +75,9 @@
                 />
         </LinearLayout>
         
+        <!-- サイズ選択 -->
         <LinearLayout
+            android:id="@+id/LayoutSizeSelect"
             android:layout_marginTop="10dip"
             android:layout_marginBottom="10dip"
             android:orientation="horizontal"
