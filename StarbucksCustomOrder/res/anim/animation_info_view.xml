@@ -3,6 +3,6 @@
     android:interpolator="@android:anim/bounce_interpolator"
     android:fillAfter="true"
     android:fromYDelta="0"
-    android:toYDelta="650"
+    android:toYDelta="660"
     android:duration="1000"
     />
