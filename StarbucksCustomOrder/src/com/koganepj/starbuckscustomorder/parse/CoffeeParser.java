@@ -44,12 +44,9 @@ public class CoffeeParser {
 			final NSDictionary dict = (NSDictionary) item;
 			final String itemName = NSDictionaryHelper.stringForKey(dict,
 					CoffeeName.ITEM_NAME);
-			if (!TextUtils.equals(targetName.getCoffeeName(), itemName)) {
-				// mCoffeeNameと異なる場合は次へ
-				continue;
+			if (TextUtils.equals(targetName.getCoffeeName(), itemName)) {
+				return dict;
 			}
-
-			resultDict = dict;
 		}
 
 		return resultDict;
