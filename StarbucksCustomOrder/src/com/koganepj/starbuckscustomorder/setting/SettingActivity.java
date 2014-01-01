@@ -31,6 +31,9 @@ public class SettingActivity extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
         
+        View backText = findViewById(R.id.TextBack);
+        backText.setOnClickListener(new BackTextClickListener(this));
+        
         findViewById(R.id.TextDevTeam).setOnClickListener(this);
         findViewById(R.id.TextHistory).setOnClickListener(this);
         findViewById(R.id.TextMail).setOnClickListener(this);
