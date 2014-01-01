@@ -23,7 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.koganepj.starbuckscustomorder.setting.SettingActivity" />
+        <activity
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:name="com.koganepj.starbuckscustomorder.setting.SettingActivity"
+            />
     </application>
 
 </manifest>

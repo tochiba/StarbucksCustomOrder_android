@@ -1,6 +1,5 @@
 package com.koganepj.starbuckscustomorder.setting;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -31,9 +30,6 @@ public class SettingActivity extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
-        
-        ActionBar actionBar = getActionBar();
-        actionBar.hide();
         
         findViewById(R.id.TextDevTeam).setOnClickListener(this);
         findViewById(R.id.TextHistory).setOnClickListener(this);
