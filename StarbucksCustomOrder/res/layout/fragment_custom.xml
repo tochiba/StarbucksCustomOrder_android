@@ -27,6 +27,7 @@
                 android:layout_centerInParent="true"
                 />
             <TextView
+                android:id="@+id/TextCoffeeName"
                 android:layout_alignLeft="@id/ImageCoffee"
                 android:layout_alignRight="@id/ImageCoffee"
                 android:layout_alignBottom="@id/ImageCoffee"
