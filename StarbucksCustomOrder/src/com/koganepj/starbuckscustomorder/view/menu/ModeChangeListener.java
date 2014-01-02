@@ -50,6 +50,7 @@ class ModeChangeListener implements OnCheckedChangeListener {
             mFrameLayout.removeAllViews();
             ListView listView = (ListView)mInflater.inflate(R.layout.layout_menu_list_simple, null);
             mFrameLayout.addView(listView);
+            listView.setOnItemClickListener(new OnRowClickListener());
             
             mMenuAdapter.setModeTo(MenuMode.SIMPLE);
             listView.setAdapter(mMenuAdapter);
@@ -61,6 +62,7 @@ class ModeChangeListener implements OnCheckedChangeListener {
             mFrameLayout.removeAllViews();
             ListView listView = (ListView)mInflater.inflate(R.layout.layout_menu_list_visual, null);
             mFrameLayout.addView(listView);
+            listView.setOnItemClickListener(new OnRowClickListener());
 
             mMenuAdapter.setModeTo(MenuMode.VISUAL);
             listView.setAdapter(mMenuAdapter);

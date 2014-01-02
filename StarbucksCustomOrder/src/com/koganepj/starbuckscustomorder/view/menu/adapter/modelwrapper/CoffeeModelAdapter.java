@@ -3,7 +3,7 @@ package com.koganepj.starbuckscustomorder.view.menu.adapter.modelwrapper;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.model.Type;
 
-class CoffeeModelAdapter implements MenuCellModel {
+public class CoffeeModelAdapter implements MenuCellModel {
     
     private SimpleCoffeeModel mCoffeeModel;
     
