@@ -46,6 +46,8 @@ public class CustomFragment extends Fragment {
         
         ((ImageView)getView().findViewById(R.id.ImageCoffee)).setImageResource(coffee.photo.getPhoto());
         ((TextView)getView().findViewById(R.id.TextCoffeeName)).setText(coffee.name.getCoffeeName());
+        ((TextView)getView().findViewById(R.id.TextPrice)).setText(coffee.price.getPrice() + "円");
+        ((TextView)getView().findViewById(R.id.TextCalorie)).setText(coffee.calorie.getCalorie() + "kcal");
     }
     
 }
