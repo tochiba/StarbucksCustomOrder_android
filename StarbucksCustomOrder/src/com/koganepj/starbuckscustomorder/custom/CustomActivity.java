@@ -1,7 +1,6 @@
 package com.koganepj.starbuckscustomorder.custom;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.os.Bundle;
 
 import com.koganepj.starbuckscustomorder.R;
@@ -11,19 +10,20 @@ public class CustomActivity extends Activity {
     
     public static final String KEY_PARAM_COFFEENAME = "key_coffeename";
     
+    private CoffeeName mCoffeeName;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom);
         
-        //パラメータを取得してFragmentに渡す
-        CoffeeName coffeeName = (CoffeeName)getIntent().getSerializableExtra(KEY_PARAM_COFFEENAME);
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(CustomFragment.KEY_PARAM_COFFEENAME, coffeeName);
-        Fragment fragment = getFragmentManager().findFragmentById(R.id.FragmentCustom);
-        fragment.setArguments(bundle);
+        mCoffeeName = (CoffeeName)getIntent().getSerializableExtra(KEY_PARAM_COFFEENAME);
         
         findViewById(R.id.TextBack).setOnClickListener(new BackTextClickListener(this));
+    }
+    
+    CoffeeName getCoffeeName() {
+        return mCoffeeName;
     }
     
 }

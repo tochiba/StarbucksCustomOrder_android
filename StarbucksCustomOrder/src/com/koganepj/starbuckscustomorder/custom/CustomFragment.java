@@ -24,15 +24,20 @@ public class CustomFragment extends Fragment {
         View infoView = view.findViewById(R.id.LayoutInfo);
         View imageView = view.findViewById(R.id.LayoutImage);
         
-        //パラメータを受け取って表示要素の設定
-//        CoffeeName coffeeName = (CoffeeName)getArguments().getSerializable(KEY_PARAM_COFFEENAME);
-//        Log.d("test", "fragment get coffe name : " + coffeeName.getCoffeeName());
-        
         //トッピング開始時のアニメーション設定
         View toppingView = view.findViewById(R.id.ImageTopping);
         toppingView.setOnClickListener(new OnShowSelectToppingViewListener(toppingSelectView, sizeSelectView, infoView, imageView));
         
         return view;
+    }
+    
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        //Activityからコーヒー名を取得 ※別Activityにも属するようになれば取得方法を抽象化する
+        CoffeeName coffeeName = ((CustomActivity)getActivity()).getCoffeeName();
+        Log.d("test", "fragment get coffe name : " + coffeeName.getCoffeeName());
     }
     
 }
