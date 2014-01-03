@@ -69,7 +69,7 @@
                 android:paddingLeft="10dip"
                 android:gravity="center"
                 />
-            <com.koganepj.starbuckscustomorder.custom.view.HotnessSelectView
+            <com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView
                 android:id="@+id/switch1"
                 android:layout_width="100dip"
                 android:layout_height="wrap_content"
