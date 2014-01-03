@@ -17,12 +17,19 @@ public class TempuretureSelectView extends FrameLayout {
     }
     
     public void setTempureture(ArrayList<String> tempuretures) {
-        //選択なしの表示
         LayoutInflater inflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.layout_custom_tempureture_select_single, this);
         
-        TextView textView = (TextView)getChildAt(0);
-        textView.setText(tempuretures.get(0));
+        if (tempuretures.size() == 1) { //選択なしの表示
+            inflater.inflate(R.layout.layout_custom_tempureture_select_single, this);
+            TextView textView = (TextView)getChildAt(0);
+            textView.setText(tempuretures.get(0));
+            return;
+        }
+        
+        if (tempuretures.size() == 2) {
+            inflater.inflate(R.layout.layout_custom_tempureture_select_multi, this);
+            return;
+        }
     }
     
 }
