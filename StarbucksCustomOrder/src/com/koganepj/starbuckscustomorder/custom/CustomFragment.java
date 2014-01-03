@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.custom.animation.OnShowSelectToppingViewListener;
+import com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.parse.CoffeeFinder;
@@ -48,6 +49,7 @@ public class CustomFragment extends Fragment {
         ((TextView)getView().findViewById(R.id.TextCoffeeName)).setText(coffee.name.getCoffeeName());
         ((TextView)getView().findViewById(R.id.TextPrice)).setText(coffee.price.getPrice() + "円");
         ((TextView)getView().findViewById(R.id.TextCalorie)).setText(coffee.calorie.getCalorie() + "kcal");
+        ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(coffee.temperature);
     }
     
 }
