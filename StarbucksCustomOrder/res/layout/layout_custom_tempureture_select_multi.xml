@@ -7,7 +7,7 @@
     <RadioButton
         android:id="@+id/RadioHot"
         android:button="@null"
-        android:text="ホット"
+        android:text="@string/custom_tempureture_select_hot"
         android:checked="true"
         android:paddingTop="5dip"
         android:paddingBottom="5dip"
@@ -18,7 +18,7 @@
     <RadioButton
         android:id="@+id/RadioIce"
         android:button="@null"
-        android:text="アイス"
+        android:text="@string/custom_tempureture_select_ice"
         android:paddingTop="5dip"
         android:paddingBottom="5dip"
         android:background="@drawable/selector_custom_tempureture_select_right"
