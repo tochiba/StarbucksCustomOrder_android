@@ -61,7 +61,7 @@
                 />
             <TextView
                 android:id="@+id/TextPrice"
-                android:layout_width="100dip"
+                android:layout_width="95dip"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"
                 android:textSize="22sp"
@@ -71,7 +71,7 @@
                 />
             <com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView
                 android:id="@+id/LayoutTempuretureSelect"
-                android:layout_width="100dip"
+                android:layout_width="120dip"
                 android:layout_height="wrap_content"
                 android:paddingRight="10dip"
                 android:paddingLeft="10dip"
