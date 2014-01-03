@@ -79,7 +79,7 @@
         </LinearLayout>
         
         <!-- サイズ選択 -->
-        <LinearLayout
+        <com.koganepj.starbuckscustomorder.custom.view.SizeSelectView
             android:id="@+id/LayoutSizeSelect"
             android:layout_marginTop="10dip"
             android:layout_marginBottom="10dip"
@@ -117,7 +117,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 />
-        </LinearLayout>
+        </com.koganepj.starbuckscustomorder.custom.view.SizeSelectView>
         
         <RelativeLayout
             android:layout_marginTop="10dip"
