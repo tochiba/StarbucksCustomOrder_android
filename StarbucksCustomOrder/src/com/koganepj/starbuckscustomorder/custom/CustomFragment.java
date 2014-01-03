@@ -6,10 +6,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.custom.animation.OnShowSelectToppingViewListener;
+import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
+import com.koganepj.starbuckscustomorder.parse.CoffeeFinder;
 
 public class CustomFragment extends Fragment {
     
@@ -37,7 +41,12 @@ public class CustomFragment extends Fragment {
 
         //Activityからコーヒー名を取得 ※別Activityにも属するようになれば取得方法を抽象化する
         CoffeeName coffeeName = ((CustomActivity)getActivity()).getCoffeeName();
-        Log.d("test", "fragment get coffe name : " + coffeeName.getCoffeeName());
+        
+        CoffeeFinder finder = new CoffeeFinder(getActivity(), coffeeName);
+        Coffee coffee = finder.find();
+        
+        ((ImageView)getView().findViewById(R.id.ImageCoffee)).setImageResource(coffee.photo.getPhoto());
+        ((TextView)getView().findViewById(R.id.TextCoffeeName)).setText(coffee.name.getCoffeeName());
     }
     
 }
