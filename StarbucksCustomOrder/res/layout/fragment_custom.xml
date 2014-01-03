@@ -69,7 +69,7 @@
                 android:paddingLeft="10dip"
                 android:gravity="center"
                 />
-            <Switch
+            <com.koganepj.starbuckscustomorder.custom.view.HotnessSelectView
                 android:id="@+id/switch1"
                 android:layout_width="100dip"
                 android:layout_height="wrap_content"
