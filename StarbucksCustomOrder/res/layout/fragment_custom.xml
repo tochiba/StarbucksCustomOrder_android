@@ -87,36 +87,8 @@
             android:layout_width="300dip"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:gravity="center_vertical"
+            android:gravity="center"
             >
-            <ImageView
-                android:src="@drawable/custom_icon_short_active"
-                android:contentDescription="@null"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                />
-            <ImageView
-                android:src="@drawable/custom_icon_tall_active"
-                android:contentDescription="@null"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                />
-            <ImageView
-                android:src="@drawable/custom_icon_grande_active"
-                android:contentDescription="@null"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                />
-            <ImageView
-                android:src="@drawable/custom_icon_venti_active"
-                android:contentDescription="@null"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                />
         </com.koganepj.starbuckscustomorder.custom.view.SizeSelectView>
         
         <RelativeLayout
