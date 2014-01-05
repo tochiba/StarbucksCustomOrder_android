@@ -19,7 +19,7 @@ public class SingleCustomizeSelectView extends LinearLayout {
     }
     
     public void setSelectItems(final ArrayList<String> items) {
-        findViewById(R.id.CheckBox).setOnClickListener(new OnClickListener() {
+        setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "選択項目：" + items, Toast.LENGTH_SHORT).show();
