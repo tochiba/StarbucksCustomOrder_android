@@ -119,24 +119,13 @@
     </LinearLayout>
     
     <com.koganepj.starbuckscustomorder.custom.view.CustomizeSelectView
-        android:visibility="gone"
         android:id="@+id/LayoutCustomizeSelect"
         android:layout_marginTop="10dip"
         android:layout_width="315dip"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/shape_custom_select_topping_background"
-        >
-        <TextView
-            android:text="@string/custom_please_select_topping"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dip"
-            android:layout_marginBottom="5dip"
-            android:textSize="20sp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@android:color/white"
-            />
-    </com.koganepj.starbuckscustomorder.custom.view.CustomizeSelectView>
+        android:orientation="vertical"
+        />
     
 </FrameLayout>
