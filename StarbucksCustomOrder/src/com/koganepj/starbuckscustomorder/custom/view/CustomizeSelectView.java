@@ -41,42 +41,42 @@ public class CustomizeSelectView extends LinearLayout {
         }
 
         if (coffee.jelly.size() != 0) {
-            View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
+            SingleCustomizeSelectView view = (SingleCustomizeSelectView)LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Jelly");
             frameVies.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
         if (coffee.milk.size() != 0) {
-            View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
+            SingleCustomizeSelectView view = (SingleCustomizeSelectView)LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Milk");
             frameVies.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
         if (coffee.powder.size() != 0) {
-            View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
+            SingleCustomizeSelectView view = (SingleCustomizeSelectView)LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Powder");
             frameVies.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
         if (coffee.sauce.size() != 0) {
-            View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
+            SingleCustomizeSelectView view = (SingleCustomizeSelectView)LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Sauce");
             frameVies.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
         if (coffee.syrup.size() != 0) {
-            View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
+            SingleCustomizeSelectView view = (SingleCustomizeSelectView)LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Syrup");
             frameVies.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
         if (coffee.whippedCream.size() != 0) {
-            View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
+            SingleCustomizeSelectView view = (SingleCustomizeSelectView)LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Whipped\nCream");
             frameVies.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
