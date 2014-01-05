@@ -1,10 +1,12 @@
 package com.koganepj.starbuckscustomorder.custom.view;
 
+import java.util.ArrayList;
+
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.GridLayout;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -21,55 +23,77 @@ public class CustomizeSelectView extends LinearLayout {
     }
     
     public void setCoffeeToCreateView(Coffee coffee) {
-        GridLayout grid = (GridLayout)findViewById(R.id.GridLayout);
+        ArrayList<ViewGroup> frameVies = getFrameViews();
+        int currentFrameIndex = 0;
         
         if (coffee.base.size() != 0) {
             View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Base");
-            grid.addView(view);
+            frameVies.get(currentFrameIndex).addView(view);
+            currentFrameIndex++;
         }
         
         if (coffee.espresso.size() != 0) {
             View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Espresso");
-            grid.addView(view);
+            frameVies.get(currentFrameIndex).addView(view);
+            currentFrameIndex++;
         }
 
         if (coffee.jelly.size() != 0) {
             View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Jelly");
-            grid.addView(view);
+            frameVies.get(currentFrameIndex).addView(view);
+            currentFrameIndex++;
         }
 
         if (coffee.milk.size() != 0) {
             View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Milk");
-            grid.addView(view);
+            frameVies.get(currentFrameIndex).addView(view);
+            currentFrameIndex++;
         }
 
         if (coffee.powder.size() != 0) {
             View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Powder");
-            grid.addView(view);
+            frameVies.get(currentFrameIndex).addView(view);
+            currentFrameIndex++;
         }
 
         if (coffee.sauce.size() != 0) {
             View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Sauce");
-            grid.addView(view);
+            frameVies.get(currentFrameIndex).addView(view);
+            currentFrameIndex++;
         }
 
         if (coffee.syrup.size() != 0) {
             View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
             ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Syrup");
-            grid.addView(view);
+            frameVies.get(currentFrameIndex).addView(view);
+            currentFrameIndex++;
         }
 
         if (coffee.whippedCream.size() != 0) {
             View view = LayoutInflater.from(getContext()).inflate(R.layout.layout_custom_customize_select, null);
-            ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("WhippedCream");
-            grid.addView(view);
+            ((TextView)view.findViewById(R.id.TextCustomizeDetail)).setText("Whipped\nCream");
+            frameVies.get(currentFrameIndex).addView(view);
+            currentFrameIndex++;
         }
+    }
+    
+    ArrayList<ViewGroup> getFrameViews() {
+        ArrayList<ViewGroup> frameViews = new ArrayList<ViewGroup>();
+        
+        ViewGroup topGroup = (ViewGroup)findViewById(R.id.LayoutCustomizeDetailZone);
+        for (int i = 0; i < topGroup.getChildCount(); i++) {
+            ViewGroup subViewGroup = (ViewGroup)topGroup.getChildAt(i);
+            for (int j = 0; j < subViewGroup.getChildCount(); j++) {
+                frameViews.add((ViewGroup)subViewGroup.getChildAt(j));
+            }
+        }
+        return frameViews;
     }
     
 }
