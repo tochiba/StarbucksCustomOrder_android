@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.custom.animation.OnShowSelectToppingViewListener;
+import com.koganepj.starbuckscustomorder.custom.view.CustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.SizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView;
 import com.koganepj.starbuckscustomorder.model.Coffee;
@@ -24,7 +25,7 @@ public class CustomFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_custom, null);
         
-        View toppingSelectView = view.findViewById(R.id.LayoutToppingSelect);
+        View toppingSelectView = view.findViewById(R.id.LayoutCustomizeSelect);
         View sizeSelectView = view.findViewById(R.id.LayoutSizeSelect);
         View infoView = view.findViewById(R.id.LayoutInfo);
         View imageView = view.findViewById(R.id.LayoutImage);
@@ -52,6 +53,7 @@ public class CustomFragment extends Fragment {
         ((TextView)getView().findViewById(R.id.TextCalorie)).setText(coffee.calorie.getCalorie() + "kcal");
         ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(coffee.temperature);
         ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setSize(coffee.size);
+        ((CustomizeSelectView)getView().findViewById(R.id.LayoutCustomizeSelect)).setCoffeeToCreateView(coffee);
     }
     
 }
