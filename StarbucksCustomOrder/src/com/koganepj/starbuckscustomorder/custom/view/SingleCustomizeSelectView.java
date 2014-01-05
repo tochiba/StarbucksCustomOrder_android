@@ -8,6 +8,7 @@ public class SingleCustomizeSelectView extends LinearLayout {
 
     public SingleCustomizeSelectView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        //layout_custom_customize_selectレイアウトを使用する場合を想定した実装になっています
     }
 
 }
