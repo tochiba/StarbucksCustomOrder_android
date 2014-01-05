@@ -120,6 +120,7 @@
     
     <com.koganepj.starbuckscustomorder.custom.view.CustomizeSelectView
         android:id="@+id/LayoutCustomizeSelect"
+        android:visibility="gone"
         android:layout_marginTop="10dip"
         android:layout_width="315dip"
         android:layout_height="wrap_content"
