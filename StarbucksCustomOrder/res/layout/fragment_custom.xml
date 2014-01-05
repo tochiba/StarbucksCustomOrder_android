@@ -118,7 +118,7 @@
         </RelativeLayout>
     </LinearLayout>
     
-    <FrameLayout
+    <com.koganepj.starbuckscustomorder.custom.view.CustomizeSelectView
         android:visibility="gone"
         android:id="@+id/LayoutToppingSelect"
         android:layout_marginTop="10dip"
@@ -137,6 +137,6 @@
             android:layout_gravity="center_horizontal"
             android:textColor="@android:color/white"
             />
-    </FrameLayout>
+    </com.koganepj.starbuckscustomorder.custom.view.CustomizeSelectView>
     
 </FrameLayout>
