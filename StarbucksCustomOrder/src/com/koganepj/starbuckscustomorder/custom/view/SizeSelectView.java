@@ -26,7 +26,7 @@ public class SizeSelectView extends RadioGroup {
         for (String sizeStr : sizeList) {
             RadioButton radioButton = (RadioButton)inflater.inflate(R.layout.layout_custom_size_select_radio, null);
             radioButton.setId(mSelectSizeMapper.getId(sizeStr));
-            radioButton.setBackgroundResource(R.drawable.selector_custom_size_select_short);
+            radioButton.setBackgroundResource(mSelectSizeMapper.getSelector(sizeStr));
             addView(radioButton);
         }
     }

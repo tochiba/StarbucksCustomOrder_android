@@ -2,8 +2,9 @@
 <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
-    android:layout_weight="1"
     android:button="@null"
     android:gravity="center"
     android:background="@drawable/custom_icon_grande_active"
+    android:paddingRight="15dip"
+    android:paddingLeft="15dip"
     /><!-- backgroundを指定している意図は大きいサイズで領域確保しておきたいから -->
