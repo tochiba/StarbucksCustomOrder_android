@@ -29,6 +29,8 @@ public class SizeSelectView extends RadioGroup {
             radioButton.setBackgroundResource(mSelectSizeMapper.getSelector(sizeStr));
             addView(radioButton);
         }
+        
+        ((RadioButton)getChildAt(0)).setChecked(true);
     }
     
 
