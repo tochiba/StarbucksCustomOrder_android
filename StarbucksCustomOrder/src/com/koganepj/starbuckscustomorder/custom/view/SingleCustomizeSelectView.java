@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -17,7 +18,8 @@ public class SingleCustomizeSelectView extends LinearLayout {
     }
     
     public void setSelectItems(ArrayList<String> items) {
-        findViewById(R.id.CheckBox).setOnClickListener(new OnSingleCustomizeSelectViewClickListener(items));
+        View checkBox = findViewById(R.id.CheckBox);
+        checkBox.setOnClickListener(new OnSingleCustomizeSelectViewClickListener(items));
     }
     
     public void setText(String text) {
