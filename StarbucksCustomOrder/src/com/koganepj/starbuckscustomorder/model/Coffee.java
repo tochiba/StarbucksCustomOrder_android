@@ -8,11 +8,11 @@ public class Coffee {
 	public Photo photo; // 画像
 	public Calorie calorie; // カロリー
 	public Price price; // 値段
-	public ArrayList<String> temperature; // 温かさ(ホット | コールド)
-	public ArrayList<String> size; // サイズ (ショート|トール|グランデ|ベンティ)
-	public ArrayList<Integer> shot; // ショット (コーヒーやサイズによってショット数が変わる)
-	public ArrayList<String> base; // ベース
-	public ArrayList<String> syrup; // シロップ
+	public ArrayList<Temperature> temperatures; // 温かさ(ホット | コールド)
+	public Size size; // サイズ (ショート|トール|グランデ|ベンティ)
+	public Shot shot; // ショット (コーヒーやサイズによってショット数が変わる)
+	public Base base; // ベース
+	public Syrup syrup; // シロップ
 	public ArrayList<String> sauce; //　ソース
 	public ArrayList<String> powder; // パウダー(チョコチップ)
 	public ArrayList<String> jelly; // ジェリー
