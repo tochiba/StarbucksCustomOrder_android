@@ -20,12 +20,4 @@ public class Coffee {
 	public ArrayList<String> whippedCream; // ホイップクリーム
 	public ArrayList<String> espresso; // エスプレッソ
 	public ArrayList<String> recommend; // おすすめ
-	
-	/**
-	 * 選択したカスタマイズから呪文を返す
-	 * @return
-	 */
-	public String getReading() {
-		return null;
-	}
 }
