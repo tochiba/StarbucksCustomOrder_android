@@ -33,6 +33,7 @@ public class RankingFragment extends Fragment {
         RankingAdapter adapter = new RankingAdapter(getActivity());
         listView.setAdapter(adapter);
         listView.setEmptyView(view.findViewById(R.id.empty));
+        listView.setOnItemClickListener(new OnRowClickListener());
         
         //ソーシャルランキングの読み込みを行っておく
         //TODO コードが整理されてきたらActivity読み込みの時点に移動！
