@@ -12,7 +12,7 @@ public class Coffee {
 	public Size size; // サイズ (ショート|トール|グランデ|ベンティ)
 	public Shot shot; // ショット (コーヒーやサイズによってショット数が変わる)
 	public Base base; // ベース
-	public ArrayList<String> syrup; // シロップ
+	public Syrup syrup; // シロップ
 	public ArrayList<String> sauce; //　ソース
 	public ArrayList<String> powder; // パウダー(チョコチップ)
 	public ArrayList<String> jelly; // ジェリー

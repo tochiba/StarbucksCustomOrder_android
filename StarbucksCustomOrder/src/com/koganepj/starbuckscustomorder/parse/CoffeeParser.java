@@ -13,6 +13,7 @@ import com.koganepj.starbuckscustomorder.model.Photo;
 import com.koganepj.starbuckscustomorder.model.Price;
 import com.koganepj.starbuckscustomorder.model.Shot;
 import com.koganepj.starbuckscustomorder.model.Size;
+import com.koganepj.starbuckscustomorder.model.Syrup;
 import com.koganepj.starbuckscustomorder.model.Temperature;
 import com.koganepj.starbuckscustomorder.model.Type;
 
@@ -20,7 +21,6 @@ public class CoffeeParser {
 	// Plistのコーヒー一覧のKey
 	private static final String ITEM_ARRAY = "ItemArray";
 
-	private static final String ITEM_SYRUP = "Syrup";
 	private static final String ITEM_SAUCE = "Sauce";
 	private static final String ITEM_POWDER = "Powder";
 	private static final String ITEM_JELLY = "Jelly";
@@ -80,7 +80,7 @@ public class CoffeeParser {
 				Shot.ITEM_SHOT));
 		coffee.base = new Base(NSDictionaryHelper.stringListForKey(dict,
 				Base.ITEM_BASE));
-		coffee.syrup = NSDictionaryHelper.stringListForKey(dict, ITEM_SYRUP);
+		coffee.syrup = new Syrup(NSDictionaryHelper.stringListForKey(dict, Syrup.ITEM_SYRUP));
 		coffee.sauce = NSDictionaryHelper.stringListForKey(dict, ITEM_SAUCE);
 		coffee.powder = NSDictionaryHelper.stringListForKey(dict, ITEM_POWDER);
 		coffee.jelly = NSDictionaryHelper.stringListForKey(dict, ITEM_JELLY);
