@@ -4,9 +4,6 @@
     <string name="app_name">スタバで呪文</string>
     <string name="title_activity_main">MainActivity</string>
     
-    <!-- アクションバー -->
-    <string name="actionbar_setting">設定</string>
-
     <!-- タブ -->
     <string name="tab_like">お好み</string>
     <string name="tab_menu">メニュー</string>
@@ -15,6 +12,10 @@
     <!-- メニュー -->
     <string name="menu_view_mode_visual">Visual Mode</string>
     <string name="menu_view_mode_simple">Simple Mode</string>
+    
+    <!-- 設定 -->
+    <string name="setting_title">設定</string>
+    <string name="setting_back">&lt; 戻る</string>
     
     <!-- ランキング -->
     <string name="ranking_price">Price</string>
