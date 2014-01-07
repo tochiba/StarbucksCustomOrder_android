@@ -10,15 +10,15 @@ import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Photo;
 import com.koganepj.starbuckscustomorder.model.Price;
+import com.koganepj.starbuckscustomorder.model.Shot;
+import com.koganepj.starbuckscustomorder.model.Size;
+import com.koganepj.starbuckscustomorder.model.Temperature;
 import com.koganepj.starbuckscustomorder.model.Type;
 
 public class CoffeeParser {
 	// Plistのコーヒー一覧のKey
 	private static final String ITEM_ARRAY = "ItemArray";
 
-	private static final String ITEM_TEMPERATURE = "Temperature";
-	private static final String ITEM_SIZE = "Size";
-	private static final String ITEM_SHOT = "Shot";
 	private static final String ITEM_BASE = "Base";
 	private static final String ITEM_SYRUP = "Syrup";
 	private static final String ITEM_SAUCE = "Sauce";
@@ -71,10 +71,13 @@ public class CoffeeParser {
 				Calorie.ITEM_CALORIE));
 		coffee.price = new Price(NSDictionaryHelper.intForKey(dict,
 				Price.ITEM_PRICE));
-		coffee.temperature = NSDictionaryHelper.stringListForKey(dict,
-				ITEM_TEMPERATURE);
-		coffee.size = NSDictionaryHelper.stringListForKey(dict, ITEM_SIZE);
-		coffee.shot = NSDictionaryHelper.integerListForKey(dict, ITEM_SHOT);
+		coffee.temperature = new Temperature(
+				NSDictionaryHelper.stringListForKey(dict,
+						Temperature.ITEM_TEMPERATURE));
+		coffee.size = new Size(NSDictionaryHelper.stringListForKey(dict,
+				Size.ITEM_SIZE));
+		coffee.shot = new Shot(NSDictionaryHelper.integerListForKey(dict,
+				Shot.ITEM_SHOT));
 		coffee.base = NSDictionaryHelper.stringListForKey(dict, ITEM_BASE);
 		coffee.syrup = NSDictionaryHelper.stringListForKey(dict, ITEM_SYRUP);
 		coffee.sauce = NSDictionaryHelper.stringListForKey(dict, ITEM_SAUCE);
