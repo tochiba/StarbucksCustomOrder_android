@@ -5,6 +5,7 @@ import android.text.TextUtils;
 import com.dd.plist.NSArray;
 import com.dd.plist.NSDictionary;
 import com.dd.plist.NSObject;
+import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Calorie;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
@@ -19,7 +20,6 @@ public class CoffeeParser {
 	// Plistのコーヒー一覧のKey
 	private static final String ITEM_ARRAY = "ItemArray";
 
-	private static final String ITEM_BASE = "Base";
 	private static final String ITEM_SYRUP = "Syrup";
 	private static final String ITEM_SAUCE = "Sauce";
 	private static final String ITEM_POWDER = "Powder";
@@ -78,7 +78,8 @@ public class CoffeeParser {
 				Size.ITEM_SIZE));
 		coffee.shot = new Shot(NSDictionaryHelper.integerListForKey(dict,
 				Shot.ITEM_SHOT));
-		coffee.base = NSDictionaryHelper.stringListForKey(dict, ITEM_BASE);
+		coffee.base = new Base(NSDictionaryHelper.stringListForKey(dict,
+				Base.ITEM_BASE));
 		coffee.syrup = NSDictionaryHelper.stringListForKey(dict, ITEM_SYRUP);
 		coffee.sauce = NSDictionaryHelper.stringListForKey(dict, ITEM_SAUCE);
 		coffee.powder = NSDictionaryHelper.stringListForKey(dict, ITEM_POWDER);
