@@ -82,7 +82,8 @@ public class CustomizeSelectView extends LinearLayout {
         int childCount = topGroup.getChildCount();
         for (int i = 0; i < childCount; i++) {
             ViewGroup subViewGroup = (ViewGroup)topGroup.getChildAt(i);
-            for (int j = 0; j < subViewGroup.getChildCount(); j++) {
+            int subChildCount = subViewGroup.getChildCount();
+            for (int j = 0; j < subChildCount; j++) {
                 frameViews.add((ViewGroup)subViewGroup.getChildAt(j));
             }
         }
