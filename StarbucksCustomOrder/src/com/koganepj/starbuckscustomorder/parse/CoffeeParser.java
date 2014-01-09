@@ -21,7 +21,6 @@ public class CoffeeParser {
 	// Plistのコーヒー一覧のKey
 	private static final String ITEM_ARRAY = "ItemArray";
 
-	private static final String ITEM_SAUCE = "Sauce";
 	private static final String ITEM_POWDER = "Powder";
 	private static final String ITEM_JELLY = "Jelly";
 	private static final String ITEM_MILK = "Milk";
@@ -76,7 +75,7 @@ public class CoffeeParser {
 		coffee.shot = ShotParser.parse(dict);
 		coffee.base = BaseParser.parse(dict);
 		coffee.syrup = SyrupParser.parse(dict);
-		coffee.sauce = NSDictionaryHelper.stringListForKey(dict, ITEM_SAUCE);
+		coffee.sauce = SauceParser.parse(dict);
 		coffee.powder = NSDictionaryHelper.stringListForKey(dict, ITEM_POWDER);
 		coffee.jelly = NSDictionaryHelper.stringListForKey(dict, ITEM_JELLY);
 		coffee.milk = NSDictionaryHelper.stringListForKey(dict, ITEM_MILK);
