@@ -32,4 +32,6 @@
     <string name="custom_title">カスタム</string>
     <string name="custom_back">&lt; 戻る</string>
     <string name="custom_please_select_topping">好きなカスタマイズを選択</string>
+    <string name="custom_tempureture_select_hot">ホット</string>
+    <string name="custom_tempureture_select_ice">アイス</string>
 </resources>
