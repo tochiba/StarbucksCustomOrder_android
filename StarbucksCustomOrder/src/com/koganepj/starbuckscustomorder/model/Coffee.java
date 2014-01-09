@@ -18,6 +18,6 @@ public class Coffee {
 	public ArrayList<Jelly> jelly; // ジェリー
 	public ArrayList<Milk> milk; // ミルク
 	public ArrayList<WhippedCream> whippedCream; // ホイップクリーム
-	public ArrayList<String> espresso; // エスプレッソ
+	public ArrayList<Espresso> espresso; // エスプレッソ
 	public ArrayList<String> recommend; // おすすめ
 }
