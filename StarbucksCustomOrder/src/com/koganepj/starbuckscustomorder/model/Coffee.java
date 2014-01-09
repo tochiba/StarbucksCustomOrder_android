@@ -17,7 +17,7 @@ public class Coffee {
 	public ArrayList<Powder> powder; // パウダー(チョコチップ)
 	public ArrayList<Jelly> jelly; // ジェリー
 	public ArrayList<Milk> milk; // ミルク
-	public ArrayList<String> whippedCream; // ホイップクリーム
+	public ArrayList<WhippedCream> whippedCream; // ホイップクリーム
 	public ArrayList<String> espresso; // エスプレッソ
 	public ArrayList<String> recommend; // おすすめ
 }
