@@ -23,14 +23,14 @@ public class CustomizeSelectView extends LinearLayout {
     }
     
     public void setCoffeeToCreateView(Coffee coffee) {
-        ArrayList<ViewGroup> frameVies = getFrameViews();
+        ArrayList<ViewGroup> frameViews = getFrameViews();
         int currentFrameIndex = 0;
         
         if (coffee.base.size() != 0) {
             SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
             view.setText("Base");
             view.setSelectItems(coffee.base);
-            frameVies.get(currentFrameIndex).addView(view);
+            frameViews.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
         
@@ -38,7 +38,7 @@ public class CustomizeSelectView extends LinearLayout {
             SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
             view.setText("Espresso");
             view.setSelectItems(coffee.espresso);
-            frameVies.get(currentFrameIndex).addView(view);
+            frameViews.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
@@ -46,7 +46,7 @@ public class CustomizeSelectView extends LinearLayout {
             SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
             view.setText("Jelly");
             view.setSelectItems(coffee.jelly);
-            frameVies.get(currentFrameIndex).addView(view);
+            frameViews.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
@@ -54,7 +54,7 @@ public class CustomizeSelectView extends LinearLayout {
             SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
             view.setText("Milk");
             view.setSelectItems(coffee.milk);
-            frameVies.get(currentFrameIndex).addView(view);
+            frameViews.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
@@ -62,7 +62,7 @@ public class CustomizeSelectView extends LinearLayout {
             SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
             view.setText("Powder");
             view.setSelectItems(coffee.powder);
-            frameVies.get(currentFrameIndex).addView(view);
+            frameViews.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
@@ -70,7 +70,7 @@ public class CustomizeSelectView extends LinearLayout {
             SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
             view.setText("Sauce");
             view.setSelectItems(coffee.sauce);
-            frameVies.get(currentFrameIndex).addView(view);
+            frameViews.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
@@ -78,7 +78,7 @@ public class CustomizeSelectView extends LinearLayout {
             SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
             view.setText("Syrup");
             view.setSelectItems(coffee.syrup);
-            frameVies.get(currentFrameIndex).addView(view);
+            frameViews.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
 
@@ -86,7 +86,7 @@ public class CustomizeSelectView extends LinearLayout {
             SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
             view.setText("Whipped\nCream");
             view.setSelectItems(coffee.whippedCream);
-            frameVies.get(currentFrameIndex).addView(view);
+            frameViews.get(currentFrameIndex).addView(view);
             currentFrameIndex++;
         }
     }
