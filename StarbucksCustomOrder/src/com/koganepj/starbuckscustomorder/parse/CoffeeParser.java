@@ -5,23 +5,16 @@ import android.text.TextUtils;
 import com.dd.plist.NSArray;
 import com.dd.plist.NSDictionary;
 import com.dd.plist.NSObject;
-import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Calorie;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Photo;
 import com.koganepj.starbuckscustomorder.model.Price;
-import com.koganepj.starbuckscustomorder.model.Shot;
-import com.koganepj.starbuckscustomorder.model.Size;
-import com.koganepj.starbuckscustomorder.model.Syrup;
-import com.koganepj.starbuckscustomorder.model.Temperature;
 import com.koganepj.starbuckscustomorder.model.Type;
 
 public class CoffeeParser {
 	// Plistのコーヒー一覧のKey
 	private static final String ITEM_ARRAY = "ItemArray";
-
-	private static final String ITEM_RECOMMEND = "Recommend";
 
 	/**
 	 * Plistから指定されたコーヒー名の要素をNSDictionaryとして取得する
@@ -76,8 +69,7 @@ public class CoffeeParser {
 		coffee.milk = MilkParser.parse(dict);
 		coffee.whippedCream = WhippedCreamParser.parse(dict);
 		coffee.espresso = EspressoParser.parse(dict);
-		coffee.recommend = NSDictionaryHelper.stringListForKey(dict,
-				ITEM_RECOMMEND);
+		coffee.recommend = RecommendParser.parse(dict);
 
 		return coffee;
 	}

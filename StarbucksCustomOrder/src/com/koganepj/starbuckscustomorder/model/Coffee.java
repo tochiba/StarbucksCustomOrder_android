@@ -19,5 +19,5 @@ public class Coffee {
 	public ArrayList<Milk> milk; // ミルク
 	public ArrayList<WhippedCream> whippedCream; // ホイップクリーム
 	public ArrayList<Espresso> espresso; // エスプレッソ
-	public ArrayList<String> recommend; // おすすめ
+	public ArrayList<Recommend> recommend; // おすすめ
 }
