@@ -15,7 +15,7 @@ public class Coffee {
 	public ArrayList<Syrup> syrup; // シロップ
 	public ArrayList<Sauce> sauce; //　ソース
 	public ArrayList<Powder> powder; // パウダー(チョコチップ)
-	public ArrayList<String> jelly; // ジェリー
+	public ArrayList<Jelly> jelly; // ジェリー
 	public ArrayList<String> milk; // ミルク
 	public ArrayList<String> whippedCream; // ホイップクリーム
 	public ArrayList<String> espresso; // エスプレッソ
