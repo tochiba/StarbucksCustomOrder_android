@@ -1,6 +1,7 @@
 package com.koganepj.starbuckscustomorder.custom.view;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -27,75 +28,59 @@ public class CustomizeSelectView extends LinearLayout {
         int currentFrameIndex = 0;
         
         if (coffee.base.size() != 0) {
-            SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
-            view.setText("Base");
-            view.setSelectItems(coffee.base);
-            frameViews.get(currentFrameIndex).addView(view);
+            setSingleItem(frameViews, currentFrameIndex, "Base", coffee.base);
             currentFrameIndex++;
         }
         
         if (coffee.espresso.size() != 0) {
-            SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
-            view.setText("Espresso");
-            view.setSelectItems(coffee.espresso);
-            frameViews.get(currentFrameIndex).addView(view);
+            setSingleItem(frameViews, currentFrameIndex, "Espresso", coffee.espresso);
             currentFrameIndex++;
         }
 
         if (coffee.jelly.size() != 0) {
-            SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
-            view.setText("Jelly");
-            view.setSelectItems(coffee.jelly);
-            frameViews.get(currentFrameIndex).addView(view);
+            setSingleItem(frameViews, currentFrameIndex, "Jelly", coffee.jelly);
             currentFrameIndex++;
         }
 
         if (coffee.milk.size() != 0) {
-            SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
-            view.setText("Milk");
-            view.setSelectItems(coffee.milk);
-            frameViews.get(currentFrameIndex).addView(view);
+            setSingleItem(frameViews, currentFrameIndex, "Milk", coffee.milk);
             currentFrameIndex++;
         }
 
         if (coffee.powder.size() != 0) {
-            SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
-            view.setText("Powder");
-            view.setSelectItems(coffee.powder);
-            frameViews.get(currentFrameIndex).addView(view);
+            setSingleItem(frameViews, currentFrameIndex, "Powder", coffee.powder);
             currentFrameIndex++;
         }
 
         if (coffee.sauce.size() != 0) {
-            SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
-            view.setText("Sauce");
-            view.setSelectItems(coffee.sauce);
-            frameViews.get(currentFrameIndex).addView(view);
+            setSingleItem(frameViews, currentFrameIndex, "Sauce", coffee.sauce);
             currentFrameIndex++;
         }
 
         if (coffee.syrup.size() != 0) {
-            SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
-            view.setText("Syrup");
-            view.setSelectItems(coffee.syrup);
-            frameViews.get(currentFrameIndex).addView(view);
+            setSingleItem(frameViews, currentFrameIndex, "Syrup", coffee.syrup);
             currentFrameIndex++;
         }
 
         if (coffee.whippedCream.size() != 0) {
-            SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
-            view.setText("Whipped\nCream");
-            view.setSelectItems(coffee.whippedCream);
-            frameViews.get(currentFrameIndex).addView(view);
+            setSingleItem(frameViews, currentFrameIndex, "Whipped\nCream", coffee.whippedCream);
             currentFrameIndex++;
         }
+    }
+    
+    void setSingleItem(List<ViewGroup> frameViews, int currentFrameIndex, String text, ArrayList<String> detailItems) {
+        SingleCustomizeSelectView view = (SingleCustomizeSelectView)mInflater.inflate(R.layout.layout_custom_customize_select, null);
+        view.setText(text);
+        view.setSelectItems(detailItems);
+        frameViews.get(currentFrameIndex).addView(view);
     }
     
     ArrayList<ViewGroup> getFrameViews() {
         ArrayList<ViewGroup> frameViews = new ArrayList<ViewGroup>();
         
         ViewGroup topGroup = (ViewGroup)findViewById(R.id.LayoutCustomizeDetailZone);
-        for (int i = 0; i < topGroup.getChildCount(); i++) {
+        int childCount = topGroup.getChildCount();
+        for (int i = 0; i < childCount; i++) {
             ViewGroup subViewGroup = (ViewGroup)topGroup.getChildAt(i);
             for (int j = 0; j < subViewGroup.getChildCount(); j++) {
                 frameViews.add((ViewGroup)subViewGroup.getChildAt(j));
