@@ -11,7 +11,7 @@ public class Coffee {
 	public ArrayList<Temperature> temperatures; // 温かさ(ホット | コールド)
 	public ArrayList<Size> size; // サイズ (ショート|トール|グランデ|ベンティ)
 	public ArrayList<Shot> shot; // ショット (コーヒーやサイズによってショット数が変わる)
-	public Base base; // ベース
+	public ArrayList<Base> base; // ベース
 	public Syrup syrup; // シロップ
 	public ArrayList<String> sauce; //　ソース
 	public ArrayList<String> powder; // パウダー(チョコチップ)
