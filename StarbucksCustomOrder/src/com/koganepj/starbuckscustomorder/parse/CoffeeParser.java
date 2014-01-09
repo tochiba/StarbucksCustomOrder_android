@@ -75,7 +75,7 @@ public class CoffeeParser {
 		coffee.size = SizeParser.parse(dict);
 		coffee.shot = ShotParser.parse(dict);
 		coffee.base = BaseParser.parse(dict);
-		coffee.syrup = new Syrup(NSDictionaryHelper.stringListForKey(dict, Syrup.ITEM_SYRUP));
+		coffee.syrup = SyrupParser.parse(dict);
 		coffee.sauce = NSDictionaryHelper.stringListForKey(dict, ITEM_SAUCE);
 		coffee.powder = NSDictionaryHelper.stringListForKey(dict, ITEM_POWDER);
 		coffee.jelly = NSDictionaryHelper.stringListForKey(dict, ITEM_JELLY);
