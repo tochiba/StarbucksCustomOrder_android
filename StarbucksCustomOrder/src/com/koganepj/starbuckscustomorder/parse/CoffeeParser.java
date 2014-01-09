@@ -72,8 +72,7 @@ public class CoffeeParser {
 		coffee.price = new Price(NSDictionaryHelper.intForKey(dict,
 				Price.ITEM_PRICE));
 		coffee.temperatures = TemperatureParser.parse(dict);
-		coffee.size = new Size(NSDictionaryHelper.stringListForKey(dict,
-				Size.ITEM_SIZE));
+		coffee.size = SizeParser.parse(dict);
 		coffee.shot = new Shot(NSDictionaryHelper.integerListForKey(dict,
 				Shot.ITEM_SHOT));
 		coffee.base = new Base(NSDictionaryHelper.stringListForKey(dict,
