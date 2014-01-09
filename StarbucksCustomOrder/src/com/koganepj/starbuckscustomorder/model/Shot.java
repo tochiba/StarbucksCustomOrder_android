@@ -1,26 +1,15 @@
 package com.koganepj.starbuckscustomorder.model;
 
-import java.util.ArrayList;
 
 public class Shot {
-	public static final String ITEM_SHOT = "Shot";
+	private Integer shot;
 	
-	private ArrayList<Integer> mShotList;
-	private Integer mShot;
-	
-	public Shot(ArrayList<Integer> shotList) {
-		mShotList = shotList;
-	}
-
-	public ArrayList<Integer> getShotList() {
-		return mShotList;
+	public Shot(Integer shot) {
+		this.shot = shot;
 	}
 
 	public Integer getShot() {
-		return mShot;
+		return shot;
 	}
 
-	public void setShot(Integer shot) {
-		mShot = shot;
-	}
 }

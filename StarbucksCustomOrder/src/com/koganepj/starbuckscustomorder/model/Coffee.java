@@ -10,7 +10,7 @@ public class Coffee {
 	public Price price; // 値段
 	public ArrayList<Temperature> temperatures; // 温かさ(ホット | コールド)
 	public ArrayList<Size> size; // サイズ (ショート|トール|グランデ|ベンティ)
-	public Shot shot; // ショット (コーヒーやサイズによってショット数が変わる)
+	public ArrayList<Shot> shot; // ショット (コーヒーやサイズによってショット数が変わる)
 	public Base base; // ベース
 	public Syrup syrup; // シロップ
 	public ArrayList<String> sauce; //　ソース
