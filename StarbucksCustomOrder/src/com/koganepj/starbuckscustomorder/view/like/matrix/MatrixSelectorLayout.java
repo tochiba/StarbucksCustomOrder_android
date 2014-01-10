@@ -41,7 +41,8 @@ public class MatrixSelectorLayout extends FrameLayout {
     }
     
     public Hotness getHotness() {
-        int hotnessValue = calcLevel(mBackgroundView.getHeight(), (int)mCoffeeIcon.getY());
+        int hotnessRawValue = calcLevel(mBackgroundView.getHeight(), (int)mCoffeeIcon.getY());
+        int hotnessValue = Math.abs(hotnessRawValue - (NUMBER_OF_STAGE - 1));//暖かさは上下が逆転
         return new Hotness(hotnessValue);
     }
     
