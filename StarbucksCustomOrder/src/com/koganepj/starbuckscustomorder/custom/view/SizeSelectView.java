@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.custom.view.support.SelectSizeMapper;
+import com.koganepj.starbuckscustomorder.model.Size;
 
 public class SizeSelectView extends RadioGroup {
     
@@ -21,15 +22,15 @@ public class SizeSelectView extends RadioGroup {
         mSelectSizeMapper = new SelectSizeMapper();
     }
     
-    public void setSize(ArrayList<String> sizeList) {
+    public void setSize(ArrayList<Size> sizeList) {
         LayoutInflater inflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         
         addView(createSpaceView());
         
-        for (String sizeStr : sizeList) {
+        for (Size size : sizeList) {
             RadioButton radioButton = (RadioButton)inflater.inflate(R.layout.layout_custom_size_select_radio, null);
-            radioButton.setId(mSelectSizeMapper.getId(sizeStr));
-            radioButton.setBackgroundResource(mSelectSizeMapper.getSelector(sizeStr));
+            radioButton.setId(mSelectSizeMapper.getId(size));
+            radioButton.setBackgroundResource(mSelectSizeMapper.getSelector(size));
             addView(radioButton);
             addView(createSpaceView());
         }

@@ -51,7 +51,7 @@ public class CustomFragment extends Fragment {
         ((TextView)getView().findViewById(R.id.TextCoffeeName)).setText(coffee.name.getCoffeeName());
         ((TextView)getView().findViewById(R.id.TextPrice)).setText(coffee.price.getPrice() + "円");
         ((TextView)getView().findViewById(R.id.TextCalorie)).setText(coffee.calorie.getCalorie() + "kcal");
-        ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(coffee.temperature);
+        ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(coffee.temperatures);
         ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setSize(coffee.size);
         ((CustomizeSelectView)getView().findViewById(R.id.LayoutCustomizeSelect)).setCoffeeToCreateView(coffee);
     }

@@ -1,6 +1,7 @@
 package com.koganepj.starbuckscustomorder.custom.view.support;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.model.Size;
 
 public class SelectSizeMapper {
     
@@ -10,7 +11,8 @@ public class SelectSizeMapper {
     public static final int ID_VENTI = 4;
     public static final int ID_ONESIZE = 5;
     
-    public int getId(String sizeStr) {
+    public int getId(Size size) {
+        String sizeStr = size.getSize();
         if ("Short".equalsIgnoreCase(sizeStr)) {
             return ID_SHORT;
         } else if ("Tall".equalsIgnoreCase(sizeStr)) {
@@ -25,7 +27,8 @@ public class SelectSizeMapper {
         throw new IllegalArgumentException("想定外のサイズです");
     }
     
-    public int getSelector(String sizeStr) {
+    public int getSelector(Size size) {
+        String sizeStr = size.getSize();
         if ("Short".equalsIgnoreCase(sizeStr)) {
             return R.drawable.selector_custom_size_select_short;
         } else if ("Tall".equalsIgnoreCase(sizeStr)) {
