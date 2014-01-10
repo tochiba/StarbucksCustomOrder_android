@@ -7,9 +7,16 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.model.Hotness;
+import com.koganepj.starbuckscustomorder.model.Sweetness;
 
 public class MatrixSelectorLayout extends FrameLayout {
-
+    
+    public static final int NUMBER_OF_STAGE = 5;//何段階で値を取得するのか
+    
+    private CoffeeIcon mCoffeeIcon;
+    private View mBackgroundView;
+    
     public MatrixSelectorLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         
@@ -18,14 +25,33 @@ public class MatrixSelectorLayout extends FrameLayout {
         inflater.inflate(R.layout.layout_matrix_selector, this, true);
         
         //ドラッグアンドドロップの設定
-        View backgroundView = findViewById(R.id.ImageMatrixSelectorBackground);
-        CoffeeIcon coffeeIcon = (CoffeeIcon)getChildAt(1);//IDでひけないのでしかたなく。
-        CoffeeImageChanger coffeeImageChanger = new CoffeeImageChanger(coffeeIcon);
-        CoffeeSteamVisibilityChanger coffeeSteamVisibilityChanger = new CoffeeSteamVisibilityChanger(coffeeIcon);
-        backgroundView.setOnTouchListener(new OnMatrixTouchListener(coffeeIcon, coffeeImageChanger, coffeeSteamVisibilityChanger));
+        mBackgroundView = findViewById(R.id.ImageMatrixSelectorBackground);
+        mCoffeeIcon = (CoffeeIcon)getChildAt(1);//IDでひけないのでしかたなく。
+        CoffeeImageChanger coffeeImageChanger = new CoffeeImageChanger(mCoffeeIcon);
+        CoffeeSteamVisibilityChanger coffeeSteamVisibilityChanger = new CoffeeSteamVisibilityChanger(mCoffeeIcon);
+        mBackgroundView.setOnTouchListener(new OnMatrixTouchListener(mCoffeeIcon, coffeeImageChanger, coffeeSteamVisibilityChanger));
         
         //表示サイズの動的調整
-        getViewTreeObserver().addOnGlobalLayoutListener(new ExpandBackgroundSizeOnGlobalLayoutListener(this, coffeeIcon));
+        getViewTreeObserver().addOnGlobalLayoutListener(new ExpandBackgroundSizeOnGlobalLayoutListener(this, mCoffeeIcon));
     }
-
+    
+    public Sweetness getSweetness() {
+        int sweetnessValue = calcLevel(mBackgroundView.getWidth(), (int)mCoffeeIcon.getX());
+        return new Sweetness(sweetnessValue);
+    }
+    
+    public Hotness getHotness() {
+        int hotnessRawValue = calcLevel(mBackgroundView.getHeight(), (int)mCoffeeIcon.getY());
+        int hotnessValue = Math.abs(hotnessRawValue - (NUMBER_OF_STAGE - 1));//暖かさは上下が逆転
+        return new Hotness(hotnessValue);
+    }
+    
+    int calcLevel(int parentValue, int currentValue) {
+        if (parentValue == currentValue) {
+            return NUMBER_OF_STAGE - 1;
+        }
+        
+        int baseValue = parentValue / NUMBER_OF_STAGE;
+        return currentValue / baseValue;
+    }
 }
