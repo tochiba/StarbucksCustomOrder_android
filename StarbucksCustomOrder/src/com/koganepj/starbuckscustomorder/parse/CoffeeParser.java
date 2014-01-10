@@ -16,19 +16,6 @@ public class CoffeeParser {
 	// Plistのコーヒー一覧のKey
 	private static final String ITEM_ARRAY = "ItemArray";
 
-	private static final String ITEM_TEMPERATURE = "Temperature";
-	private static final String ITEM_SIZE = "Size";
-	private static final String ITEM_SHOT = "Shot";
-	private static final String ITEM_BASE = "Base";
-	private static final String ITEM_SYRUP = "Syrup";
-	private static final String ITEM_SAUCE = "Sauce";
-	private static final String ITEM_POWDER = "Powder";
-	private static final String ITEM_JELLY = "Jelly";
-	private static final String ITEM_MILK = "Milk";
-	private static final String ITEM_WHIPPEDCREAM = "WhippedCream";
-	private static final String ITEM_ESPRESSO = "Espresso";
-	private static final String ITEM_RECOMMEND = "Recommend";
-
 	/**
 	 * Plistから指定されたコーヒー名の要素をNSDictionaryとして取得する
 	 * 
@@ -71,22 +58,18 @@ public class CoffeeParser {
 				Calorie.ITEM_CALORIE));
 		coffee.price = new Price(NSDictionaryHelper.intForKey(dict,
 				Price.ITEM_PRICE));
-		coffee.temperature = NSDictionaryHelper.stringListForKey(dict,
-				ITEM_TEMPERATURE);
-		coffee.size = NSDictionaryHelper.stringListForKey(dict, ITEM_SIZE);
-		coffee.shot = NSDictionaryHelper.integerListForKey(dict, ITEM_SHOT);
-		coffee.base = NSDictionaryHelper.stringListForKey(dict, ITEM_BASE);
-		coffee.syrup = NSDictionaryHelper.stringListForKey(dict, ITEM_SYRUP);
-		coffee.sauce = NSDictionaryHelper.stringListForKey(dict, ITEM_SAUCE);
-		coffee.powder = NSDictionaryHelper.stringListForKey(dict, ITEM_POWDER);
-		coffee.jelly = NSDictionaryHelper.stringListForKey(dict, ITEM_JELLY);
-		coffee.milk = NSDictionaryHelper.stringListForKey(dict, ITEM_MILK);
-		coffee.whippedCream = NSDictionaryHelper.stringListForKey(dict,
-				ITEM_WHIPPEDCREAM);
-		coffee.espresso = NSDictionaryHelper.stringListForKey(dict,
-				ITEM_ESPRESSO);
-		coffee.recommend = NSDictionaryHelper.stringListForKey(dict,
-				ITEM_RECOMMEND);
+		coffee.temperatures = TemperatureParser.parse(dict);
+		coffee.size = SizeParser.parse(dict);
+		coffee.shot = ShotParser.parse(dict);
+		coffee.base = BaseParser.parse(dict);
+		coffee.syrup = SyrupParser.parse(dict);
+		coffee.sauce = SauceParser.parse(dict);
+		coffee.powder = PowderParser.parse(dict);
+		coffee.jelly = JellyParser.parse(dict);
+		coffee.milk = MilkParser.parse(dict);
+		coffee.whippedCream = WhippedCreamParser.parse(dict);
+		coffee.espresso = EspressoParser.parse(dict);
+		coffee.recommend = RecommendParser.parse(dict);
 
 		return coffee;
 	}
