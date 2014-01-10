@@ -9,6 +9,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.model.Temperature;
 
 public class TempuretureSelectView extends FrameLayout {
     
@@ -16,13 +17,15 @@ public class TempuretureSelectView extends FrameLayout {
         super(context, attrs);
     }
     
-    public void setTempureture(ArrayList<String> tempuretures) {
+    public void setTempureture(ArrayList<Temperature> tempuretures) {
         LayoutInflater inflater = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         
         if (tempuretures.size() == 1) { //選択なしの表示
             inflater.inflate(R.layout.layout_custom_tempureture_select_single, this);
             TextView textView = (TextView)getChildAt(0);
-            textView.setText(tempuretures.get(0));
+            
+            Temperature temperature = tempuretures.get(0);
+            textView.setText(temperature.getTemperature());
             return;
         }
         
