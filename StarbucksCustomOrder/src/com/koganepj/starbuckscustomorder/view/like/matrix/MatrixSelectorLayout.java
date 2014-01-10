@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.model.Hotness;
+import com.koganepj.starbuckscustomorder.model.Sweetness;
 
 public class MatrixSelectorLayout extends FrameLayout {
 
@@ -26,6 +28,14 @@ public class MatrixSelectorLayout extends FrameLayout {
         
         //表示サイズの動的調整
         getViewTreeObserver().addOnGlobalLayoutListener(new ExpandBackgroundSizeOnGlobalLayoutListener(this, coffeeIcon));
+    }
+    
+    public Sweetness getSweetness() {
+        return new Sweetness(1);
+    }
+    
+    public Hotness getHotness() {
+        return new Hotness(1);
     }
 
 }
