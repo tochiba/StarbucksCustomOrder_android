@@ -26,7 +26,6 @@
     <string name="setting_support_page">サポートページ</string>
     <string name="setting_mail">メールで問い合わせる</string>
     <string name="setting_dev_team">開発チーム</string>
-    <string name="setting_history">このアプリが出来るまで</string>
     
     <!-- カスタム画面 -->
     <string name="custom_title">カスタム</string>
