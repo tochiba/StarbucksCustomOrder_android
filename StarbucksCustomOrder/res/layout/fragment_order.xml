@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" 
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/ImageCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:scaleType="fitEnd"
+                android:contentDescription="@null"
+                android:src="@drawable/cafeamericano" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/ImageCoffee"
+                android:text="@string/order_jumon" />
+        </RelativeLayout>
+
+        <!-- 呪文 -->
+        <TextView
+            android:id="@+id/TextOrder"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:padding="10dip"
+            android:gravity="center"
+            android:text="ダークモカフラペチーノ"
+            android:background="@drawable/shape_order_jumon_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <!-- 呪文を見る -->
+            <ImageView
+                android:id="@+id/ImageSeeOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:src="@drawable/miru" />
+
+            <!-- 呪文を唱える -->
+            <ImageView
+                android:id="@+id/ImageTalkOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:src="@drawable/tonaeru" />
+
+            <!-- 呪文を投稿する -->
+            <ImageView
+                android:id="@+id/ImageUploadOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:src="@drawable/toukousuru" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <include 
+        layout="@layout/layout_order_upload"
+        android:visibility="gone"
+        />
+</FrameLayout>
