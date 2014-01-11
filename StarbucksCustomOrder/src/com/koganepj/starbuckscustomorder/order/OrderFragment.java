@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.order.view.UploadView;
 
 public class OrderFragment extends Fragment {
 
@@ -19,12 +20,12 @@ public class OrderFragment extends Fragment {
 		View seeOrder = view.findViewById(R.id.ImageSeeOrder);
 		View talkOrder = view.findViewById(R.id.ImageTalkOrder);
 		View uploadOrder = view.findViewById(R.id.ImageUploadOrder);
+		View uploadOrderView = view.findViewById(R.id.LayoutUploadOrder);
 		
 		seeOrder.setOnClickListener(new SeeOrderClickListener());
 		talkOrder.setOnClickListener(new TalkOrderClickListener());
 		
-		// TODO アップロード用のアニメーションを追加する
-		uploadOrder.setOnClickListener(new UploadOrderClickListener());
+		uploadOrder.setOnClickListener(new UploadOrderClickListener(uploadOrderView));
 		
 		return view;
 	}
@@ -34,7 +35,7 @@ public class OrderFragment extends Fragment {
 		super.onResume();
 		
 		String order = ((OrderActivity)getActivity()).getOrder();
-		
 		((TextView)getView().findViewById(R.id.TextOrder)).setText(order);
+		((UploadView)getView().findViewById(R.id.LayoutUploadOrder)).setHashTag(order.replaceAll(" ", ""));
 	}
 }

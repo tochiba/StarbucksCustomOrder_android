@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="315dip"
-    android:layout_margin="5dip"
-    android:orientation="vertical" >
+    android:layout_height="match_parent"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,24 +12,29 @@
         android:padding="10dip" >
 
         <!-- 本文 -->
-        <TextView
+        <EditText
             android:id="@+id/TextMessage"
             android:layout_width="150dip"
             android:layout_height="200dip"
             android:layout_alignParentLeft="true"
             android:background="@drawable/shape_order_upload_item_background"
+            android:inputType="textMultiLine"
             android:padding="5dip"
-            android:text="#ダークモカフラペチーノ"
-            android:textColor="@color/brown" />
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="start"
+            android:textColor="@color/brown"
+            android:textSize="12sp" />
 
         <!-- 写真を選ぶ -->
-        <Button
+        <TextView
             android:id="@+id/ButtonSelectImage"
             android:layout_width="100dip"
             android:layout_height="100dip"
             android:layout_alignParentRight="true"
             android:background="@drawable/shape_order_upload_item_background"
             android:gravity="center"
+            android:contentDescription="@null"
             android:text="@string/order_up_image"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -49,11 +53,15 @@
 
     <!-- 閉じる -->
     <TextView
+        android:id="@+id/TextClose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/background"
+        android:background="@android:color/white"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
         android:gravity="center"
         android:text="@string/order_up_close"
+        android:textSize="14sp"
         android:textColor="@color/brown" />
-
-</LinearLayout>
+    
+</merge>
