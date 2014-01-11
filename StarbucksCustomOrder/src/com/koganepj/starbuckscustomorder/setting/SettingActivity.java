@@ -16,7 +16,7 @@ public class SettingActivity extends Activity implements OnClickListener {
     private static final String BLOG_URL = "http://koganepj.hatenablog.com/";
     private static final String KOGANEPJ_MAIL = "mailto:koganepj@gmail.com?subject=【問い合わせ】スタバで呪文";
     private static final String SUPPORT_URL = "http://www1415uo.sakura.ne.jp/jumon.html";
-    private static final String DEV_TEAM_URL = "http://www1415uo.sakura.ne.jp/member/index.html";
+    private static final String DEV_TEAM_URL = "http://www1415uo.sakura.ne.jp/member/a_member.html";
     
     private static SparseArray<String> sIdUrlMap = new SparseArray<String>();
     static {
