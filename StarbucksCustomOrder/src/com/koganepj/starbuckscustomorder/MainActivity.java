@@ -5,6 +5,7 @@ import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.crashlytics.android.Crashlytics;
 import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 import com.koganepj.starbuckscustomorder.tablistener.LikeTabListener;
 import com.koganepj.starbuckscustomorder.tablistener.MenuTabListener;
@@ -15,6 +16,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Crashlytics.start(this);
         setContentView(R.layout.activity_main);
         
         //アクションバーの設定
