@@ -1,7 +1,14 @@
 package com.koganepj.starbuckscustomorder.model;
 
-public class Espresso {
-	private String espresso;
+import java.io.Serializable;
+
+public class Espresso implements Serializable {
+	/**
+     * 
+     */
+    private static final long serialVersionUID = -1244496344046101167L;
+
+    private String espresso;
 	
 	public Espresso(String espresso) {
 		this.espresso = espresso;

@@ -1,8 +1,6 @@
-package com.koganepj.starbuckscustomorder.custom.view;
+package com.koganepj.starbuckscustomorder.custom.view.detail;
 
 import java.util.ArrayList;
-
-import com.koganepj.starbuckscustomorder.R;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -12,7 +10,10 @@ import android.view.LayoutInflater;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class SelectToppingDialogFragment extends DialogFragment {
+import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.model.Espresso;
+
+public class SelectEspressoDialogFragment extends DialogFragment {
     
     public static final String KEY_ITEMS = "key_items";
     
@@ -26,9 +27,9 @@ public class SelectToppingDialogFragment extends DialogFragment {
         listView.setAdapter(adapter);
         
         @SuppressWarnings("unchecked")
-        ArrayList<String> items = (ArrayList<String>)arguments.getSerializable(KEY_ITEMS);
-        for (String item : items) {
-            adapter.add(item);
+        ArrayList<Espresso> items = (ArrayList<Espresso>)arguments.getSerializable(KEY_ITEMS);
+        for (Espresso item : items) {
+            adapter.add(item.getEspresso());
         }
         
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
