@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 
 public class SettingActivity extends Activity implements OnClickListener {
     
@@ -43,4 +44,17 @@ public class SettingActivity extends Activity implements OnClickListener {
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
+    
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FlurryWrapper.onStartSession(this);
+    }
+    
+    @Override
+    protected void onStop() {
+        super.onStop();
+        FlurryWrapper.onEndSession(this);
+    }
+    
 }
