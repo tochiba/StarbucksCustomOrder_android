@@ -5,8 +5,13 @@ import java.util.ArrayList;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -27,10 +32,19 @@ public class SelectEspressoDialogFragment extends DialogFragment {
         listView.setAdapter(adapter);
         
         @SuppressWarnings("unchecked")
-        ArrayList<Espresso> items = (ArrayList<Espresso>)arguments.getSerializable(KEY_ITEMS);
+        final ArrayList<Espresso> items = (ArrayList<Espresso>)arguments.getSerializable(KEY_ITEMS);
         for (Espresso item : items) {
             adapter.add(item.getEspresso());
         }
+        
+        listView.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Espresso espresso = items.get(position);
+                Log.d("test", "select espresson : " + espresso.getEspresso());
+                Log.d("test", "activity is " + getActivity().getClass());
+            }
+        });
         
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setView(listView);
