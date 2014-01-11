@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.koganepj.starbuckscustomorder.R;
-import com.koganepj.starbuckscustomorder.custom.view.detail.EspressoCustomizeSelectView;
+import com.koganepj.starbuckscustomorder.custom.view.espresso.EspressoCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 

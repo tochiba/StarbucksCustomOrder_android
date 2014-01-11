@@ -1,4 +1,4 @@
-package com.koganepj.starbuckscustomorder.custom.view.detail;
+package com.koganepj.starbuckscustomorder.custom.view.espresso;
 
 import java.util.ArrayList;
 
@@ -7,9 +7,6 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -31,18 +28,13 @@ public class SelectEspressoDialogFragment extends DialogFragment {
         listView.setAdapter(adapter);
         
         @SuppressWarnings("unchecked")
-        final ArrayList<Espresso> items = (ArrayList<Espresso>)arguments.getSerializable(KEY_ITEMS);
-        for (Espresso item : items) {
+        ArrayList<Espresso> espressos = (ArrayList<Espresso>)arguments.getSerializable(KEY_ITEMS);
+        for (Espresso item : espressos) {
             adapter.add(item.getEspresso());
         }
         
-        listView.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Espresso espresso = items.get(position);
-                ((CustomActivity)getActivity()).changeEspresso(espresso);
-            }
-        });
+        CustomActivity activity = (CustomActivity)getActivity();
+        listView.setOnItemClickListener(new OnSelectEspressoItemClickListener(activity, espressos));
         
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setView(listView);
