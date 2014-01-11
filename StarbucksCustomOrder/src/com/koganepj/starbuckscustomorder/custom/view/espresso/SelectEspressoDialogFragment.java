@@ -34,7 +34,7 @@ public class SelectEspressoDialogFragment extends DialogFragment {
         }
         
         CustomActivity activity = (CustomActivity)getActivity();
-        listView.setOnItemClickListener(new OnSelectEspressoItemClickListener(activity, espressos));
+        listView.setOnItemClickListener(new OnSelectEspressoItemClickListener(activity, this, espressos));
         
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setView(listView);
