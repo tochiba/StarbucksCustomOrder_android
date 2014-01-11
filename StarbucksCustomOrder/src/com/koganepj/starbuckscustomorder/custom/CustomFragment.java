@@ -2,6 +2,7 @@ package com.koganepj.starbuckscustomorder.custom;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import com.koganepj.starbuckscustomorder.custom.view.SizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
+import com.koganepj.starbuckscustomorder.model.Espresso;
 import com.koganepj.starbuckscustomorder.parse.CoffeeFinder;
 
 public class CustomFragment extends Fragment {
@@ -54,6 +56,10 @@ public class CustomFragment extends Fragment {
         ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(coffee.temperatures);
         ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setSize(coffee.size);
         ((CustomizeSelectView)getView().findViewById(R.id.LayoutCustomizeSelect)).setCoffeeToCreateView(coffee);
+    }
+    
+    public void changeEspresso(Espresso espresso) {
+        Log.d("test", "receive espresso : " + espresso.getEspresso());
     }
     
 }

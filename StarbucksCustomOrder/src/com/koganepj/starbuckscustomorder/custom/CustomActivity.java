@@ -12,6 +12,7 @@ public class CustomActivity extends Activity {
     
     public static final String KEY_PARAM_COFFEENAME = "key_coffeename";
     
+    private CustomFragment mCustomFragment;
     private CoffeeName mCoffeeName;
     
     @Override
@@ -19,6 +20,7 @@ public class CustomActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom);
         
+        mCustomFragment = (CustomFragment)getFragmentManager().findFragmentById(R.id.FragmentCustom);
         mCoffeeName = (CoffeeName)getIntent().getSerializableExtra(KEY_PARAM_COFFEENAME);
         
         findViewById(R.id.TextBack).setOnClickListener(new BackTextClickListener(this));
@@ -29,7 +31,7 @@ public class CustomActivity extends Activity {
     }
     
     public void changeEspresso(Espresso espresso) {
-        
+        mCustomFragment.changeEspresso(espresso);//この呼び方だとFragment再生成時はカスタマイズが初期化されるが許容範囲とする
     }
     
     @Override
