@@ -11,7 +11,7 @@ import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 
 public class ReadingFinderTest extends AndroidTestCase {
 
-	public void test¤•i‚©‚çô•¶‚ğæ“¾‚·‚é() {
+	public void testå•†å“ã‹ã‚‰å‘ªæ–‡ã‚’å–å¾—ã™ã‚‹() {
 		CoffeeListParser parser = new CoffeeListParser(getContext());
 		ArrayList<SimpleCoffeeModel> coffeeLists = parser.getCoffeeList();
 
@@ -21,11 +21,11 @@ public class ReadingFinderTest extends AndroidTestCase {
 			Coffee coffee = finder.find();
 
 			String errorMessage = String.format(Locale.getDefault(),
-					"%s ‚Ìô•¶‚ğ¶¬‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B", model.coffeeName.getCoffeeName());
-			// ô•¶‚ğ¶¬‚Å‚«‚½‚©ŒŸ¸
+					"%s ã®å‘ªæ–‡ã‚’ç”Ÿæˆã§ãã¾ã›ã‚“ã§ã—ãŸã€‚", model.coffeeName.getCoffeeName());
+			// å‘ªæ–‡ã‚’ç”Ÿæˆã§ããŸã‹æ¤œæŸ»
 //			assertNotNull(errorMessage, null);
 
-			// ˆê‰ƒR[ƒq[‚Ì–¼‘O‚ğo—Í‚µ‚ÄŠm”F‚µ‚Ä‚¨‚­
+			// ä¸€å¿œã‚³ãƒ¼ãƒ’ãƒ¼ã®åå‰ã‚’å‡ºåŠ›ã—ã¦ç¢ºèªã—ã¦ãŠã
 			Log.d("test", "The coffeeName is " + coffee.name);
 		}
 	}

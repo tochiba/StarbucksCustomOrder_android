@@ -11,22 +11,22 @@ import com.koganepj.starbuckscustomorder.model.Calorie;
 
 public class CalorieFinderTest extends AndroidTestCase {
 
-	public void testƒJƒXƒ^ƒ}ƒCƒY–¼‚©‚çƒJƒƒŠ[‚ğæ“¾‚·‚é() {
+	public void testã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºåã‹ã‚‰ã‚«ãƒ­ãƒªãƒ¼ã‚’å–å¾—ã™ã‚‹() {
 		final CalorieFinder finder = new CalorieFinder(getContext());
 
 		final NSDictionary rootDict = NSDictionaryHelper
 				.returnRootDictionary(getContext());
 		final NSDictionary calorieDict = (NSDictionary) (rootDict
 				.objectForKey("CalorieDic"));
-		// ƒJƒXƒ^ƒ}ƒCƒY–¼‚ğƒ‹[ƒv‚³‚¹‚é
+		// ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºåã‚’ãƒ«ãƒ¼ãƒ—ã•ã›ã‚‹
 		for (Entry<String, NSObject> entry : calorieDict.entrySet()) {
 
-			// ŒŸ¸
+			// æ¤œæŸ»
 			final Calorie calorie = finder.getCalorie(entry.getKey());
-			String errorMessage = String.format("%s ‚ª‚İ‚Â‚©‚è‚Ü‚¹‚ñ", entry.getKey());
+			String errorMessage = String.format("%s ãŒã¿ã¤ã‹ã‚Šã¾ã›ã‚“", entry.getKey());
 			assertNotNull(errorMessage, calorie);
 
-			Log.d("test", String.format("%s ‚ÌƒJƒƒŠ[‚Í %s ‚Å‚·.", entry.getKey(),
+			Log.d("test", String.format("%s ã®ã‚«ãƒ­ãƒªãƒ¼ã¯ %s ã§ã™.", entry.getKey(),
 							calorie.getCalorie()));
 		}
 

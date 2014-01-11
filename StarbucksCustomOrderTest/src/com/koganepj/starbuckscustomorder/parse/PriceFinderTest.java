@@ -11,22 +11,22 @@ import com.koganepj.starbuckscustomorder.model.Price;
 
 public class PriceFinderTest extends AndroidTestCase {
 
-	public void testƒJƒXƒ^ƒ}ƒCƒY–¼‚©‚ç’l’i‚ğæ“¾‚·‚é() {
+	public void testã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºåã‹ã‚‰å€¤æ®µã‚’å–å¾—ã™ã‚‹() {
 		final PriceFinder finder = new PriceFinder(getContext());
 
 		final NSDictionary rootDict = NSDictionaryHelper
 				.returnRootDictionary(getContext());
 		final NSDictionary priceDict = (NSDictionary) (rootDict
 				.objectForKey("PriceDic"));
-		// ƒJƒXƒ^ƒ}ƒCƒY–¼‚ğƒ‹[ƒv‚³‚¹‚é
+		// ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚ºåã‚’ãƒ«ãƒ¼ãƒ—ã•ã›ã‚‹
 		for (Entry<String, NSObject> entry : priceDict.entrySet()) {
 
-			// ŒŸ¸
+			// æ¤œæŸ»
 			final Price price = finder.getPrice(entry.getKey());
-			String errorMessage = String.format("%s ‚ª‚İ‚Â‚©‚è‚Ü‚¹‚ñ", entry.getKey());
+			String errorMessage = String.format("%s ãŒã¿ã¤ã‹ã‚Šã¾ã›ã‚“", entry.getKey());
 			assertNotNull(errorMessage, price);
 
-			Log.d("test", String.format("%s ‚Ì’l’i‚Í %s ‚Å‚·.", entry.getKey(),
+			Log.d("test", String.format("%s ã®å€¤æ®µã¯ %s ã§ã™.", entry.getKey(),
 							price.getPrice()));
 		}
 
