@@ -11,7 +11,6 @@ import com.dd.plist.NSDictionary;
 import com.dd.plist.NSObject;
 import com.koganepj.starbuckscustomorder.model.Calorie;
 import com.koganepj.starbuckscustomorder.model.Coffee;
-import com.koganepj.starbuckscustomorder.model.Price;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 
 public class CalorieFinderTest extends AndroidTestCase {
@@ -49,22 +48,18 @@ public class CalorieFinderTest extends AndroidTestCase {
 			Coffee coffee = coffeeFinder.find();
 
 			int count = coffee.size.size();
-
 			for (int i = 0; i < count; i++) {
-				// コーヒーのサイズに合わせて値段を返す
+				// コーヒーのサイズに合わせてカロリー
 				Calorie actualCalorie = finder.getCoffeeSizeCalorie(coffee, coffee.size.get(i));
-				
-				// 実際の値段
-				int expectedPrice = coffee.price.getPrice() + (40 * i);
 
 				String errorMessage = String.format(Locale.getDefault(),
-						"%s が見つかりません", model.coffeeName.getCoffeeName());
+						"%s のカロリーが取得できません", model.coffeeName.getCoffeeName());
+				
+				// カロリーが取得出来ているか確認する
+				assertNotSame(errorMessage, 0, actualCalorie.getCalorie());
 
-				// 値段が合っているか確認する
-				assertEquals(errorMessage, expectedPrice,
-						actualPrice.getPrice());
 				// 一応コーヒーの名前を出力して確認しておく
-				Log.d("test", "The coffeeName is " + coffee.name);
+				Log.d("test", "Calorie is " + actualCalorie.getCalorie());
 			}
 		}
 	}
