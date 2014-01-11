@@ -32,6 +32,7 @@
             android:theme="@android:style/Theme.Holo.Light.NoActionBar"
             android:name="com.koganepj.starbuckscustomorder.setting.SettingActivity"
             />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="134f98bed84563329183f9853f108d9632d03cf2"/>
     </application>
 
 </manifest>
