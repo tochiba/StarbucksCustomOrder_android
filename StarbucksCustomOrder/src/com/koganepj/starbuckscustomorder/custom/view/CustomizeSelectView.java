@@ -18,6 +18,8 @@ public class CustomizeSelectView extends LinearLayout {
     
     private LayoutInflater mInflater;
     
+    private EspressoCustomizeSelectView mEspressoView;
+    
     public CustomizeSelectView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
@@ -36,10 +38,10 @@ public class CustomizeSelectView extends LinearLayout {
     }
     
     void setEspressoItem(List<ViewGroup> frameViews, int currentFrameIndex, String text, ArrayList<Espresso> detailItems) {
-        EspressoCustomizeSelectView view = new EspressoCustomizeSelectView(getContext());
-        view.setText(text);
-        view.setSelectEspressos(detailItems);
-        frameViews.get(currentFrameIndex).addView(view);
+        mEspressoView = new EspressoCustomizeSelectView(getContext());
+        mEspressoView.setText(text);
+        mEspressoView.setSelectEspressos(detailItems);
+        frameViews.get(currentFrameIndex).addView(mEspressoView);
     }
     
     ArrayList<ViewGroup> getFrameViews() {
@@ -55,6 +57,13 @@ public class CustomizeSelectView extends LinearLayout {
             }
         }
         return frameViews;
+    }
+    
+    public void changeSelectedEspresso(Espresso espresso) {
+        if (mEspressoView == null) {
+            return;
+        }
+        mEspressoView.setSelectedEspresso(espresso);
     }
     
 }

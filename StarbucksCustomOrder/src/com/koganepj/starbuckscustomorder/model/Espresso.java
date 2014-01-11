@@ -17,4 +17,18 @@ public class Espresso implements Serializable {
 	public String getEspresso() {
 		return this.espresso;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+	    if (o == null) {
+	        return false;
+	    }
+	    
+	    if ((o instanceof Espresso) == false) {
+	        return false;
+	    }
+	    Espresso another = (Espresso)o;
+	    return espresso.equals(another.espresso);
+	}
+	
 }

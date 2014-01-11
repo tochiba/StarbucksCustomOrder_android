@@ -2,7 +2,6 @@ package com.koganepj.starbuckscustomorder.custom;
 
 import android.app.Fragment;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,18 +22,19 @@ public class CustomFragment extends Fragment {
     
     public static final String KEY_PARAM_COFFEENAME = "key_coffeename";
     
+    private CustomizeSelectView mCustomizeSelectView;
+    
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_custom, null);
         
-        View toppingSelectView = view.findViewById(R.id.LayoutCustomizeSelect);
+        //トッピング開始時のアニメーション設定
+        mCustomizeSelectView = (CustomizeSelectView)view.findViewById(R.id.LayoutCustomizeSelect);
         View sizeSelectView = view.findViewById(R.id.LayoutSizeSelect);
         View infoView = view.findViewById(R.id.LayoutInfo);
         View imageView = view.findViewById(R.id.LayoutImage);
-        
-        //トッピング開始時のアニメーション設定
         View toppingView = view.findViewById(R.id.ImageTopping);
-        toppingView.setOnClickListener(new OnShowSelectToppingViewListener(toppingSelectView, sizeSelectView, infoView, imageView));
+        toppingView.setOnClickListener(new OnShowSelectToppingViewListener(mCustomizeSelectView, sizeSelectView, infoView, imageView));
         
         return view;
     }
@@ -55,11 +55,11 @@ public class CustomFragment extends Fragment {
         ((TextView)getView().findViewById(R.id.TextCalorie)).setText(coffee.calorie.getCalorie() + "kcal");
         ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(coffee.temperatures);
         ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setSize(coffee.size);
-        ((CustomizeSelectView)getView().findViewById(R.id.LayoutCustomizeSelect)).setCoffeeToCreateView(coffee);
+        mCustomizeSelectView.setCoffeeToCreateView(coffee);
     }
     
     public void changeEspresso(Espresso espresso) {
-        Log.d("test", "receive espresso : " + espresso.getEspresso());
+        mCustomizeSelectView.changeSelectedEspresso(espresso);
     }
     
 }
