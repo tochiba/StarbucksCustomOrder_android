@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
+import com.koganepj.starbuckscustomorder.model.Espresso;
 
 public class CustomActivity extends Activity {
     
@@ -25,6 +26,10 @@ public class CustomActivity extends Activity {
     
     CoffeeName getCoffeeName() {
         return mCoffeeName;
+    }
+    
+    public void changeEspresso(Espresso espresso) {
+        
     }
     
     @Override

@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
-import android.app.Fragment;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.custom.CustomActivity;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 
 public class SelectEspressoDialogFragment extends DialogFragment {
@@ -41,8 +40,7 @@ public class SelectEspressoDialogFragment extends DialogFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Espresso espresso = items.get(position);
-                Log.d("test", "select espresson : " + espresso.getEspresso());
-                Log.d("test", "activity is " + getActivity().getClass());
+                ((CustomActivity)getActivity()).changeEspresso(espresso);
             }
         });
         
