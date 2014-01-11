@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 
 public class CustomActivity extends Activity {
@@ -24,6 +25,18 @@ public class CustomActivity extends Activity {
     
     CoffeeName getCoffeeName() {
         return mCoffeeName;
+    }
+    
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FlurryWrapper.onStartSession(this);
+    }
+    
+    @Override
+    protected void onStop() {
+        super.onStop();
+        FlurryWrapper.onEndSession(this);
     }
     
 }
