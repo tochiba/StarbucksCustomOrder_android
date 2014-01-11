@@ -32,6 +32,10 @@
             android:theme="@android:style/Theme.Holo.Light.NoActionBar"
             android:name="com.koganepj.starbuckscustomorder.setting.SettingActivity"
             />
+        <activity
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:name="com.koganepj.starbuckscustomorder.order.OrderActivity"
+            />
         <meta-data android:name="com.crashlytics.ApiKey" android:value="134f98bed84563329183f9853f108d9632d03cf2"/>
     </application>
 
