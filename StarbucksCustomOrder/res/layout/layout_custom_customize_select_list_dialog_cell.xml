@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:textColor="@android:color/black"
-    android:id="@android:id/text1"
-    android:textSize="18sp"
-    android:paddingTop="15dip"
-    android:paddingBottom="15dip"
-    android:paddingLeft="10dip"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_width="match_parent"
     >
-</TextView>
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/TextCustomName"
+        android:textSize="18sp"
+        android:paddingTop="15dip"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+    </TextView>
+    <ImageView
+        android:id="@+id/ImageCheckbox"
+        android:src="@drawable/custom_topping_check_on"
+        android:contentDescription="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        />
+</RelativeLayout>
