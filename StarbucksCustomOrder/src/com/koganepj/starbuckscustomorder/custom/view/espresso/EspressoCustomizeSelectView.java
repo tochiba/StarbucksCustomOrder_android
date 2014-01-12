@@ -16,6 +16,7 @@ public class EspressoCustomizeSelectView extends FrameLayout {
     private ArrayList<Espresso> mEspressos;
     
     private CheckBox mCheckBox;
+    private OnEspressoCustomizeClickListener mListener;
     
     public EspressoCustomizeSelectView(Context context) {
         super(context);
@@ -28,7 +29,8 @@ public class EspressoCustomizeSelectView extends FrameLayout {
 
     public void setSelectEspressos(ArrayList<Espresso> espressos) {
         mEspressos = espressos;
-        mCheckBox.setOnClickListener(new OnEspressoCustomizeClickListener(espressos));
+        mListener = new OnEspressoCustomizeClickListener(espressos);
+        mCheckBox.setOnClickListener(mListener);
     }
     
     public void setText(String text) {
@@ -40,6 +42,7 @@ public class EspressoCustomizeSelectView extends FrameLayout {
             return;
         }
         
+        mListener.setSelectedEspresso(espresso);
         if (mEspressos.get(0).equals(espresso)) {
             mCheckBox.setChecked(false);
             return;

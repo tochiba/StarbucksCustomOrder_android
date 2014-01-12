@@ -13,17 +13,25 @@ import com.koganepj.starbuckscustomorder.model.Espresso;
 public class OnEspressoCustomizeClickListener implements OnClickListener {
     
     private ArrayList<Espresso> mEspressos;
+    private Espresso mSelectedEspresso;
     
     public OnEspressoCustomizeClickListener(ArrayList<Espresso> espressos) {
         mEspressos = espressos;
     }
-
+    
+    public void setSelectedEspresso(Espresso espresso) {
+        mSelectedEspresso = espresso;
+    }
+    
     @Override
     public void onClick(View v) {
         FragmentManager manager = ((Activity)v.getContext()).getFragmentManager();
         
         Bundle bundle = new Bundle();
         bundle.putSerializable(SelectEspressoDialogFragment.KEY_ITEMS, mEspressos);
+        if (mSelectedEspresso != null) {
+            bundle.putSerializable(SelectEspressoDialogFragment.KEY_SELECTED_ITEM, mSelectedEspresso);
+        }
         
         SelectEspressoDialogFragment fragment = new SelectEspressoDialogFragment();
         fragment.setArguments(bundle);
