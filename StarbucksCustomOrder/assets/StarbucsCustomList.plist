@@ -706,10 +706,7 @@
 			<key>Powder</key>
 			<array/>
 			<key>Jelly</key>
-			<array>
-				<string>なし</string>
-				<string>コーヒージェリー</string>
-			</array>
+			<array/>
 			<key>Milk</key>
 			<array/>
 			<key>WhippedCream</key>
@@ -784,10 +781,7 @@
 			<key>Powder</key>
 			<array/>
 			<key>Jelly</key>
-			<array>
-				<string>なし</string>
-				<string>コーヒージェリー</string>
-			</array>
+			<array/>
 			<key>Milk</key>
 			<array>
 				<string>ミルク</string>
@@ -863,13 +857,11 @@
 			<key>Powder</key>
 			<array>
 				<string>追加なし</string>
+				<string>エクストラパウダー</string>
 				<string>チョコレートチップ</string>
 			</array>
 			<key>Jelly</key>
-			<array>
-				<string>なし</string>
-				<string>コーヒージェリー</string>
-			</array>
+			<array/>
 			<key>Milk</key>
 			<array>
 				<string>ミルク</string>
@@ -953,10 +945,7 @@
 				<string>コーヒーベース増量</string>
 			</array>
 			<key>Jelly</key>
-			<array>
-				<string>なし</string>
-				<string>コーヒージェリー</string>
-			</array>
+			<array/>
 			<key>Milk</key>
 			<array>
 				<string>ミルク</string>
@@ -1119,10 +1108,7 @@
 				<string>コーヒーベース増量</string>
 			</array>
 			<key>Jelly</key>
-			<array>
-				<string>なし</string>
-				<string>コーヒージェリー</string>
-			</array>
+			<array/>
 			<key>Milk</key>
 			<array>
 				<string>ミルク</string>
@@ -1204,10 +1190,7 @@
 				<string>チョコレートチップ</string>
 			</array>
 			<key>Jelly</key>
-			<array>
-				<string>なし</string>
-				<string>コーヒージェリー</string>
-			</array>
+			<array/>
 			<key>WhippedCream</key>
 			<array>
 				<string>なし</string>
@@ -1288,10 +1271,7 @@
 				<string>チョコレートチップ</string>
 			</array>
 			<key>Jelly</key>
-			<array>
-				<string>なし</string>
-				<string>コーヒージェリー</string>
-			</array>
+			<array/>
 			<key>WhippedCream</key>
 			<array>
 				<string>なし</string>
@@ -1445,6 +1425,11 @@
 				<string>なし</string>
 				<string>ホイップ追加</string>
 			</array>
+			<key>MilkCustom</key>
+			<array>
+				<string>なし</string>
+				<string>オールミルク</string>
+			</array>
 			<key>Milk</key>
 			<array>
 				<string>ミルク</string>
@@ -1515,13 +1500,21 @@
 				<string>キャラメルソース</string>
 			</array>
 			<key>Powder</key>
-			<array/>
+			<array>
+				<string>追加なし</string>
+				<string>エクストラパウダー</string>
+			</array>
 			<key>Jelly</key>
 			<array/>
 			<key>WhippedCream</key>
 			<array>
 				<string>なし</string>
 				<string>ホイップ追加</string>
+			</array>
+			<key>MilkCustom</key>
+			<array>
+				<string>なし</string>
+				<string>オールミルク</string>
 			</array>
 			<key>Milk</key>
 			<array>
@@ -1598,6 +1591,11 @@
 				<string>なし</string>
 				<string>ホイップ追加</string>
 			</array>
+			<key>MilkCustom</key>
+			<array>
+				<string>なし</string>
+				<string>オールミルク</string>
+			</array>
 			<key>Milk</key>
 			<array>
 				<string>ミルク</string>
@@ -1672,6 +1670,11 @@
 			<array>
 				<string>なし</string>
 				<string>ホイップ追加</string>
+			</array>
+			<key>MilkCustom</key>
+			<array>
+				<string>なし</string>
+				<string>オールミルク</string>
 			</array>
 			<key>Milk</key>
 			<array>
@@ -1748,6 +1751,11 @@
 				<string>なし</string>
 				<string>ホイップ追加</string>
 			</array>
+			<key>MilkCustom</key>
+			<array>
+				<string>なし</string>
+				<string>オールミルク</string>
+			</array>
 			<key>Milk</key>
 			<array>
 				<string>ミルク</string>
@@ -1823,6 +1831,11 @@
 				<string>なし</string>
 				<string>ホイップ追加</string>
 			</array>
+			<key>MilkCustom</key>
+			<array>
+				<string>なし</string>
+				<string>オールミルク</string>
+			</array>
 			<key>Milk</key>
 			<array>
 				<string>ミルク</string>
@@ -1847,88 +1860,11 @@
 			<key>Type</key>
 			<string>Espresso Beverages</string>
 			<key>Name</key>
-			<string>クラッシュマロンパイラテ</string>
+			<string>チョコレート プレッツェル モカ</string>
 			<key>Photo</key>
-			<string>CrashMarronPieLatte.jpg</string>
+			<string>MochaPretzelsChocolate.jpg</string>
 			<key>Calorie</key>
-			<string>233</string>
-			<key>Price</key>
-			<string>440</string>
-			<key>Temperature</key>
-			<array>
-				<string>アイス</string>
-				<string>ホット</string>
-			</array>
-			<key>Size</key>
-			<array>
-				<string>Short</string>
-				<string>Tall</string>
-				<string>Grande</string>
-				<string>Venti</string>
-			</array>
-			<key>Shot</key>
-			<array>
-				<string>1</string>
-				<string>1</string>
-				<string>2</string>
-				<string>3</string>
-			</array>
-			<key>Base</key>
-			<array/>
-			<key>Syrup</key>
-			<array>
-				<string>変更なし</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
-				<string>シロップなし</string>
-			</array>
-			<key>Sauce</key>
-			<array>
-				<string>なし</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
-			</array>
-			<key>Powder</key>
-			<array/>
-			<key>Jelly</key>
-			<array/>
-			<key>WhippedCream</key>
-			<array>
-				<string>変更なし</string>
-				<string>ホイップ増量</string>
-				<string>ホイップなし</string>
-			</array>
-			<key>Milk</key>
-			<array>
-				<string>ミルク</string>
-				<string>ソイミルク</string>
-				<string>ノンファットミルク</string>
-				<string>低脂肪ミルク</string>
-				<string>ブラベミルク</string>
-			</array>
-			<key>Espresso</key>
-			<array>
-				<string>変更なし</string>
-				<string>ショット少なめ</string>
-				<string>ショット追加</string>
-			</array>
-			<key>Recommend</key>
-			<array/>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>Espresso Beverages</string>
-			<key>Name</key>
-			<string>ジンジャーブレッドラテ</string>
-			<key>Photo</key>
-			<string>GingerBreadLatte.jpg</string>
-			<key>Calorie</key>
-			<string>154</string>
+			<string>206</string>
 			<key>Price</key>
 			<string>430</string>
 			<key>Temperature</key>
@@ -2068,13 +2004,13 @@
 			<key>Type</key>
 			<string>Frappuccino</string>
 			<key>Name</key>
-			<string>クラッシュマロンパイフラペチーノ</string>
+			<string>チョコレート プレッツェル モカ フラペチーノ</string>
 			<key>Photo</key>
-			<string>CrashMarronPieFrappuccino.jpg</string>
+			<string>ChocolatePretzelsMochaFrappuccino.jpg</string>
 			<key>Calorie</key>
-			<string>307</string>
+			<string>280</string>
 			<key>Price</key>
-			<string>500</string>
+			<string>490</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -2118,10 +2054,7 @@
 				<string>チョコレートチップ</string>
 			</array>
 			<key>Jelly</key>
-			<array>
-				<string>なし</string>
-				<string>コーヒージェリー</string>
-			</array>
+			<array/>
 			<key>WhippedCream</key>
 			<array>
 				<string>なし</string>
@@ -2191,16 +2124,12 @@
 		<string>2</string>
 		<key>ソイ ラテ</key>
 		<string>3</string>
-		<key>ジンジャーブレッドラテ</key>
+		<key>チョコレート プレッツェル モカ フラペチーノ</key>
 		<string>1</string>
-		<key>クラッシュマロンパイフラペチーノ</key>
+		<key>チョコレート プレッツェル モカ</key>
 		<string>1</string>
-		<key>キャラメルホワイトモカ</key>
+		<key>カフェミスト</key>
 		<string>1</string>
-		<key>抹茶 ティー ラテ</key>
-		<string>4</string>
-		<key>クラッシュマロンパイラテ</key>
-		<string>2</string>
 	</dict>
 	<key>SweetnessDic</key>
 	<dict>
@@ -2227,9 +2156,9 @@
 		<key>コーヒー フラペチーノ</key>
 		<string>0</string>
 		<key>抹茶 クリーム フラペチーノ</key>
-		<string>3</string>
+		<string>2</string>
 		<key>ダーク モカ チップ クリーム フラペチーノ</key>
-		<string>4</string>
+		<string>0</string>
 		<key>ダーク モカ チップ フラペチーノ</key>
 		<string>1</string>
 		<key>カフェ アメリカーノ</key>
@@ -2237,9 +2166,9 @@
 		<key>キャラメル マキアート</key>
 		<string>3</string>
 		<key>ホワイト モカ</key>
-		<string>3</string>
+		<string>4</string>
 		<key>カフェ モカ</key>
-		<string>1</string>
+		<string>3</string>
 		<key>カプチーノ</key>
 		<string>3</string>
 		<key>フォーム ドピオ エスプレッソ</key>
@@ -2248,19 +2177,19 @@
 		<string>1</string>
 		<key>ソイ ラテ</key>
 		<string>1</string>
-		<key>ジンジャーブレッドラテ</key>
-		<string>0</string>
-		<key>クラッシュマロンパイフラペチーノ</key>
-		<string>2</string>
-		<key>キャラメルホワイトモカ</key>
-		<string>1</string>
-		<key>抹茶 ティー ラテ</key>
-		<string>3</string>
-		<key>クラッシュマロンパイラテ</key>
+		<key>チョコレート プレッツェル モカ フラペチーノ</key>
 		<string>4</string>
+		<key>チョコレート プレッツェル モカ</key>
+		<string>3</string>
+		<key>カフェミスト</key>
+		<string>1</string>
 	</dict>
 	<key>PriceDic</key>
 	<dict>
+		<key>オールミルク</key>
+		<string>0</string>
+		<key>エクストラパウダー</key>
+		<string>0</string>
 		<key>ミルク</key>
 		<string>0</string>
 		<key>シロップなし</key>
@@ -2322,6 +2251,10 @@
 	</dict>
 	<key>CalorieDic</key>
 	<dict>
+		<key>オールミルク</key>
+		<string>20</string>
+		<key>エクストラパウダー</key>
+		<string>3</string>
 		<key>ミルク</key>
 		<string>0</string>
 		<key>シロップなし</key>
@@ -2383,6 +2316,10 @@
 	</dict>
 	<key>ReadingDic</key>
 	<dict>
+		<key>オールミルク</key>
+		<string>オールミルク</string>
+		<key>エクストラパウダー</key>
+		<string>エクストラパウダー</string>
 		<key>カフェミスト</key>
 		<string>カフェミスト</string>
 		<key>ソイ ラテ</key>
