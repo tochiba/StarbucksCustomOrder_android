@@ -16,13 +16,19 @@ import com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Espresso;
+import com.koganepj.starbuckscustomorder.parse.CalorieFinder;
 import com.koganepj.starbuckscustomorder.parse.CoffeeFinder;
+import com.koganepj.starbuckscustomorder.parse.PriceFinder;
 
 public class CustomFragment extends Fragment {
     
     public static final String KEY_PARAM_COFFEENAME = "key_coffeename";
     
+    private Coffee mCoffee;
+    
     private CustomizeSelectView mCustomizeSelectView;
+    private TextView mPriceText;
+    private TextView mCalorieText;
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -36,6 +42,9 @@ public class CustomFragment extends Fragment {
         View toppingView = view.findViewById(R.id.ImageTopping);
         toppingView.setOnClickListener(new OnShowSelectToppingViewListener(mCustomizeSelectView, sizeSelectView, infoView, imageView));
         
+        mPriceText = (TextView)view.findViewById(R.id.TextPrice);
+        mCalorieText = (TextView)view.findViewById(R.id.TextCalorie);
+        
         return view;
     }
     
@@ -47,19 +56,29 @@ public class CustomFragment extends Fragment {
         CoffeeName coffeeName = ((CustomActivity)getActivity()).getCoffeeName();
         
         CoffeeFinder finder = new CoffeeFinder(getActivity(), coffeeName);
-        Coffee coffee = finder.find();
+        mCoffee = finder.find();
         
-        ((ImageView)getView().findViewById(R.id.ImageCoffee)).setImageResource(coffee.photo.getPhoto());
-        ((TextView)getView().findViewById(R.id.TextCoffeeName)).setText(coffee.name.getCoffeeName());
-        ((TextView)getView().findViewById(R.id.TextPrice)).setText(coffee.price.getPrice() + "円");
-        ((TextView)getView().findViewById(R.id.TextCalorie)).setText(coffee.calorie.getCalorie() + "kcal");
-        ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(coffee.temperatures);
-        ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setSize(coffee.size);
-        mCustomizeSelectView.setCoffeeToCreateView(coffee);
+        ((ImageView)getView().findViewById(R.id.ImageCoffee)).setImageResource(mCoffee.photo.getPhoto());
+        ((TextView)getView().findViewById(R.id.TextCoffeeName)).setText(mCoffee.name.getCoffeeName());
+        mPriceText.setText(mCoffee.price.getPrice() + "円");
+        mCalorieText.setText(mCoffee.calorie.getCalorie() + "kcal");
+        ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(mCoffee.temperatures);
+        ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setSize(mCoffee.size);
+        mCustomizeSelectView.setCoffeeToCreateView(mCoffee);
     }
     
     public void changeEspresso(Espresso espresso) {
         mCustomizeSelectView.changeSelectedEspresso(espresso);
+        
+        PriceFinder priceFinder = new PriceFinder(getActivity());
+        CalorieFinder calorieFinder = new CalorieFinder(getActivity());
+        
+        int espressoPrice = priceFinder.getPrice(espresso.getEspresso()).getPrice();
+        int espressoCalorie = calorieFinder.getCalorie(espresso.getEspresso()).getCalorie();
+        
+        mPriceText.setText(mCoffee.price.getPrice() + espressoPrice + "円");
+        mCalorieText.setText(mCoffee.calorie.getCalorie() + espressoCalorie + "kcal");
+        
     }
     
 }
