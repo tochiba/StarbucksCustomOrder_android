@@ -14,7 +14,7 @@ import com.dd.plist.PropertyListParser;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 
 public class NSDictionaryHelper {
-	private static final String PLIST_NAME = "StarbucksCustomList.plist";
+	private static final String PLIST_NAME = "StarbucsCustomList.plist";
 	
 	/**
 	 * RootのDictionaryを返す
