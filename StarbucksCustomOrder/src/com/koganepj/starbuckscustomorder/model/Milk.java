@@ -1,7 +1,13 @@
 package com.koganepj.starbuckscustomorder.model;
 
-public class Milk {
-	private String milk;
+import java.io.Serializable;
+
+public class Milk implements Serializable {
+	/**
+     * 
+     */
+    private static final long serialVersionUID = -906750618519503774L;
+    private String milk;
 	
 	public Milk(String milk) {
 		this.milk = milk;

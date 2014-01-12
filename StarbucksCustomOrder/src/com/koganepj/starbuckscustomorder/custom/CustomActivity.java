@@ -9,6 +9,7 @@ import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 import com.koganepj.starbuckscustomorder.model.Jelly;
+import com.koganepj.starbuckscustomorder.model.Milk;
 
 public class CustomActivity extends Activity {
     
@@ -42,6 +43,10 @@ public class CustomActivity extends Activity {
     
     public void changeJelly(Jelly jelly) {
         mCustomFragment.changeJelly(jelly);
+    }
+    
+    public void changeMilk(Milk milk) {
+        mCustomFragment.changeMilk(milk);
     }
     
     @Override

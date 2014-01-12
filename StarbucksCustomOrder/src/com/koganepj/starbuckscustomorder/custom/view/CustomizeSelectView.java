@@ -12,10 +12,12 @@ import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.custom.view.base.BaseCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.espresso.EspressoCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.jelly.JellyCustomizeSelectView;
+import com.koganepj.starbuckscustomorder.custom.view.milk.MilkCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 import com.koganepj.starbuckscustomorder.model.Jelly;
+import com.koganepj.starbuckscustomorder.model.Milk;
 
 public class CustomizeSelectView extends LinearLayout {
     
@@ -24,6 +26,7 @@ public class CustomizeSelectView extends LinearLayout {
     private EspressoCustomizeSelectView mEspressoView;
     private BaseCustomizeSelectView mBaseView;
     private JellyCustomizeSelectView mJellyView;
+    private MilkCustomizeSelectView mMilkView;
     
     public CustomizeSelectView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -57,6 +60,14 @@ public class CustomizeSelectView extends LinearLayout {
             mJellyView.setText("Jelly");
             mJellyView.setJellies(coffee.jelly);
             frameViews.get(currentFrameIndex).addView(mJellyView);
+            currentFrameIndex++;
+        }
+        
+        if (coffee.milk.size() != 0) {
+            mMilkView = new MilkCustomizeSelectView(getContext());
+            mMilkView.setText("Milk");
+            mMilkView.setMilks(coffee.milk);
+            frameViews.get(currentFrameIndex).addView(mMilkView);
             currentFrameIndex++;
         }
     }
@@ -95,5 +106,12 @@ public class CustomizeSelectView extends LinearLayout {
             return;
         }
         mJellyView.setSelectedJelly(jelly);
+    }
+    
+    public void changeSelectedMilk(Milk milk) {
+        if (mBaseView == null) {
+            return;
+        }
+        mMilkView.setSelectedMilk(milk);
     }
 }
