@@ -12,6 +12,7 @@ public class CloseTextClickListener implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
+		((UploadView) mView).hideKeyboard();
 		mView.setVisibility(View.GONE);
 	}
 

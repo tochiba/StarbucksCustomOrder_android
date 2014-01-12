@@ -20,11 +20,11 @@
             android:background="@drawable/shape_order_upload_item_background"
             android:inputType="textMultiLine"
             android:padding="5dip"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
             android:gravity="start"
             android:textColor="@color/brown"
-            android:textSize="12sp" />
+            android:textSize="12sp" >
+            <requestFocus />
+            </EditText>
 
         <!-- 写真を選ぶ -->
         <TextView
