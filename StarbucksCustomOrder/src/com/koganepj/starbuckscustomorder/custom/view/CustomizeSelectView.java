@@ -15,6 +15,7 @@ import com.koganepj.starbuckscustomorder.custom.view.jelly.JellyCustomizeSelectV
 import com.koganepj.starbuckscustomorder.custom.view.milk.MilkCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.powder.PowderCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.sauce.SauceCustomizeSelectView;
+import com.koganepj.starbuckscustomorder.custom.view.syrup.SyrupCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;
@@ -22,6 +23,7 @@ import com.koganepj.starbuckscustomorder.model.Jelly;
 import com.koganepj.starbuckscustomorder.model.Milk;
 import com.koganepj.starbuckscustomorder.model.Powder;
 import com.koganepj.starbuckscustomorder.model.Sauce;
+import com.koganepj.starbuckscustomorder.model.Syrup;
 
 public class CustomizeSelectView extends LinearLayout {
     
@@ -33,6 +35,7 @@ public class CustomizeSelectView extends LinearLayout {
     private MilkCustomizeSelectView mMilkView;
     private PowderCustomizeSelectView mPowderView;
     private SauceCustomizeSelectView mSauceView;
+    private SyrupCustomizeSelectView mSyrupView;
     
     public CustomizeSelectView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -92,6 +95,14 @@ public class CustomizeSelectView extends LinearLayout {
             frameViews.get(currentFrameIndex).addView(mSauceView);
             currentFrameIndex++;
         }
+        
+        if (coffee.syrup.size() != 0) {
+            mSyrupView = new SyrupCustomizeSelectView(getContext());
+            mSyrupView.setText("Syrup");
+            mSyrupView.setSyrups(coffee.syrup);
+            frameViews.get(currentFrameIndex).addView(mSyrupView);
+            currentFrameIndex++;
+        }
     }
     
     ArrayList<ViewGroup> getFrameViews() {
@@ -149,5 +160,12 @@ public class CustomizeSelectView extends LinearLayout {
             return;
         }
         mPowderView.setSelectedPowder(powder);
+    }
+    
+    public void changeSelectedSyrup(Syrup syrup) {
+        if (mSyrupView == null) {
+            return;
+        }
+        mSyrupView.setSelectedSyrup(syrup);
     }
 }
