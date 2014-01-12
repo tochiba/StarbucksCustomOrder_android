@@ -9,6 +9,7 @@ import com.koganepj.starbuckscustomorder.model.CustomizeCoffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 import com.koganepj.starbuckscustomorder.model.Jelly;
 import com.koganepj.starbuckscustomorder.model.Milk;
+import com.koganepj.starbuckscustomorder.model.Photo;
 import com.koganepj.starbuckscustomorder.model.Powder;
 import com.koganepj.starbuckscustomorder.model.Price;
 import com.koganepj.starbuckscustomorder.model.Sauce;
@@ -152,5 +153,9 @@ class CustomizeDataHolder {
 //                mWhippedCream,
 //                mEspresso,
 //                null);
+    }
+    
+    public Photo getCoffeePhoto() {
+        return mCoffee.photo;
     }
 }

@@ -1,14 +1,24 @@
 package com.koganepj.starbuckscustomorder.model;
 
+import java.io.Serializable;
 import java.lang.reflect.Field;
 
+import android.annotation.SuppressLint;
 import com.koganepj.starbuckscustomorder.R.drawable;
 
-public class Photo {
-	public static final String ITEM_PHOTO = "Photo";
+public class Photo implements Serializable {
+    
+    
+	/**
+     * 
+     */
+    private static final long serialVersionUID = -2813248986482111784L;
+    
+    public static final String ITEM_PHOTO = "Photo";
 	private int resourceId;
 
-	public Photo(String fileName) {
+	@SuppressLint("DefaultLocale")
+    public Photo(String fileName) {
 		// ファイル名からリソースIDに変換
 		final drawable drawable = new drawable();
 		int resourceId;

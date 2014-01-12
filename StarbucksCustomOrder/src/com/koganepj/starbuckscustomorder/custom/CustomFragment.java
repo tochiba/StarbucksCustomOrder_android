@@ -68,10 +68,16 @@ public class CustomFragment extends Fragment implements OnChangeSizeListener {
         //Activityからコーヒー名を取得 ※別Activityにも属するようになれば取得方法を抽象化する
         CoffeeName coffeeName = ((CustomActivity)getActivity()).getCoffeeName();
         
+        //カスタマイズデータ保持用の準備
         CoffeeFinder finder = new CoffeeFinder(getActivity(), coffeeName);
         Coffee coffee = finder.find();
         mCustomizeDataHolder = new CustomizeDataHolder(coffee, new PriceFinder(getActivity()), new CalorieFinder(getActivity()));
         
+        //呪文生成ボタンの動作設定
+        View magicButton = getView().findViewById(R.id.ButtonMagic);
+        magicButton.setOnClickListener(new MagicClickListener(mCustomizeDataHolder));
+        
+        //表示設定
         ((ImageView)getView().findViewById(R.id.ImageCoffee)).setImageResource(coffee.photo.getPhoto());
         ((TextView)getView().findViewById(R.id.TextCoffeeName)).setText(coffee.name.getCoffeeName());
         mPriceText.setText(coffee.price.getPrice() + "円");

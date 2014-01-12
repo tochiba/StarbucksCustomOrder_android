@@ -5,13 +5,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.model.Photo;
 import com.koganepj.starbuckscustomorder.order.view.UploadView;
 
 public class OrderFragment extends Fragment {
-	private String mOrder;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -24,7 +25,12 @@ public class OrderFragment extends Fragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		
-		mOrder = ((OrderActivity) getActivity()).getOrder();
+		String order = ((OrderActivity) getActivity()).getOrder();
+		Photo photo = ((OrderActivity)getActivity()).getPhoto();
+		
+		((ImageView)getView().findViewById(R.id.ImageCoffee)).setImageResource(photo.getPhoto());
+		((TextView)getView().findViewById(R.id.TextOrder)).setText(order);
+		((UploadView)getView().findViewById(R.id.LayoutUploadOrder)).setHashTag(order.replaceAll(" ", ""));
 		
 		View seeOrder = getView().findViewById(R.id.ImageSeeOrder);
 		View talkOrder = getView().findViewById(R.id.ImageTalkOrder);
@@ -32,7 +38,7 @@ public class OrderFragment extends Fragment {
 		View uploadOrderView = getView().findViewById(R.id.LayoutUploadOrder);
 
 		seeOrder.setOnClickListener(new SeeOrderClickListener());
-		talkOrder.setOnClickListener(new TalkOrderClickListener(getActivity(), mOrder));
+		talkOrder.setOnClickListener(new TalkOrderClickListener(getActivity(), order));
 
 		uploadOrder.setOnClickListener(new UploadOrderClickListener(
 				uploadOrderView));
@@ -41,9 +47,5 @@ public class OrderFragment extends Fragment {
 	@Override
 	public void onResume() {
 		super.onResume();
-
-		((TextView) getView().findViewById(R.id.TextOrder)).setText(mOrder);
-		((UploadView) getView().findViewById(R.id.LayoutUploadOrder))
-				.setHashTag(mOrder.replaceAll(" ", ""));
 	}
 }
