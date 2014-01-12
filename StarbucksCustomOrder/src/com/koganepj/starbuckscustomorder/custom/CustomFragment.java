@@ -2,6 +2,7 @@ package com.koganepj.starbuckscustomorder.custom;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import com.koganepj.starbuckscustomorder.custom.animation.OnShowSelectToppingVie
 import com.koganepj.starbuckscustomorder.custom.view.CustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.SizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView;
+import com.koganepj.starbuckscustomorder.custom.view.SizeSelectView.OnChangeSizeListener;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
@@ -21,13 +23,14 @@ import com.koganepj.starbuckscustomorder.model.Jelly;
 import com.koganepj.starbuckscustomorder.model.Milk;
 import com.koganepj.starbuckscustomorder.model.Powder;
 import com.koganepj.starbuckscustomorder.model.Sauce;
+import com.koganepj.starbuckscustomorder.model.Size;
 import com.koganepj.starbuckscustomorder.model.Syrup;
 import com.koganepj.starbuckscustomorder.model.WhippedCream;
 import com.koganepj.starbuckscustomorder.parse.CalorieFinder;
 import com.koganepj.starbuckscustomorder.parse.CoffeeFinder;
 import com.koganepj.starbuckscustomorder.parse.PriceFinder;
 
-public class CustomFragment extends Fragment {
+public class CustomFragment extends Fragment implements OnChangeSizeListener {
     
     public static final String KEY_PARAM_COFFEENAME = "key_coffeename";
     
@@ -71,6 +74,7 @@ public class CustomFragment extends Fragment {
         mCalorieText.setText(mCoffee.calorie.getCalorie() + "kcal");
         ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(mCoffee.temperatures);
         ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setSize(mCoffee.size);
+        ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setOnChangeSizeListener(this);
         mCustomizeSelectView.setCoffeeToCreateView(mCoffee);
     }
     
@@ -115,6 +119,11 @@ public class CustomFragment extends Fragment {
     
     public void changeWhippedCream(WhippedCream whippedCream) {
         mCustomizeSelectView.changeSelectedWhippedCream(whippedCream);
+    }
+
+    @Override
+    public void changeSize(Size size) {
+        Log.d("test", "size : " + size.getSize());
     }
     
 }
