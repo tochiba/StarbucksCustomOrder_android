@@ -13,8 +13,8 @@ import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.custom.animation.OnShowSelectToppingViewListener;
 import com.koganepj.starbuckscustomorder.custom.view.CustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.SizeSelectView;
-import com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.SizeSelectView.OnChangeSizeListener;
+import com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
@@ -34,7 +34,7 @@ public class CustomFragment extends Fragment implements OnChangeSizeListener {
     
     public static final String KEY_PARAM_COFFEENAME = "key_coffeename";
     
-    private Coffee mCoffee;
+    private CustomizeDataHolder mCustomizeDataHolder;
     
     private CustomizeSelectView mCustomizeSelectView;
     private TextView mPriceText;
@@ -61,40 +61,39 @@ public class CustomFragment extends Fragment implements OnChangeSizeListener {
     @Override
     public void onResume() {
         super.onResume();
+        
+        if (mCustomizeDataHolder != null) {
+            return;
+        }
 
         //Activityからコーヒー名を取得 ※別Activityにも属するようになれば取得方法を抽象化する
         CoffeeName coffeeName = ((CustomActivity)getActivity()).getCoffeeName();
         
         CoffeeFinder finder = new CoffeeFinder(getActivity(), coffeeName);
-        mCoffee = finder.find();
+        Coffee coffee = finder.find();
+        mCustomizeDataHolder = new CustomizeDataHolder(coffee, new PriceFinder(getActivity()), new CalorieFinder(getActivity()));
         
-        ((ImageView)getView().findViewById(R.id.ImageCoffee)).setImageResource(mCoffee.photo.getPhoto());
-        ((TextView)getView().findViewById(R.id.TextCoffeeName)).setText(mCoffee.name.getCoffeeName());
-        mPriceText.setText(mCoffee.price.getPrice() + "円");
-        mCalorieText.setText(mCoffee.calorie.getCalorie() + "kcal");
-        ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(mCoffee.temperatures);
-        ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setSize(mCoffee.size);
+        ((ImageView)getView().findViewById(R.id.ImageCoffee)).setImageResource(coffee.photo.getPhoto());
+        ((TextView)getView().findViewById(R.id.TextCoffeeName)).setText(coffee.name.getCoffeeName());
+        mPriceText.setText(coffee.price.getPrice() + "円");
+        mCalorieText.setText(coffee.calorie.getCalorie() + "kcal");
+        ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(coffee.temperatures);
+        ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setSize(coffee.size);
         ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setOnChangeSizeListener(this);
-        mCustomizeSelectView.setCoffeeToCreateView(mCoffee);
+        mCustomizeSelectView.setCoffeeToCreateView(coffee);
     }
     
     public void changeEspresso(Espresso espresso) {
         mCustomizeSelectView.changeSelectedEspresso(espresso);
         
-        PriceFinder priceFinder = new PriceFinder(getActivity());
-        CalorieFinder calorieFinder = new CalorieFinder(getActivity());
+        mCustomizeDataHolder.changeEspresso(espresso);
         
-        int espressoPrice = priceFinder.getPrice(espresso.getEspresso()).getPrice();
-        int espressoCalorie = calorieFinder.getCalorie(espresso.getEspresso()).getCalorie();
-        
-        mPriceText.setText(mCoffee.price.getPrice() + espressoPrice + "円");
-        mCalorieText.setText(mCoffee.calorie.getCalorie() + espressoCalorie + "kcal");
+        mCalorieText.setText(mCustomizeDataHolder.getCalorie() + "kcal");
+        mPriceText.setText(mCustomizeDataHolder.getPrice() + "円");
     }
     
     public void changeBase(Base base) {
         mCustomizeSelectView.changeSelectedBase(base);
-        
-        //TODO 価格とカロリーは他のトッピングも考慮しなければ！！
     }
     
     public void changeJelly(Jelly jelly) {
