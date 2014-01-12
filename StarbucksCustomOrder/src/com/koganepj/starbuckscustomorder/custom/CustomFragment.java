@@ -22,6 +22,7 @@ import com.koganepj.starbuckscustomorder.model.Milk;
 import com.koganepj.starbuckscustomorder.model.Powder;
 import com.koganepj.starbuckscustomorder.model.Sauce;
 import com.koganepj.starbuckscustomorder.model.Syrup;
+import com.koganepj.starbuckscustomorder.model.WhippedCream;
 import com.koganepj.starbuckscustomorder.parse.CalorieFinder;
 import com.koganepj.starbuckscustomorder.parse.CoffeeFinder;
 import com.koganepj.starbuckscustomorder.parse.PriceFinder;
@@ -110,6 +111,10 @@ public class CustomFragment extends Fragment {
     
     public void changeSyrup(Syrup syrup) {
         mCustomizeSelectView.changeSelectedSyrup(syrup);
+    }
+    
+    public void changeWhippedCream(WhippedCream whippedCream) {
+        mCustomizeSelectView.changeSelectedWhippedCream(whippedCream);
     }
     
 }

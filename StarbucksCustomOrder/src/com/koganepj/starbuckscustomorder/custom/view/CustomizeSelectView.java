@@ -16,6 +16,7 @@ import com.koganepj.starbuckscustomorder.custom.view.milk.MilkCustomizeSelectVie
 import com.koganepj.starbuckscustomorder.custom.view.powder.PowderCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.sauce.SauceCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.syrup.SyrupCustomizeSelectView;
+import com.koganepj.starbuckscustomorder.custom.view.whippedCream.WhippedCreamCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;
@@ -24,6 +25,7 @@ import com.koganepj.starbuckscustomorder.model.Milk;
 import com.koganepj.starbuckscustomorder.model.Powder;
 import com.koganepj.starbuckscustomorder.model.Sauce;
 import com.koganepj.starbuckscustomorder.model.Syrup;
+import com.koganepj.starbuckscustomorder.model.WhippedCream;
 
 public class CustomizeSelectView extends LinearLayout {
     
@@ -36,6 +38,7 @@ public class CustomizeSelectView extends LinearLayout {
     private PowderCustomizeSelectView mPowderView;
     private SauceCustomizeSelectView mSauceView;
     private SyrupCustomizeSelectView mSyrupView;
+    private WhippedCreamCustomizeSelectView mWhippedCreamView;
     
     public CustomizeSelectView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -103,6 +106,14 @@ public class CustomizeSelectView extends LinearLayout {
             frameViews.get(currentFrameIndex).addView(mSyrupView);
             currentFrameIndex++;
         }
+        
+        if (coffee.whippedCream.size() != 0) {
+            mWhippedCreamView = new WhippedCreamCustomizeSelectView(getContext());
+            mWhippedCreamView.setText("Whipped\nCream");
+            mWhippedCreamView.setWhippedCreams(coffee.whippedCream);
+            frameViews.get(currentFrameIndex).addView(mWhippedCreamView);
+            currentFrameIndex++;
+        }
     }
     
     ArrayList<ViewGroup> getFrameViews() {
@@ -167,5 +178,12 @@ public class CustomizeSelectView extends LinearLayout {
             return;
         }
         mSyrupView.setSelectedSyrup(syrup);
+    }
+    
+    public void changeSelectedWhippedCream(WhippedCream whippedCream) {
+        if (mWhippedCreamView == null) {
+            return;
+        }
+        mWhippedCreamView.setSelectedWhippedCream(whippedCream);
     }
 }
