@@ -94,30 +94,65 @@ public class CustomFragment extends Fragment implements OnChangeSizeListener {
     
     public void changeBase(Base base) {
         mCustomizeSelectView.changeSelectedBase(base);
+        
+        mCustomizeDataHolder.changeBase(base);
+        
+        mCalorieText.setText(mCustomizeDataHolder.getCalorie() + "kcal");
+        mPriceText.setText(mCustomizeDataHolder.getPrice() + "円");
     }
     
     public void changeJelly(Jelly jelly) {
         mCustomizeSelectView.changeSelectedJelly(jelly);
+        
+        mCustomizeDataHolder.changeJelly(jelly);
+        
+        mCalorieText.setText(mCustomizeDataHolder.getCalorie() + "kcal");
+        mPriceText.setText(mCustomizeDataHolder.getPrice() + "円");
     }
     
     public void changeMilk(Milk milk) {
         mCustomizeSelectView.changeSelectedMilk(milk);
+        
+        mCustomizeDataHolder.changeMilk(milk);
+        
+        mCalorieText.setText(mCustomizeDataHolder.getCalorie() + "kcal");
+        mPriceText.setText(mCustomizeDataHolder.getPrice() + "円");
     }
     
     public void changePowder(Powder powder) {
         mCustomizeSelectView.changeSelectedPowder(powder);
+        
+        mCustomizeDataHolder.changePowder(powder);
+        
+        mCalorieText.setText(mCustomizeDataHolder.getCalorie() + "kcal");
+        mPriceText.setText(mCustomizeDataHolder.getPrice() + "円");
     }
     
     public void changeSauce(Sauce sauce) {
         mCustomizeSelectView.changeSelectedSauce(sauce);
+        
+        mCustomizeDataHolder.changeSauce(sauce);
+        
+        mCalorieText.setText(mCustomizeDataHolder.getCalorie() + "kcal");
+        mPriceText.setText(mCustomizeDataHolder.getPrice() + "円");
     }
     
     public void changeSyrup(Syrup syrup) {
         mCustomizeSelectView.changeSelectedSyrup(syrup);
+        
+        mCustomizeDataHolder.changeSyrup(syrup);
+        
+        mCalorieText.setText(mCustomizeDataHolder.getCalorie() + "kcal");
+        mPriceText.setText(mCustomizeDataHolder.getPrice() + "円");
     }
     
     public void changeWhippedCream(WhippedCream whippedCream) {
         mCustomizeSelectView.changeSelectedWhippedCream(whippedCream);
+        
+        mCustomizeDataHolder.changeWhippedCream(whippedCream);
+        
+        mCalorieText.setText(mCustomizeDataHolder.getCalorie() + "kcal");
+        mPriceText.setText(mCustomizeDataHolder.getPrice() + "円");
     }
 
     @Override
