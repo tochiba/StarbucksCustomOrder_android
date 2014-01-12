@@ -14,12 +14,14 @@ import com.koganepj.starbuckscustomorder.custom.view.espresso.EspressoCustomizeS
 import com.koganepj.starbuckscustomorder.custom.view.jelly.JellyCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.milk.MilkCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.powder.PowderCustomizeSelectView;
+import com.koganepj.starbuckscustomorder.custom.view.sauce.SauceCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 import com.koganepj.starbuckscustomorder.model.Jelly;
 import com.koganepj.starbuckscustomorder.model.Milk;
 import com.koganepj.starbuckscustomorder.model.Powder;
+import com.koganepj.starbuckscustomorder.model.Sauce;
 
 public class CustomizeSelectView extends LinearLayout {
     
@@ -30,6 +32,7 @@ public class CustomizeSelectView extends LinearLayout {
     private JellyCustomizeSelectView mJellyView;
     private MilkCustomizeSelectView mMilkView;
     private PowderCustomizeSelectView mPowderView;
+    private SauceCustomizeSelectView mSauceView;
     
     public CustomizeSelectView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -81,6 +84,14 @@ public class CustomizeSelectView extends LinearLayout {
             frameViews.get(currentFrameIndex).addView(mPowderView);
             currentFrameIndex++;
         }
+        
+        if (coffee.sauce.size() != 0) {
+            mSauceView = new SauceCustomizeSelectView(getContext());
+            mSauceView.setText("Sauce");
+            mSauceView.setSauces(coffee.sauce);
+            frameViews.get(currentFrameIndex).addView(mSauceView);
+            currentFrameIndex++;
+        }
     }
     
     ArrayList<ViewGroup> getFrameViews() {
@@ -124,6 +135,13 @@ public class CustomizeSelectView extends LinearLayout {
             return;
         }
         mMilkView.setSelectedMilk(milk);
+    }
+    
+    public void changeSelectedSauce(Sauce sauce) {
+        if (mSauceView == null) {
+            return;
+        }
+        mSauceView.setSelectedSauce(sauce);
     }
     
     public void changeSelectedPowder(Powder powder) {

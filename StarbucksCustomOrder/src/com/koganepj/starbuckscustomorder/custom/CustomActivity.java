@@ -11,6 +11,7 @@ import com.koganepj.starbuckscustomorder.model.Espresso;
 import com.koganepj.starbuckscustomorder.model.Jelly;
 import com.koganepj.starbuckscustomorder.model.Milk;
 import com.koganepj.starbuckscustomorder.model.Powder;
+import com.koganepj.starbuckscustomorder.model.Sauce;
 
 public class CustomActivity extends Activity {
     
@@ -52,6 +53,10 @@ public class CustomActivity extends Activity {
     
     public void changePowder(Powder powder) {
         mCustomFragment.changePowder(powder);
+    }
+    
+    public void changeSauce(Sauce sauce) {
+        mCustomFragment.changeSauce(sauce);
     }
     
     @Override
