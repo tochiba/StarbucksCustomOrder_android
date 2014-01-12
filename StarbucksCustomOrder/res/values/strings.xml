@@ -33,4 +33,12 @@
     <string name="custom_please_select_topping">好きなカスタマイズを選択</string>
     <string name="custom_tempureture_select_hot">ホット</string>
     <string name="custom_tempureture_select_ice">アイス</string>
+    
+    <!-- オーダー -->
+    <string name="order_title">オーダー</string>
+    <string name="order_back">&lt; カスタム</string>
+    <string name="order_jumon">呪文</string>
+    <string name="order_up_image">写真を選ぶ</string>
+    <string name="order_up_cancel_image">写真をキャンセル</string>
+    <string name="order_up_close">閉じる</string>
 </resources>

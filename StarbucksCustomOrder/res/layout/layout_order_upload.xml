@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/background"
+        android:padding="10dip" >
+
+        <!-- 本文 -->
+        <EditText
+            android:id="@+id/TextMessage"
+            android:layout_width="150dip"
+            android:layout_height="200dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape_order_upload_item_background"
+            android:inputType="textMultiLine"
+            android:padding="5dip"
+            android:gravity="start"
+            android:textColor="@color/brown"
+            android:textSize="12sp" >
+            <requestFocus />
+            </EditText>
+
+        <!-- 写真を選ぶ -->
+        <TextView
+            android:id="@+id/ButtonSelectImage"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_order_upload_item_background"
+            android:gravity="center"
+            android:contentDescription="@null"
+            android:text="@string/order_up_image"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown" />
+
+        <!-- 写真をキャンセル -->
+        <TextView
+            android:id="@+id/TextCancelImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ButtonSelectImage"
+            android:text="@string/order_up_cancel_image"
+            android:textColor="@color/brown" />
+    </RelativeLayout>
+
+    <!-- 閉じる -->
+    <TextView
+        android:id="@+id/TextClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:gravity="center"
+        android:text="@string/order_up_close"
+        android:textSize="14sp"
+        android:textColor="@color/brown" />
+    
+</merge>
