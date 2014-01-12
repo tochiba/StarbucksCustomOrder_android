@@ -7,6 +7,7 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.view.ranking.adapter.RankingAdapter;
 import com.koganepj.starbuckscustomorder.view.ranking.social.ModelSearcher;
@@ -17,15 +18,24 @@ class TypeSelectListener implements OnCheckedChangeListener {
     private RankingAdapter mAdapter;
     private ArrayList<SimpleCoffeeModel> mCoffeeModels;
     private SocialRankingLoaderCallback mCallback;
+    private AdmobWrapper mHeaderAd;
+	private AdmobWrapper mFooterAd;
     
-    public TypeSelectListener(RankingAdapter adapter, ArrayList<SimpleCoffeeModel> coffeeModels, SocialRankingLoaderCallback callback) {
+    
+    public TypeSelectListener(RankingAdapter adapter, ArrayList<SimpleCoffeeModel> coffeeModels, SocialRankingLoaderCallback callback, AdmobWrapper headerAd, AdmobWrapper footerAd) {
         mAdapter = adapter;
         mCoffeeModels = coffeeModels;
         mCallback = callback;
+        mHeaderAd = headerAd;
+        mFooterAd = footerAd;
     }
     
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
+    	// 広告を更新
+    	mHeaderAd.loadAd();
+    	mFooterAd.loadAd();
+    	
         if (checkedId == R.id.RadioCalorie) {
             mAdapter.clear();
             
