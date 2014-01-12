@@ -13,11 +13,13 @@ import com.koganepj.starbuckscustomorder.custom.view.base.BaseCustomizeSelectVie
 import com.koganepj.starbuckscustomorder.custom.view.espresso.EspressoCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.jelly.JellyCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.milk.MilkCustomizeSelectView;
+import com.koganepj.starbuckscustomorder.custom.view.powder.PowderCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 import com.koganepj.starbuckscustomorder.model.Jelly;
 import com.koganepj.starbuckscustomorder.model.Milk;
+import com.koganepj.starbuckscustomorder.model.Powder;
 
 public class CustomizeSelectView extends LinearLayout {
     
@@ -27,6 +29,7 @@ public class CustomizeSelectView extends LinearLayout {
     private BaseCustomizeSelectView mBaseView;
     private JellyCustomizeSelectView mJellyView;
     private MilkCustomizeSelectView mMilkView;
+    private PowderCustomizeSelectView mPowderView;
     
     public CustomizeSelectView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -70,6 +73,14 @@ public class CustomizeSelectView extends LinearLayout {
             frameViews.get(currentFrameIndex).addView(mMilkView);
             currentFrameIndex++;
         }
+        
+        if (coffee.powder.size() != 0) {
+            mPowderView = new PowderCustomizeSelectView(getContext());
+            mPowderView.setText("Powder");
+            mPowderView.setPowders(coffee.powder);
+            frameViews.get(currentFrameIndex).addView(mPowderView);
+            currentFrameIndex++;
+        }
     }
     
     ArrayList<ViewGroup> getFrameViews() {
@@ -102,16 +113,23 @@ public class CustomizeSelectView extends LinearLayout {
     }
     
     public void changeSelectedJelly(Jelly jelly) {
-        if (mBaseView == null) {
+        if (mJellyView == null) {
             return;
         }
         mJellyView.setSelectedJelly(jelly);
     }
     
     public void changeSelectedMilk(Milk milk) {
-        if (mBaseView == null) {
+        if (mMilkView == null) {
             return;
         }
         mMilkView.setSelectedMilk(milk);
+    }
+    
+    public void changeSelectedPowder(Powder powder) {
+        if (mPowderView == null) {
+            return;
+        }
+        mPowderView.setSelectedPowder(powder);
     }
 }

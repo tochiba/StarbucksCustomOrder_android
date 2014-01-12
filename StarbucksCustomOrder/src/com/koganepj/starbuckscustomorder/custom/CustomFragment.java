@@ -19,6 +19,7 @@ import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 import com.koganepj.starbuckscustomorder.model.Jelly;
 import com.koganepj.starbuckscustomorder.model.Milk;
+import com.koganepj.starbuckscustomorder.model.Powder;
 import com.koganepj.starbuckscustomorder.parse.CalorieFinder;
 import com.koganepj.starbuckscustomorder.parse.CoffeeFinder;
 import com.koganepj.starbuckscustomorder.parse.PriceFinder;
@@ -95,6 +96,10 @@ public class CustomFragment extends Fragment {
     
     public void changeMilk(Milk milk) {
         mCustomizeSelectView.changeSelectedMilk(milk);
+    }
+    
+    public void changePowder(Powder powder) {
+        mCustomizeSelectView.changeSelectedPowder(powder);
     }
     
 }
