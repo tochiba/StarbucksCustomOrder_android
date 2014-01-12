@@ -157,7 +157,10 @@ public class CustomFragment extends Fragment implements OnChangeSizeListener {
 
     @Override
     public void changeSize(Size size) {
-        Log.d("test", "size : " + size.getSize());
+        mCustomizeDataHolder.changeSize(size);
+        
+        mCalorieText.setText(mCustomizeDataHolder.getCalorie() + "kcal");
+        mPriceText.setText(mCustomizeDataHolder.getPrice() + "円");
     }
     
 }

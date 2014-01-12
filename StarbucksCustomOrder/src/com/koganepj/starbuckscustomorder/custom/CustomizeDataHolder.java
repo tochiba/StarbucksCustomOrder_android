@@ -33,6 +33,7 @@ class CustomizeDataHolder {
     private Sauce mSauce;
     private Syrup mSyrup;
     private WhippedCream mWhippedCream;
+    private Size mSize;
     
     public CustomizeDataHolder(Coffee coffee, PriceFinder priceFinder, CalorieFinder calorieFinder) {
         mCoffee = coffee;
@@ -45,11 +46,11 @@ class CustomizeDataHolder {
     
     void calcCalorieAndPrice(String prevName, String name) {
         if (prevName != null) {
-            Price mPrevPrice = mPriceFinder.getPrice(prevName);
-            Calorie mPrevCalorie = mCalorieFinder.getCalorie(prevName);
+            Price prevPrice = mPriceFinder.getPrice(prevName);
+            Calorie prevCalorie = mCalorieFinder.getCalorie(prevName);
             
-            mCurrentPrice -= mPrevPrice.getPrice();
-            mCurrentCalorie -= mPrevCalorie.getCalorie();
+            mCurrentPrice -= prevPrice.getPrice();
+            mCurrentCalorie -= prevCalorie.getCalorie();
         }
         
         Price price = mPriceFinder.getPrice(name);
@@ -108,6 +109,19 @@ class CustomizeDataHolder {
     }
 
     public void changeSize(Size size) {
+        if (mSize != null) {
+            Price prevPrice = mPriceFinder.getSizePrice(mCoffee, mSize);
+            Calorie prevCalorie = mCalorieFinder.getCoffeeSizeCalorie(mCoffee, mSize);
+            
+            mCurrentPrice -= prevPrice.getPrice();
+            mCurrentCalorie -= prevCalorie.getCalorie();
+        }
+        Price price = mPriceFinder.getSizePrice(mCoffee, size);
+        Calorie calorie = mCalorieFinder.getCoffeeSizeCalorie(mCoffee, size);
+        
+        mCurrentPrice = price.getPrice();
+        mCurrentCalorie = calorie.getCalorie();
+        mSize = size;
     }
     
     public int getCalorie() {
