@@ -11,31 +11,39 @@ import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.order.view.UploadView;
 
 public class OrderFragment extends Fragment {
+	private String mOrder;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_order, null);
-		
-		View seeOrder = view.findViewById(R.id.ImageSeeOrder);
-		View talkOrder = view.findViewById(R.id.ImageTalkOrder);
-		View uploadOrder = view.findViewById(R.id.ImageUploadOrder);
-		View uploadOrderView = view.findViewById(R.id.LayoutUploadOrder);
-		
-		seeOrder.setOnClickListener(new SeeOrderClickListener());
-		talkOrder.setOnClickListener(new TalkOrderClickListener());
-		
-		uploadOrder.setOnClickListener(new UploadOrderClickListener(uploadOrderView));
-		
 		return view;
 	}
 	
 	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		
+		mOrder = ((OrderActivity) getActivity()).getOrder();
+		
+		View seeOrder = getView().findViewById(R.id.ImageSeeOrder);
+		View talkOrder = getView().findViewById(R.id.ImageTalkOrder);
+		View uploadOrder = getView().findViewById(R.id.ImageUploadOrder);
+		View uploadOrderView = getView().findViewById(R.id.LayoutUploadOrder);
+
+		seeOrder.setOnClickListener(new SeeOrderClickListener());
+		talkOrder.setOnClickListener(new TalkOrderClickListener(getActivity(), mOrder));
+
+		uploadOrder.setOnClickListener(new UploadOrderClickListener(
+				uploadOrderView));
+	}
+
+	@Override
 	public void onResume() {
 		super.onResume();
-		
-		String order = ((OrderActivity)getActivity()).getOrder();
-		((TextView)getView().findViewById(R.id.TextOrder)).setText(order);
-		((UploadView)getView().findViewById(R.id.LayoutUploadOrder)).setHashTag(order.replaceAll(" ", ""));
+
+		((TextView) getView().findViewById(R.id.TextOrder)).setText(mOrder);
+		((UploadView) getView().findViewById(R.id.LayoutUploadOrder))
+				.setHashTag(mOrder.replaceAll(" ", ""));
 	}
 }
