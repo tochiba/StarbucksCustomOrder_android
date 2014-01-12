@@ -1,5 +1,7 @@
 package com.koganepj.starbuckscustomorder.custom;
 
+import android.content.Context;
+
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Calorie;
 import com.koganepj.starbuckscustomorder.model.Coffee;
@@ -12,6 +14,7 @@ import com.koganepj.starbuckscustomorder.model.Price;
 import com.koganepj.starbuckscustomorder.model.Sauce;
 import com.koganepj.starbuckscustomorder.model.Size;
 import com.koganepj.starbuckscustomorder.model.Syrup;
+import com.koganepj.starbuckscustomorder.model.Temperature;
 import com.koganepj.starbuckscustomorder.model.WhippedCream;
 import com.koganepj.starbuckscustomorder.parse.CalorieFinder;
 import com.koganepj.starbuckscustomorder.parse.PriceFinder;
@@ -132,7 +135,22 @@ class CustomizeDataHolder {
         return mCurrentPrice;
     }
     
-    public CustomizeCoffee getCustomizeCoffe() {
+    public CustomizeCoffee getCustomizeCoffe(Context context, Temperature temperature) {
         return null;
+//        return new CustomizeCoffee(
+//                context,
+//                mCoffee,
+//                temperature,
+//                mSize,
+//                new Shot(1),
+//                mBase,
+//                mSyrup,
+//                mSauce,
+//                mPowder,
+//                mJelly,
+//                mMilk,
+//                mWhippedCream,
+//                mEspresso,
+//                null);
     }
 }
