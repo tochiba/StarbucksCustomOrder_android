@@ -10,6 +10,7 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.parse.CoffeeListParser;
 import com.koganepj.starbuckscustomorder.view.menu.adapter.MenuAdapter;
@@ -22,13 +23,17 @@ class ModeChangeListener implements OnCheckedChangeListener {
     private Context mContext;
     private ViewGroup mFrameLayout;
     private LayoutInflater mInflater;
+    private AdmobWrapper mHeaderAdWrapper;
+    private AdmobWrapper mFooterAdWrapper;
     
     private MenuAdapter mMenuAdapter;
     
-    public ModeChangeListener(Context context, ViewGroup frameLayout) {
+    public ModeChangeListener(Context context, ViewGroup frameLayout, AdmobWrapper headerAdWrapper, AdmobWrapper footerWraper) {
         mContext = context;
         mFrameLayout = frameLayout;
         mInflater = LayoutInflater.from(context);
+        mHeaderAdWrapper = headerAdWrapper;
+        mFooterAdWrapper = footerWraper;
         
         prepareAdapter();
     }
@@ -45,6 +50,10 @@ class ModeChangeListener implements OnCheckedChangeListener {
     
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
+    	// 広告の更新
+    	mHeaderAdWrapper.loadAd();
+    	mFooterAdWrapper.loadAd();
+    	
         if (checkedId == R.id.RadioSimple) {//シンプルモード
             //ListViewの入れ替え
             mFrameLayout.removeAllViews();
@@ -53,7 +62,10 @@ class ModeChangeListener implements OnCheckedChangeListener {
             listView.setOnItemClickListener(new OnRowClickListener());
             
             mMenuAdapter.setModeTo(MenuMode.SIMPLE);
+            listView.addHeaderView(mHeaderAdWrapper.getAdView());
+            listView.addFooterView(mFooterAdWrapper.getAdView());
             listView.setAdapter(mMenuAdapter);
+            
             return;
         }
         
@@ -65,6 +77,8 @@ class ModeChangeListener implements OnCheckedChangeListener {
             listView.setOnItemClickListener(new OnRowClickListener());
 
             mMenuAdapter.setModeTo(MenuMode.VISUAL);
+            listView.addHeaderView(mHeaderAdWrapper.getAdView());
+            listView.addFooterView(mFooterAdWrapper.getAdView());
             listView.setAdapter(mMenuAdapter);
             return;
         }
