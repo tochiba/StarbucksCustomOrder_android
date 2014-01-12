@@ -21,13 +21,13 @@ public class EspressoCustomizeSelectView extends FrameLayout {
     public EspressoCustomizeSelectView(Context context) {
         super(context);
         
+        //Viewの初期設定
         LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.layout_custom_customize_select, this);
-        
         mCheckBox = (CheckBox)findViewById(R.id.CheckBox);
     }
 
-    public void setSelectEspressos(ArrayList<Espresso> espressos) {
+    public void setEspressos(ArrayList<Espresso> espressos) {
         mEspressos = espressos;
         mListener = new OnEspressoCustomizeClickListener(espressos);
         mCheckBox.setOnClickListener(mListener);

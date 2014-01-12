@@ -33,7 +33,7 @@ public class CustomizeSelectView extends LinearLayout {
         if (coffee.espresso.size() != 0) {
             mEspressoView = new EspressoCustomizeSelectView(getContext());
             mEspressoView.setText("Espresso");
-            mEspressoView.setSelectEspressos(coffee.espresso);
+            mEspressoView.setEspressos(coffee.espresso);
             frameViews.get(currentFrameIndex).addView(mEspressoView);
             currentFrameIndex++;
         }

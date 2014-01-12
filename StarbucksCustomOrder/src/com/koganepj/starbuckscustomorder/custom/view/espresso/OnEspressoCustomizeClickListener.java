@@ -25,14 +25,16 @@ public class OnEspressoCustomizeClickListener implements OnClickListener {
     
     @Override
     public void onClick(View v) {
-        FragmentManager manager = ((Activity)v.getContext()).getFragmentManager();
         
+        //パラメータを渡す
         Bundle bundle = new Bundle();
         bundle.putSerializable(SelectEspressoDialogFragment.KEY_ITEMS, mEspressos);
         if (mSelectedEspresso != null) {
             bundle.putSerializable(SelectEspressoDialogFragment.KEY_SELECTED_ITEM, mSelectedEspresso);
         }
         
+        //ダイアログの表示
+        FragmentManager manager = ((Activity)v.getContext()).getFragmentManager();
         SelectEspressoDialogFragment fragment = new SelectEspressoDialogFragment();
         fragment.setArguments(bundle);
         fragment.show(manager, null);
