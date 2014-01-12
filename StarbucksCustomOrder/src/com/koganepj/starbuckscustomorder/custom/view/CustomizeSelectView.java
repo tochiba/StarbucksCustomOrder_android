@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.custom.view.base.BaseCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.espresso.EspressoCustomizeSelectView;
+import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 
@@ -18,6 +20,7 @@ public class CustomizeSelectView extends LinearLayout {
     private LayoutInflater mInflater;
     
     private EspressoCustomizeSelectView mEspressoView;
+    private BaseCustomizeSelectView mBaseView;
     
     public CustomizeSelectView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -29,6 +32,14 @@ public class CustomizeSelectView extends LinearLayout {
     public void setCoffeeToCreateView(Coffee coffee) {
         ArrayList<ViewGroup> frameViews = getFrameViews();
         int currentFrameIndex = 0;
+        
+        if (coffee.base.size() != 0) {
+            mBaseView = new BaseCustomizeSelectView(getContext());
+            mBaseView.setText("Base");
+            mBaseView.setBases(coffee.base);
+            frameViews.get(currentFrameIndex).addView(mBaseView);
+            currentFrameIndex++;
+        }
         
         if (coffee.espresso.size() != 0) {
             mEspressoView = new EspressoCustomizeSelectView(getContext());
@@ -61,4 +72,10 @@ public class CustomizeSelectView extends LinearLayout {
         mEspressoView.setSelectedEspresso(espresso);
     }
     
+    public void changeSelectedBase(Base base) {
+        if (mBaseView == null) {
+            return;
+        }
+        mBaseView.setSelectedBase(base);
+    }
 }

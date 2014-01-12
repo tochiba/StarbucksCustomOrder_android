@@ -13,6 +13,7 @@ import com.koganepj.starbuckscustomorder.custom.animation.OnShowSelectToppingVie
 import com.koganepj.starbuckscustomorder.custom.view.CustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.SizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView;
+import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Espresso;
@@ -78,7 +79,12 @@ public class CustomFragment extends Fragment {
         
         mPriceText.setText(mCoffee.price.getPrice() + espressoPrice + "円");
         mCalorieText.setText(mCoffee.calorie.getCalorie() + espressoCalorie + "kcal");
+    }
+    
+    public void changeBase(Base base) {
+        mCustomizeSelectView.changeSelectedBase(base);
         
+        //TODO 価格とカロリーは他のトッピングも考慮しなければ！！
     }
     
 }

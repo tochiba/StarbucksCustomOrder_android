@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
+import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 
@@ -32,6 +33,10 @@ public class CustomActivity extends Activity {
     
     public void changeEspresso(Espresso espresso) {
         mCustomFragment.changeEspresso(espresso);//この呼び方だとFragment再生成時はカスタマイズが初期化されるが許容範囲とする
+    }
+    
+    public void changeBase(Base base) {
+        mCustomFragment.changeBase(base);
     }
     
     @Override
