@@ -1,7 +1,6 @@
 package com.koganepj.starbuckscustomorder.custom.view;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -32,16 +31,12 @@ public class CustomizeSelectView extends LinearLayout {
         int currentFrameIndex = 0;
         
         if (coffee.espresso.size() != 0) {
-            setEspressoItem(frameViews, currentFrameIndex, "Espresso", coffee.espresso);
+            mEspressoView = new EspressoCustomizeSelectView(getContext());
+            mEspressoView.setText("Espresso");
+            mEspressoView.setSelectEspressos(coffee.espresso);
+            frameViews.get(currentFrameIndex).addView(mEspressoView);
             currentFrameIndex++;
         }
-    }
-    
-    void setEspressoItem(List<ViewGroup> frameViews, int currentFrameIndex, String text, ArrayList<Espresso> detailItems) {
-        mEspressoView = new EspressoCustomizeSelectView(getContext());
-        mEspressoView.setText(text);
-        mEspressoView.setSelectEspressos(detailItems);
-        frameViews.get(currentFrameIndex).addView(mEspressoView);
     }
     
     ArrayList<ViewGroup> getFrameViews() {
