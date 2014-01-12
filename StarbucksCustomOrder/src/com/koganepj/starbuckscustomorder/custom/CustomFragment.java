@@ -17,6 +17,7 @@ import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Espresso;
+import com.koganepj.starbuckscustomorder.model.Jelly;
 import com.koganepj.starbuckscustomorder.parse.CalorieFinder;
 import com.koganepj.starbuckscustomorder.parse.CoffeeFinder;
 import com.koganepj.starbuckscustomorder.parse.PriceFinder;
@@ -85,6 +86,10 @@ public class CustomFragment extends Fragment {
         mCustomizeSelectView.changeSelectedBase(base);
         
         //TODO 価格とカロリーは他のトッピングも考慮しなければ！！
+    }
+    
+    public void changeJelly(Jelly jelly) {
+        mCustomizeSelectView.changeSelectedJelly(jelly);
     }
     
 }

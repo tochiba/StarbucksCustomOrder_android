@@ -8,6 +8,7 @@ import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Espresso;
+import com.koganepj.starbuckscustomorder.model.Jelly;
 
 public class CustomActivity extends Activity {
     
@@ -37,6 +38,10 @@ public class CustomActivity extends Activity {
     
     public void changeBase(Base base) {
         mCustomFragment.changeBase(base);
+    }
+    
+    public void changeJelly(Jelly jelly) {
+        mCustomFragment.changeJelly(jelly);
     }
     
     @Override

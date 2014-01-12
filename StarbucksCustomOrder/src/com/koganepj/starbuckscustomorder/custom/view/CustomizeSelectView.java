@@ -11,9 +11,11 @@ import android.widget.LinearLayout;
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.custom.view.base.BaseCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.espresso.EspressoCustomizeSelectView;
+import com.koganepj.starbuckscustomorder.custom.view.jelly.JellyCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;
+import com.koganepj.starbuckscustomorder.model.Jelly;
 
 public class CustomizeSelectView extends LinearLayout {
     
@@ -21,6 +23,7 @@ public class CustomizeSelectView extends LinearLayout {
     
     private EspressoCustomizeSelectView mEspressoView;
     private BaseCustomizeSelectView mBaseView;
+    private JellyCustomizeSelectView mJellyView;
     
     public CustomizeSelectView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -46,6 +49,14 @@ public class CustomizeSelectView extends LinearLayout {
             mEspressoView.setText("Espresso");
             mEspressoView.setEspressos(coffee.espresso);
             frameViews.get(currentFrameIndex).addView(mEspressoView);
+            currentFrameIndex++;
+        }
+        
+        if (coffee.jelly.size() != 0) {
+            mJellyView = new JellyCustomizeSelectView(getContext());
+            mJellyView.setText("Jelly");
+            mJellyView.setJellies(coffee.jelly);
+            frameViews.get(currentFrameIndex).addView(mJellyView);
             currentFrameIndex++;
         }
     }
@@ -77,5 +88,12 @@ public class CustomizeSelectView extends LinearLayout {
             return;
         }
         mBaseView.setSelectedBase(base);
+    }
+    
+    public void changeSelectedJelly(Jelly jelly) {
+        if (mBaseView == null) {
+            return;
+        }
+        mJellyView.setSelectedJelly(jelly);
     }
 }
