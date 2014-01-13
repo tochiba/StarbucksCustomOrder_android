@@ -2,11 +2,17 @@ package com.koganepj.starbuckscustomorder.order;
 
 import java.util.HashMap;
 
+import com.koganepj.starbuckscustomorder.R;
+
 import net.gimite.jatts.JapaneseTextToSpeech;
 import android.app.Activity;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Toast;
 
 public class TalkOrderClickListener implements OnClickListener {
 	private Activity mActivity;
@@ -23,6 +29,19 @@ public class TalkOrderClickListener implements OnClickListener {
 		HashMap<String, String> params = new HashMap<String, String>();
 		params.put(JapaneseTextToSpeech.KEY_PARAM_SPEAKER, "female01");
 		speech.speak(mOrder, TextToSpeech.QUEUE_FLUSH, params);
+		
+		showDescriptionToast();
+	}
+	
+	void showDescriptionToast() {
+	    ConnectivityManager connectivityManager = (ConnectivityManager)mActivity.getSystemService(Context.CONNECTIVITY_SERVICE);
+	    NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+	    if (networkInfo != null && networkInfo.isConnected()) {
+	        Toast.makeText(mActivity, R.string.order_will_read_jumon, Toast.LENGTH_SHORT).show();
+	        return;
+	    }
+        Toast.makeText(mActivity, R.string.order_cant_read_jumon, Toast.LENGTH_LONG).show();
+	    
 	}
 
 }
