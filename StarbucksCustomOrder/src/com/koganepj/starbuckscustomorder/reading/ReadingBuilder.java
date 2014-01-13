@@ -27,7 +27,7 @@ public class ReadingBuilder {
 		builder.append(getSize());
 		builder.append(getSyrup());
 		builder.append(getMilk());
-		
+
 		// カスタム
 		builder.append(getExShot());
 		builder.append(getNonSyrup());
@@ -65,17 +65,19 @@ public class ReadingBuilder {
 		return String.format("%s ", readTemperacture);
 	}
 
-	 private String getShot() {
-		 if (TextUtils.equals("アドリストレットショット", mCustomizeCoffee.espresso.getEspresso())) {
-			 mExShot = "アドリストレットショット";
-			 return "";
-		 }
-		 
-		 if (!TextUtils.equals("アドショット", mCustomizeCoffee.espresso.getEspresso())) { 
-			 // 変更なし、リストレット
-			 return getReadingFormat(mCustomizeCoffee.espresso.getEspresso());
-		 }
-		
+	private String getShot() {
+		String espresso = NSDictionaryHelper.stringForKey(getReadingDict(),
+				mCustomizeCoffee.espresso.getEspresso());
+		if (TextUtils.equals("アドリストレットショット", espresso)) {
+			mExShot = "アドリストレットショット";
+			return "";
+		}
+
+		if (!TextUtils.equals("アドショット", espresso)) {
+			// 変更なし、リストレット
+			return getReadingFormat(espresso);
+		}
+
 		String readingShot;
 		switch (mCustomizeCoffee.shot.getShot()) {
 		case 0:
@@ -95,24 +97,28 @@ public class ReadingBuilder {
 			readingShot = "";
 			break;
 		}
-		
+
 		return getReadingFormat(readingShot);
-	 }
+	}
 
 	private String getSize() {
 		// サイズはそのまま入れる
 		return String.format("%s ", NSDictionaryHelper.stringForKey(
 				getReadingDict(), mCustomizeCoffee.size.getSize()));
 	}
-	
+
 	private String getSyrup() {
-		String readingSyrup = NSDictionaryHelper.stringForKey(getReadingDict(), mCustomizeCoffee.syrup.getSyrup());
-		
+		if (mCustomizeCoffee.syrup == null) {
+			return "";
+		}
+		String readingSyrup = NSDictionaryHelper.stringForKey(getReadingDict(),
+				mCustomizeCoffee.syrup.getSyrup());
+
 		if (TextUtils.equals("ノンシロップ", readingSyrup)) {
 			mNonSyrup = "ノンシロップ";
 			return "";
-		} 
-		
+		}
+
 		return getReadingFormat(readingSyrup);
 	}
 
@@ -124,7 +130,7 @@ public class ReadingBuilder {
 	/**
 	 * 以下、カスタマイズ項目
 	 */
-	
+
 	private String getExShot() {
 		return getReadingFormat(mExShot);
 	}
@@ -132,28 +138,36 @@ public class ReadingBuilder {
 	private String getNonSyrup() {
 		return getReadingFormat(mNonSyrup);
 	}
-	
+
 	private String getSauce() {
-		return getReadingFormat(NSDictionaryHelper.stringForKey(
+		if (mCustomizeCoffee.sauce == null) {
+			return "";
+		}
+ 		return getReadingFormat(NSDictionaryHelper.stringForKey(
 				getReadingDict(), mCustomizeCoffee.sauce.getSauce()));
 	}
 
 	private String getPowder() {
+		if (mCustomizeCoffee.powder == null) {
+			return "";
+		}
 		return getReadingFormat(NSDictionaryHelper.stringForKey(
 				getReadingDict(), mCustomizeCoffee.powder.getPowder()));
 
 	}
 
 	private String getBase() {
-		if (mCustomizeCoffee.base.getBase() == null) {
+		if (mCustomizeCoffee.base == null) {
 			return "";
 		}
-		
 		return getReadingFormat(NSDictionaryHelper.stringForKey(
 				getReadingDict(), mCustomizeCoffee.base.getBase()));
 	}
 
 	private String getJelly() {
+		if (mCustomizeCoffee.jelly == null) {
+			return "";
+		}
 		return getReadingFormat(NSDictionaryHelper.stringForKey(
 				getReadingDict(), mCustomizeCoffee.jelly.getJelly()));
 	}
