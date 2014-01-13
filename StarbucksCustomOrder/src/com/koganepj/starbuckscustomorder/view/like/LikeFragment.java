@@ -5,9 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView.FindListener;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
@@ -33,7 +31,7 @@ public class LikeFragment extends Fragment {
         // 広告
         mWrapper = new AdmobWrapper(getActivity()); 
         ((FrameLayout) view.findViewById(R.id.FrameAd)).addView(mWrapper.getAdView());
-        
+        mWrapper.loadAd();
         return view;
     }
     

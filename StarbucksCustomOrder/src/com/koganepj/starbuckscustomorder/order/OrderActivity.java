@@ -29,6 +29,7 @@ public class OrderActivity extends Activity {
 
         mWrapper = new AdmobWrapper(this); 
         ((FrameLayout) findViewById(R.id.FrameAd)).addView(mWrapper.getAdView());
+		mWrapper.loadAd();
 	}
 	
 	String getOrder() {
@@ -37,6 +38,11 @@ public class OrderActivity extends Activity {
 	
 	Photo getPhoto() {
 	    return mPhoto;
+	}
+	
+	@Override
+	protected void onStart() {
+		super.onStart();
 	}
 	
 	@Override

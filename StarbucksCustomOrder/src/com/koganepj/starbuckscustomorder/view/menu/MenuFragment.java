@@ -27,6 +27,8 @@ public class MenuFragment extends Fragment {
         mFooterAdWrapper = new AdmobWrapper(getActivity());
         
         modeRadioGroup.setOnCheckedChangeListener(new ModeChangeListener(getActivity(), frameLayout, mHeaderAdWrapper, mFooterAdWrapper));
+        mHeaderAdWrapper.loadAd();
+        mFooterAdWrapper.loadAd();
         
         //初期表示
         modeRadioGroup.check(R.id.RadioSimple);

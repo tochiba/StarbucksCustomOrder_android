@@ -37,6 +37,7 @@ public class CustomActivity extends Activity {
 
         mWrapper = new AdmobWrapper(this); 
         ((FrameLayout) findViewById(R.id.FrameAd)).addView(mWrapper.getAdView());
+		mWrapper.loadAd();
     }
     
     CoffeeName getCoffeeName() {
