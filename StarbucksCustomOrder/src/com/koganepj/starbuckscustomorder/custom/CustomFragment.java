@@ -73,19 +73,20 @@ public class CustomFragment extends Fragment implements OnChangeSizeListener {
         Coffee coffee = finder.find();
         mCustomizeDataHolder = new CustomizeDataHolder(coffee, new PriceFinder(getActivity()), new CalorieFinder(getActivity()));
         
-        //呪文生成ボタンの動作設定
-        View magicButton = getView().findViewById(R.id.ButtonMagic);
-        magicButton.setOnClickListener(new MagicClickListener(mCustomizeDataHolder));
-        
         //表示設定
         ((ImageView)getView().findViewById(R.id.ImageCoffee)).setImageResource(coffee.photo.getPhoto());
         ((TextView)getView().findViewById(R.id.TextCoffeeName)).setText(coffee.name.getCoffeeName());
         mPriceText.setText(coffee.price.getPrice() + "円");
         mCalorieText.setText(coffee.calorie.getCalorie() + "kcal");
-        ((TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect)).setTempureture(coffee.temperatures);
+        TempuretureSelectView tempuretureSelectView = (TempuretureSelectView)getView().findViewById(R.id.LayoutTempuretureSelect);
+        tempuretureSelectView.setTempureture(coffee.temperatures);
         ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setSize(coffee.size);
         ((SizeSelectView)getView().findViewById(R.id.LayoutSizeSelect)).setOnChangeSizeListener(this);
         mCustomizeSelectView.setCoffeeToCreateView(coffee);
+        
+        //呪文生成ボタンの動作設定
+        View magicButton = getView().findViewById(R.id.ButtonMagic);
+        magicButton.setOnClickListener(new MagicClickListener(mCustomizeDataHolder, tempuretureSelectView));
     }
     
     public void changeEspresso(Espresso espresso) {
