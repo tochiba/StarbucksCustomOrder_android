@@ -34,11 +34,11 @@ public class OrderFragment extends Fragment {
 		View seeOrder = getView().findViewById(R.id.ImageSeeOrder);
 		View talkOrder = getView().findViewById(R.id.ImageTalkOrder);
 		View uploadOrder = getView().findViewById(R.id.ImageUploadOrder);
-		View uploadOrderView = getView().findViewById(R.id.LayoutUploadOrder);
+		//View uploadOrderView = getView().findViewById(R.id.LayoutUploadOrder);
 
 		seeOrder.setOnClickListener(new SeeOrderClickListener(replacedOrder));
 		talkOrder.setOnClickListener(new TalkOrderClickListener(getActivity(), order));
-		uploadOrder.setOnClickListener(new UploadOrderClickListener(uploadOrderView));
+		uploadOrder.setOnClickListener(new UploadOrderClickListener(replacedOrder));
 	}
 
 	@Override
