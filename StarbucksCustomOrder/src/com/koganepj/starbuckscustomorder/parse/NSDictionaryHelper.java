@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.text.TextUtils;
 
 import com.dd.plist.NSArray;
 import com.dd.plist.NSDictionary;
@@ -40,7 +41,12 @@ public class NSDictionaryHelper {
 	 * @return String
 	 */
 	public static String stringForKey(NSDictionary dict, String key) {
-		return ((NSString) dict.objectForKey(key)).getContent();
+		NSString value = (NSString) dict.objectForKey(key);
+		
+		if (value == null) {
+			return "";
+		}
+		return value.toString();
 	}
 
 	/**
@@ -52,6 +58,9 @@ public class NSDictionaryHelper {
 	 */
 	public static int intForKey(NSDictionary dict, String key) {
 		final String str = stringForKey(dict, key);
+		if (TextUtils.isEmpty(str)) {
+			return 0;
+		}
 		return Integer.parseInt(str);
 	}
 
