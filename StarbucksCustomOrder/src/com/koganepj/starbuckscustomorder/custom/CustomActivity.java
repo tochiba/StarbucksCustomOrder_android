@@ -6,9 +6,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
-import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
 import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
+import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
 import com.koganepj.starbuckscustomorder.model.Espresso;

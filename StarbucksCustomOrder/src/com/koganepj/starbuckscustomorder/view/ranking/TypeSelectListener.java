@@ -6,9 +6,9 @@ import java.util.Collections;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
 import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
+import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.view.ranking.adapter.RankingAdapter;
 import com.koganepj.starbuckscustomorder.view.ranking.social.ModelSearcher;

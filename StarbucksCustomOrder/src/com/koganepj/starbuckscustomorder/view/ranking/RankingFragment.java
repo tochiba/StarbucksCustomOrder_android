@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.RadioGroup;
 
-import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
+import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.parse.CoffeeListParser;
 import com.koganepj.starbuckscustomorder.view.ranking.adapter.RankingAdapter;

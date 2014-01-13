@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.model.Hotness;
 import com.koganepj.starbuckscustomorder.model.Sweetness;
 

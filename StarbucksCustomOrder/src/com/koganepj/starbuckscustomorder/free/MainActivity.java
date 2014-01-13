@@ -1,4 +1,4 @@
-package com.koganepj.starbuckscustomorder;
+package com.koganepj.starbuckscustomorder.free;
 
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;

@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
+import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.parse.CoffeeNameFinder;
 import com.koganepj.starbuckscustomorder.view.like.matrix.MatrixSelectorLayout;
 

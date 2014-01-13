@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.free.R;
 
 public class UploadView extends LinearLayout {
 	private LayoutInflater mInflater;
