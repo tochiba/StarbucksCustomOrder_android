@@ -45,6 +45,7 @@
     
     <!-- 広告 -->
     <FrameLayout
+        android:visibility="gone"
         android:id="@+id/FrameAd" 
         android:layout_width="wrap_content"
         android:layout_height="50dip" 
