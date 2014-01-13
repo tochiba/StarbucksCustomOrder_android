@@ -5,13 +5,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
 import com.koganepj.starbuckscustomorder.parse.CoffeeNameFinder;
 import com.koganepj.starbuckscustomorder.view.like.matrix.MatrixSelectorLayout;
 
 public class LikeFragment extends Fragment {
-    
+	private AdmobWrapper mWrapper;
+	
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_like, null);
@@ -25,7 +28,23 @@ public class LikeFragment extends Fragment {
         View okButton = view.findViewById(R.id.ButtonOk);
         okButton.setOnClickListener(new OnDecideButtonClickListener(matrixSelectorLayout, finder));
         
+        // 広告
+        mWrapper = new AdmobWrapper(getActivity()); 
+        ((FrameLayout) view.findViewById(R.id.FrameAd)).addView(mWrapper.getAdView());
+        mWrapper.loadAd();
         return view;
     }
     
+    @Override
+    public void onResume() {
+    	super.onResume();
+    	
+        mWrapper.loadAd();
+    }
+    
+    @Override
+    public void onDestroy() {
+    	mWrapper.destroy();
+    	super.onDestroy();
+    }
 }

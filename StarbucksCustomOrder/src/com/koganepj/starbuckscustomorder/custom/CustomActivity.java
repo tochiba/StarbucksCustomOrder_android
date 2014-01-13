@@ -2,8 +2,10 @@ package com.koganepj.starbuckscustomorder.custom;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.FrameLayout;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
 import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;
@@ -21,6 +23,7 @@ public class CustomActivity extends Activity {
     
     private CustomFragment mCustomFragment;
     private CoffeeName mCoffeeName;
+	private AdmobWrapper mWrapper;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,10 @@ public class CustomActivity extends Activity {
         mCoffeeName = (CoffeeName)getIntent().getSerializableExtra(KEY_PARAM_COFFEENAME);
         
         findViewById(R.id.TextBack).setOnClickListener(new BackTextClickListener(this));
+
+        mWrapper = new AdmobWrapper(this); 
+        ((FrameLayout) findViewById(R.id.FrameAd)).addView(mWrapper.getAdView());
+		mWrapper.loadAd();
     }
     
     CoffeeName getCoffeeName() {
@@ -79,6 +86,18 @@ public class CustomActivity extends Activity {
     protected void onStop() {
         super.onStop();
         FlurryWrapper.onEndSession(this);
+    }
+    
+    @Override
+    protected void onResume() {
+		mWrapper.loadAd();
+    	super.onResume();
+    }
+    
+    @Override
+    protected void onDestroy() {
+		mWrapper.destroy();
+    	super.onDestroy();
     }
     
 }
