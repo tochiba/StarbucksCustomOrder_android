@@ -1,5 +1,7 @@
 package com.koganepj.starbuckscustomorder.custom;
 
+import java.util.HashMap;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.FrameLayout;
@@ -38,6 +40,10 @@ public class CustomActivity extends Activity {
         mWrapper = new AdmobWrapper(this); 
         ((FrameLayout) findViewById(R.id.FrameAd)).addView(mWrapper.getAdView());
 		mWrapper.loadAd();
+        
+        HashMap<String, String> params = new HashMap<String, String>();
+        params.put("coffee_name", mCoffeeName.getCoffeeName());
+        FlurryWrapper.logEvent("custom_onCreate", params);
     }
     
     CoffeeName getCoffeeName() {

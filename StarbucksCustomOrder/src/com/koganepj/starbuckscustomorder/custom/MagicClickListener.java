@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView;
+import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 import com.koganepj.starbuckscustomorder.model.CustomizeCoffee;
 import com.koganepj.starbuckscustomorder.order.OrderActivity;
 
@@ -20,6 +21,8 @@ class MagicClickListener implements OnClickListener {
     
     @Override
     public void onClick(View v) {
+        FlurryWrapper.logEvent("custom_goto_order");
+        
         Intent intent = new Intent(v.getContext(), OrderActivity.class);
 
         CustomizeCoffee customizeCoffe = mCustomizeDataHolder.getCustomizeCoffe(v.getContext(), mTempuretureSelectView.getSelectedTempureture());

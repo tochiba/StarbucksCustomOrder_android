@@ -1,11 +1,14 @@
 package com.koganepj.starbuckscustomorder.order;
 
+import java.util.HashMap;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
+import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 import com.koganepj.starbuckscustomorder.model.Photo;
 
 public class OrderActivity extends Activity {
@@ -30,6 +33,10 @@ public class OrderActivity extends Activity {
         mWrapper = new AdmobWrapper(this); 
         ((FrameLayout) findViewById(R.id.FrameAd)).addView(mWrapper.getAdView());
 		mWrapper.loadAd();
+		
+		HashMap<String, String> params = new HashMap<String, String>();
+		params.put("order", mOrder);
+		FlurryWrapper.logEvent("order_onCreate", params);
 	}
 	
 	String getOrder() {

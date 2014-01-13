@@ -5,6 +5,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.BounceInterpolator;
 
+import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
+
 public class OnShowSelectToppingViewListener implements OnClickListener {
     
     private View mToppingSelectView;
@@ -21,6 +23,8 @@ public class OnShowSelectToppingViewListener implements OnClickListener {
     
     @Override
     public void onClick(View v) {
+        FlurryWrapper.logEvent("custom_start_customize");
+        
         int duration = 1000;
         BounceInterpolator interpolator = new BounceInterpolator();
         
