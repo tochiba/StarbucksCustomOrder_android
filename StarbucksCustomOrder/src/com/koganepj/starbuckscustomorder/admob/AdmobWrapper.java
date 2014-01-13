@@ -18,7 +18,7 @@ public class AdmobWrapper {
 	}
 	
 	public View getAdView() {
-		if (!PayTypeUtil.isPayVersion(mActivity.getApplicationContext())) {
+		if (PayTypeUtil.isPayVersion(mActivity.getApplicationContext())) {
 			return new View(mActivity);
 		}
 		if (mAdView == null) {
