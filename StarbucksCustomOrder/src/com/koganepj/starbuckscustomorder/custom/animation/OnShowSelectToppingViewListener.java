@@ -1,11 +1,9 @@
 package com.koganepj.starbuckscustomorder.custom.animation;
 
-import com.koganepj.starbuckscustomorder.R;
-
+import android.animation.ObjectAnimator;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
+import android.view.animation.BounceInterpolator;
 
 public class OnShowSelectToppingViewListener implements OnClickListener {
     
@@ -23,18 +21,29 @@ public class OnShowSelectToppingViewListener implements OnClickListener {
     
     @Override
     public void onClick(View v) {
-        Animation selectToppingAnimation = AnimationUtils.loadAnimation(v.getContext(), R.anim.animation_topping_select_view);
+        int duration = 1000;
+        BounceInterpolator interpolator = new BounceInterpolator();
+        
         mToppingSelectView.setVisibility(View.VISIBLE);
-        mToppingSelectView.startAnimation(selectToppingAnimation);
+        ObjectAnimator selectToppingAnimator = ObjectAnimator.ofFloat(mToppingSelectView, "y", -500f, 20f);
+        selectToppingAnimator.setDuration(duration);
+        selectToppingAnimator.setInterpolator(interpolator);
+        selectToppingAnimator.start();
         
-        Animation sizeSelectAnimation = AnimationUtils.loadAnimation(v.getContext(), R.anim.animation_size_select_view);
-        mSizeSelectView.startAnimation(sizeSelectAnimation);
+        ObjectAnimator sizeSelectAnimator = ObjectAnimator.ofFloat(mSizeSelectView, "y", mInfoView.getTop(), mSizeSelectView.getTop() + 630f);
+        sizeSelectAnimator.setDuration(duration);
+        sizeSelectAnimator.setInterpolator(interpolator);
+        sizeSelectAnimator.start();
         
-        Animation infoAnimation = AnimationUtils.loadAnimation(v.getContext(), R.anim.animation_info_view);
-        mInfoView.startAnimation(infoAnimation);
+        ObjectAnimator infoAnimator = ObjectAnimator.ofFloat(mInfoView, "y", mInfoView.getTop(), mInfoView.getTop() + 660f);
+        infoAnimator.setDuration(duration);
+        infoAnimator.setInterpolator(interpolator);
+        infoAnimator.start();
         
-        Animation imageAnimation = AnimationUtils.loadAnimation(v.getContext(), R.anim.animation_image_view);
-        mImageView.startAnimation(imageAnimation);
+        ObjectAnimator imageAnimator = ObjectAnimator.ofFloat(mImageView, "y", mImageView.getTop(), mImageView.getTop() + 680f);
+        imageAnimator.setDuration(duration);
+        imageAnimator.setInterpolator(interpolator);
+        imageAnimator.start();
     }
 
 }
