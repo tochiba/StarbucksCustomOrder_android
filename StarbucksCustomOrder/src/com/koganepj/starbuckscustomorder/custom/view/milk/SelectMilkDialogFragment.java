@@ -9,10 +9,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.widget.ListView;
 
-import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.custom.CustomActivity;
 import com.koganepj.starbuckscustomorder.custom.view.CustomizeAdapter;
 import com.koganepj.starbuckscustomorder.custom.view.CustomizeNameModel;
+import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.model.Milk;
 
 public class SelectMilkDialogFragment extends DialogFragment {

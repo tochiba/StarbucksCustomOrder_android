@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.parse.CoffeeNameFinder;
 import com.koganepj.starbuckscustomorder.view.like.matrix.MatrixSelectorLayout;
 

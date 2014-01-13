@@ -10,8 +10,8 @@ import android.util.SparseArray;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
+import com.koganepj.starbuckscustomorder.free.R;
 
 public class SettingActivity extends Activity implements OnClickListener {
     

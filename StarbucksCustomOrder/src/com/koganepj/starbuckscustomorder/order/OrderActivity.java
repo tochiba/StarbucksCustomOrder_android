@@ -5,8 +5,8 @@ import java.util.HashMap;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
+import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.model.Photo;
 
 public class OrderActivity extends Activity {

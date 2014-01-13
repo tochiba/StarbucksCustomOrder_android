@@ -2,8 +2,8 @@ package com.koganepj.starbuckscustomorder.order;
 
 import java.util.HashMap;
 
-import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
+import com.koganepj.starbuckscustomorder.free.R;
 
 import net.gimite.jatts.JapaneseTextToSpeech;
 import android.app.Activity;
