@@ -145,6 +145,10 @@ public class ReadingBuilder {
 	}
 
 	private String getBase() {
+		if (mCustomizeCoffee.base.getBase() == null) {
+			return "";
+		}
+		
 		return getReadingFormat(NSDictionaryHelper.stringForKey(
 				getReadingDict(), mCustomizeCoffee.base.getBase()));
 	}
