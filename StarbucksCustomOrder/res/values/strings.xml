@@ -40,4 +40,6 @@
     <string name="order_up_image">写真を選ぶ</string>
     <string name="order_up_cancel_image">写真をキャンセル</string>
     <string name="order_up_close">閉じる</string>
+    <string name="order_will_read_jumon">呪文を唱えます</string>
+    <string name="order_cant_read_jumon">呪文を唱えられません。\nネットワークに接続してください。</string>
 </resources>
