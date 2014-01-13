@@ -49,7 +49,7 @@ public class CustomFragment extends Fragment implements OnChangeSizeListener {
         View infoView = view.findViewById(R.id.LayoutInfo);
         View imageView = view.findViewById(R.id.LayoutImage);
         View toppingView = view.findViewById(R.id.ImageTopping);
-        toppingView.setOnClickListener(new OnShowSelectToppingViewListener(mCustomizeSelectView, sizeSelectView, infoView, imageView));
+        toppingView.setOnClickListener(new OnShowSelectToppingViewListener(view, mCustomizeSelectView, sizeSelectView, infoView, imageView));
         
         mPriceText = (TextView)view.findViewById(R.id.TextPrice);
         mCalorieText = (TextView)view.findViewById(R.id.TextCalorie);
