@@ -1,16 +1,25 @@
 package com.koganepj.starbuckscustomorder.order;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.view.View;
 import android.view.View.OnClickListener;
 
 public class SeeOrderClickListener implements OnClickListener {
-	
-	SeeOrderClickListener() {
-	}
+    
+    public static final String BASE_URL = "https://mobile.twitter.com/search?q=";
+    
+    private String mOrder;
+    
+    SeeOrderClickListener(String order) {
+        mOrder = order;
+    }
 
-	@Override
-	public void onClick(View v) {
-
-	}
+    @Override
+    public void onClick(View v) {
+        Uri uri = Uri.parse(BASE_URL + "%23" + mOrder);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        v.getContext().startActivity(intent);
+    }
 
 }

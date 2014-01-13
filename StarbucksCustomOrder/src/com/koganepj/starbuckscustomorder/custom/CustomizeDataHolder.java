@@ -9,9 +9,11 @@ import com.koganepj.starbuckscustomorder.model.CustomizeCoffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;
 import com.koganepj.starbuckscustomorder.model.Jelly;
 import com.koganepj.starbuckscustomorder.model.Milk;
+import com.koganepj.starbuckscustomorder.model.Photo;
 import com.koganepj.starbuckscustomorder.model.Powder;
 import com.koganepj.starbuckscustomorder.model.Price;
 import com.koganepj.starbuckscustomorder.model.Sauce;
+import com.koganepj.starbuckscustomorder.model.Shot;
 import com.koganepj.starbuckscustomorder.model.Size;
 import com.koganepj.starbuckscustomorder.model.Syrup;
 import com.koganepj.starbuckscustomorder.model.Temperature;
@@ -136,21 +138,133 @@ class CustomizeDataHolder {
     }
     
     public CustomizeCoffee getCustomizeCoffe(Context context, Temperature temperature) {
-        return null;
-//        return new CustomizeCoffee(
-//                context,
-//                mCoffee,
-//                temperature,
-//                mSize,
-//                new Shot(1),
-//                mBase,
-//                mSyrup,
-//                mSauce,
-//                mPowder,
-//                mJelly,
-//                mMilk,
-//                mWhippedCream,
-//                mEspresso,
-//                null);
+        return new CustomizeCoffee(
+                context,
+                mCoffee,
+                temperature,
+                getSize(),
+                getShot(),
+                getBase(),
+                getSyrup(),
+                getSauce(),
+                getPowder(),
+                getJelly(),
+                getMilk(),
+                getWhippedCream(),
+                getEspresso(),
+                null);
+    }
+    
+    Shot getShot() {
+        if (mCoffee.shot == null || mCoffee.shot.size() == 0) {
+            return null;
+        }
+        if (mSize == null) {
+            return mCoffee.shot.get(0);
+        }
+        
+        int shotIndex = 0;
+        if (mSize.getSize().equalsIgnoreCase("Short")) {
+            shotIndex = 0;
+        } else if (mSize.getSize().equalsIgnoreCase("Tall")) {
+            shotIndex = 1;
+        } else if (mSize.getSize().equalsIgnoreCase("Grande")) {
+            shotIndex = 2;
+        } else if (mSize.getSize().equalsIgnoreCase("Venti")) {
+            shotIndex = 3;
+        }
+        
+        return mCoffee.shot.get(shotIndex);
+    }
+    
+    Espresso getEspresso() {
+        if (mCoffee.espresso == null || mCoffee.espresso.size() == 0) {
+            return null;
+        }
+        if (mEspresso == null) {
+            return mCoffee.espresso.get(0);
+        }
+        return mEspresso;
+    }
+    
+    Size getSize() {
+        if (mSize == null) {
+            return mCoffee.size.get(0);
+        }
+        return mSize;
+    }
+    
+    Base getBase() {
+        if (mCoffee.base == null || mCoffee.base.size() == 0) {
+            return null;
+        }
+        if (mBase == null) {
+            return mCoffee.base.get(0);
+        }
+        return mBase;
+    }
+    
+    Syrup getSyrup() {
+        if (mCoffee.syrup == null || mCoffee.syrup.size() == 0) {
+            return null;
+        }
+        if (mSyrup == null) {
+            return mCoffee.syrup.get(0);
+        }
+        return mSyrup;
+    }
+    
+    Sauce getSauce() {
+        if (mCoffee.sauce == null || mCoffee.sauce.size() == 0) {
+            return null;
+        }
+        if (mSauce == null) {
+            return mCoffee.sauce.get(0);
+        }
+        return mSauce;
+    }
+    
+    Powder getPowder() {
+        if (mCoffee.powder == null || mCoffee.powder.size() == 0) {
+            return null;
+        }
+        if (mPowder == null) {
+            return mCoffee.powder.get(0);
+        }
+        return mPowder;
+    }
+    
+    Jelly getJelly() {
+        if (mCoffee.jelly == null || mCoffee.jelly.size() == 0) {
+            return null;
+        }
+        if (mJelly == null) {
+            return mCoffee.jelly.get(0);
+        }
+        return mJelly;
+    }
+    
+    Milk getMilk() {
+        if (mCoffee.milk == null || mCoffee.milk.size() == 0) {
+            return null;
+        }
+        if (mMilk == null) {
+            return mCoffee.milk.get(0);
+        }
+        return mMilk;
+    }
+    
+    WhippedCream getWhippedCream() {
+        if (mCoffee.whippedCream == null || mCoffee.whippedCream.size() == 0) {
+            return null;
+        }
+        if (mWhippedCream == null) {
+            return mCoffee.whippedCream.get(0);
+        }
+        return mWhippedCream;
+    }
+    
+    public Photo getCoffeePhoto() {
+        return mCoffee.photo;
     }
 }

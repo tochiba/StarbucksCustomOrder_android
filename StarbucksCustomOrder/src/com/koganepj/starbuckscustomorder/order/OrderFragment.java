@@ -5,13 +5,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.koganepj.starbuckscustomorder.R;
-import com.koganepj.starbuckscustomorder.order.view.UploadView;
+import com.koganepj.starbuckscustomorder.model.Photo;
 
 public class OrderFragment extends Fragment {
-	private String mOrder;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -24,26 +24,25 @@ public class OrderFragment extends Fragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		
-		mOrder = ((OrderActivity) getActivity()).getOrder();
+		String order = ((OrderActivity) getActivity()).getOrder();
+		String replacedOrder = order.replaceAll(" ", "");
+		Photo photo = ((OrderActivity)getActivity()).getPhoto();
+		
+		((ImageView)getView().findViewById(R.id.ImageCoffee)).setImageResource(photo.getPhoto());
+		((TextView)getView().findViewById(R.id.TextOrder)).setText(order);
 		
 		View seeOrder = getView().findViewById(R.id.ImageSeeOrder);
 		View talkOrder = getView().findViewById(R.id.ImageTalkOrder);
 		View uploadOrder = getView().findViewById(R.id.ImageUploadOrder);
-		View uploadOrderView = getView().findViewById(R.id.LayoutUploadOrder);
+		//View uploadOrderView = getView().findViewById(R.id.LayoutUploadOrder);
 
-		seeOrder.setOnClickListener(new SeeOrderClickListener());
-		talkOrder.setOnClickListener(new TalkOrderClickListener(getActivity(), mOrder));
-
-		uploadOrder.setOnClickListener(new UploadOrderClickListener(
-				uploadOrderView));
+		seeOrder.setOnClickListener(new SeeOrderClickListener(replacedOrder));
+		talkOrder.setOnClickListener(new TalkOrderClickListener(getActivity(), order));
+		uploadOrder.setOnClickListener(new UploadOrderClickListener(replacedOrder));
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
-
-		((TextView) getView().findViewById(R.id.TextOrder)).setText(mOrder);
-		((UploadView) getView().findViewById(R.id.LayoutUploadOrder))
-				.setHashTag(mOrder.replaceAll(" ", ""));
 	}
 }

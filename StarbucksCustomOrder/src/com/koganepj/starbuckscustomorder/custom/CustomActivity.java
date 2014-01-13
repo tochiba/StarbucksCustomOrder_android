@@ -31,7 +31,6 @@ public class CustomActivity extends Activity {
         mCoffeeName = (CoffeeName)getIntent().getSerializableExtra(KEY_PARAM_COFFEENAME);
         
         findViewById(R.id.TextBack).setOnClickListener(new BackTextClickListener(this));
-        findViewById(R.id.ButtonMagic).setOnClickListener(new MagicClickListener());
     }
     
     CoffeeName getCoffeeName() {
