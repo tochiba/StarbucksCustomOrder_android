@@ -3,6 +3,7 @@ package com.koganepj.starbuckscustomorder.order;
 import java.util.HashMap;
 
 import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 
 import net.gimite.jatts.JapaneseTextToSpeech;
 import android.app.Activity;
@@ -25,6 +26,8 @@ public class TalkOrderClickListener implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
+	    FlurryWrapper.logEvent("order_talk");
+	    
 		JapaneseTextToSpeech speech = new JapaneseTextToSpeech(mActivity, null);
 		HashMap<String, String> params = new HashMap<String, String>();
 		params.put(JapaneseTextToSpeech.KEY_PARAM_SPEAKER, "female01");

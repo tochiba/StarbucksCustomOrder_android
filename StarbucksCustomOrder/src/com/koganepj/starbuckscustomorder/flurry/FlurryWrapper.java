@@ -1,5 +1,7 @@
 package com.koganepj.starbuckscustomorder.flurry;
 
+import java.util.HashMap;
+
 import android.content.Context;
 
 import com.flurry.android.FlurryAgent;
@@ -14,6 +16,14 @@ public class FlurryWrapper {
     
     public static void onEndSession(Context context) {
         FlurryAgent.onEndSession(context);
+    }
+    
+    public static void logEvent(String event) {
+        FlurryAgent.logEvent(event);
+    }
+    
+    public static void logEvent(String event, HashMap<String, String> params) {
+        FlurryAgent.logEvent(event, params);
     }
     
 }

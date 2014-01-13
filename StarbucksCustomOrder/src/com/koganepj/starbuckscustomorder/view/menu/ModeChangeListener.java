@@ -11,6 +11,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
+import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.parse.CoffeeListParser;
 import com.koganepj.starbuckscustomorder.view.menu.adapter.MenuAdapter;
@@ -55,6 +56,8 @@ class ModeChangeListener implements OnCheckedChangeListener {
     	mFooterAdWrapper.loadAd();
     	
         if (checkedId == R.id.RadioSimple) {//シンプルモード
+            FlurryWrapper.logEvent("menu_change_mode_to_simple");
+            
             //ListViewの入れ替え
             mFrameLayout.removeAllViews();
             ListView listView = (ListView)mInflater.inflate(R.layout.layout_menu_list_simple, null);
@@ -70,6 +73,8 @@ class ModeChangeListener implements OnCheckedChangeListener {
         }
         
         if (checkedId == R.id.RadioVisual) {//ビジュアルモード
+            FlurryWrapper.logEvent("menu_change_mode_to_visual");
+            
             //ListViewの入れ替え
             mFrameLayout.removeAllViews();
             ListView listView = (ListView)mInflater.inflate(R.layout.layout_menu_list_visual, null);

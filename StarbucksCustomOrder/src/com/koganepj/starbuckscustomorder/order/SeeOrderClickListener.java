@@ -1,5 +1,7 @@
 package com.koganepj.starbuckscustomorder.order;
 
+import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.view.View;
@@ -17,6 +19,8 @@ public class SeeOrderClickListener implements OnClickListener {
 
     @Override
     public void onClick(View v) {
+        FlurryWrapper.logEvent("order_see");
+        
         Uri uri = Uri.parse(BASE_URL + "%23" + mOrder);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         v.getContext().startActivity(intent);

@@ -1,6 +1,9 @@
 package com.koganepj.starbuckscustomorder.view.ranking;
 
+import java.util.HashMap;
+
 import com.koganepj.starbuckscustomorder.custom.CustomActivity;
+import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 
 import android.content.Intent;
@@ -17,6 +20,10 @@ class OnRowClickListener implements OnItemClickListener {
         Intent intent = new Intent(view.getContext(), CustomActivity.class);
         intent.putExtra(CustomActivity.KEY_PARAM_COFFEENAME, coffeeModel.coffeeName);
         view.getContext().startActivity(intent);
+        
+        HashMap<String, String> params = new HashMap<String, String>();
+        params.put("coffee", coffeeModel.coffeeName.getCoffeeName());
+        FlurryWrapper.logEvent("ranking_select", params);
     }
 
 }

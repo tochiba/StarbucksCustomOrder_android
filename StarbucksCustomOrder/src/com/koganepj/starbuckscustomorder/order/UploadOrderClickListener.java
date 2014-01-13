@@ -1,5 +1,7 @@
 package com.koganepj.starbuckscustomorder.order;
 
+import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
+
 import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,6 +16,8 @@ public class UploadOrderClickListener implements OnClickListener {
     
     @Override
     public void onClick(View v) {
+        FlurryWrapper.logEvent("order_post");
+        
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, "#" + mOrder);

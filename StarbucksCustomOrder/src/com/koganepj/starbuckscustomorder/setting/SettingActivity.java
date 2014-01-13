@@ -1,5 +1,7 @@
 package com.koganepj.starbuckscustomorder.setting;
 
+import java.util.HashMap;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -40,9 +42,15 @@ public class SettingActivity extends Activity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Uri uri = Uri.parse(sIdUrlMap.get(v.getId(), BLOG_URL));
+        String url = sIdUrlMap.get(v.getId(), BLOG_URL);
+        
+        Uri uri = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
+        
+        HashMap<String, String> params = new HashMap<String, String>();
+        params.put("url", url);
+        FlurryWrapper.logEvent("setting_tap_item", params);
     }
     
     @Override
