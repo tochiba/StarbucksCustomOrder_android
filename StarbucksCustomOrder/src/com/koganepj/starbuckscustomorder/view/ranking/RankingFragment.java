@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.RadioGroup;
 
+import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
 import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.model.SimpleCoffeeModel;
 import com.koganepj.starbuckscustomorder.parse.CoffeeListParser;
@@ -19,6 +20,8 @@ import com.koganepj.starbuckscustomorder.view.ranking.social.SocialRankingLoader
 import com.koganepj.starbuckscustomorder.view.ranking.social.SocialRankingModel;
 
 public class RankingFragment extends Fragment {
+	private AdmobWrapper mHeaderAd;
+	private AdmobWrapper mFooterAd;
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -28,10 +31,15 @@ public class RankingFragment extends Fragment {
         CoffeeListParser parser = new CoffeeListParser(getActivity());
         ArrayList<SimpleCoffeeModel> coffeeList = parser.getCoffeeList();
         
+        // 広告の設定
+        mHeaderAd = new AdmobWrapper(getActivity());
+        mFooterAd = new AdmobWrapper(getActivity());
         
         //ListViewの初期設定
         ListView listView = (ListView)view.findViewById(R.id.ListMenu);
         RankingAdapter adapter = new RankingAdapter(getActivity());
+        listView.addHeaderView(mHeaderAd.getAdView());
+        listView.addFooterView(mFooterAd.getAdView());
         listView.setAdapter(adapter);
         listView.setEmptyView(view.findViewById(R.id.empty));
         listView.setOnItemClickListener(new OnRowClickListener());
@@ -44,12 +52,28 @@ public class RankingFragment extends Fragment {
         
         //ラジオボタンの動作設定
         RadioGroup radioGroup = (RadioGroup)view.findViewById(R.id.RadioGroupMenuShowType);
-        radioGroup.setOnCheckedChangeListener(new TypeSelectListener(adapter, coffeeList, callback));
+        radioGroup.setOnCheckedChangeListener(new TypeSelectListener(adapter, coffeeList, callback, mHeaderAd, mFooterAd));
         
         //初期表示
         radioGroup.check(R.id.RadioPrice);
         
         return view;
+    }
+    
+    @Override
+    public void onResume() {
+    	super.onResume();
+    	
+    	mHeaderAd.loadAd();
+    	mFooterAd.loadAd();
+    }
+    
+    @Override
+    public void onDestroy() {
+    	mHeaderAd.destroy();
+    	mFooterAd.destroy();
+    	
+    	super.onDestroy();
     }
     
 }
