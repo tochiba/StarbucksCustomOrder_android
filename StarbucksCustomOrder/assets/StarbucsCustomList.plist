@@ -1860,83 +1860,6 @@
 			<key>Type</key>
 			<string>Espresso Beverages</string>
 			<key>Name</key>
-			<string>チョコレート プレッツェル モカ</string>
-			<key>Photo</key>
-			<string>MochaPretzelsChocolate.jpg</string>
-			<key>Calorie</key>
-			<string>206</string>
-			<key>Price</key>
-			<string>430</string>
-			<key>Temperature</key>
-			<array>
-				<string>アイス</string>
-				<string>ホット</string>
-			</array>
-			<key>Size</key>
-			<array>
-				<string>Short</string>
-				<string>Tall</string>
-				<string>Grande</string>
-				<string>Venti</string>
-			</array>
-			<key>Shot</key>
-			<array>
-				<string>1</string>
-				<string>1</string>
-				<string>2</string>
-				<string>3</string>
-			</array>
-			<key>Base</key>
-			<array/>
-			<key>Syrup</key>
-			<array>
-				<string>変更なし</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
-				<string>シロップなし</string>
-			</array>
-			<key>Sauce</key>
-			<array>
-				<string>なし</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
-			</array>
-			<key>Powder</key>
-			<array/>
-			<key>Jelly</key>
-			<array/>
-			<key>WhippedCream</key>
-			<array>
-				<string>変更なし</string>
-				<string>ホイップ増量</string>
-				<string>ホイップなし</string>
-			</array>
-			<key>Milk</key>
-			<array>
-				<string>ミルク</string>
-				<string>ソイミルク</string>
-				<string>ノンファットミルク</string>
-				<string>低脂肪ミルク</string>
-				<string>ブラベミルク</string>
-			</array>
-			<key>Espresso</key>
-			<array>
-				<string>変更なし</string>
-				<string>ショット少なめ</string>
-				<string>ショット追加</string>
-			</array>
-			<key>Recommend</key>
-			<array/>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>Espresso Beverages</string>
-			<key>Name</key>
 			<string>キャラメルホワイトモカ</string>
 			<key>Photo</key>
 			<string>CaramelWhiteMocha.jpg</string>
@@ -2004,90 +1927,13 @@
 			<key>Type</key>
 			<string>Frappuccino</string>
 			<key>Name</key>
-			<string>チョコレート プレッツェル モカ フラペチーノ</string>
+			<string>さくら チョコレート フラペチーノ</string>
 			<key>Photo</key>
-			<string>ChocolatePretzelsMochaFrappuccino.jpg</string>
-			<key>Calorie</key>
-			<string>280</string>
-			<key>Price</key>
-			<string>490</string>
-			<key>Temperature</key>
-			<array>
-				<string>アイス</string>
-			</array>
-			<key>Size</key>
-			<array>
-				<string>Tall</string>
-				<string>Grande</string>
-				<string>Venti</string>
-			</array>
-			<key>Shot</key>
-			<array>
-				<string>0</string>
-				<string>0</string>
-				<string>0</string>
-				<string>0</string>
-			</array>
-			<key>Base</key>
-			<array/>
-			<key>Syrup</key>
-			<array>
-				<string>変更なし</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
-				<string>シロップなし</string>
-			</array>
-			<key>Sauce</key>
-			<array>
-				<string>なし</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
-			</array>
-			<key>Powder</key>
-			<array>
-				<string>追加なし</string>
-				<string>チョコレートチップ</string>
-			</array>
-			<key>Jelly</key>
-			<array/>
-			<key>WhippedCream</key>
-			<array>
-				<string>なし</string>
-				<string>ホイップ追加</string>
-			</array>
-			<key>Milk</key>
-			<array>
-				<string>ミルク</string>
-				<string>ソイミルク</string>
-				<string>ノンファットミルク</string>
-				<string>低脂肪ミルク</string>
-				<string>ブラベミルク</string>
-			</array>
-			<key>Espresso</key>
-			<array>
-				<string>ショットなし</string>
-				<string>ショット少なめ追加</string>
-				<string>ショット追加</string>
-			</array>
-			<key>Recommend</key>
-			<array/>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>Frappuccino</string>
-			<key>Name</key>
-			<string>バレンタイン チョコレート プレッツェル モカ フラペチーノ</string>
-			<key>Photo</key>
-			<string>ValentineChocolatePretzelsMochaFrappuccino.jpg</string>
+			<string>cherrychocolatefrappuccino.jpg</string>
 			<key>Calorie</key>
 			<string>289</string>
 			<key>Price</key>
-			<string>490</string>
+			<string>510</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -2156,13 +2002,13 @@
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>Espresso Beverages</string>
+			<string>Other Beverages</string>
 			<key>Name</key>
-			<string>バレンタイン チョコレート プレッツェル モカ</string>
+			<string>さくら チョコレート ラテ</string>
 			<key>Photo</key>
-			<string>ValentineMochaPretzelsChocolate.jpg</string>
+			<string>cherrychocolatelatte.jpg</string>
 			<key>Calorie</key>
-			<string>212</string>
+			<string>203</string>
 			<key>Price</key>
 			<string>430</string>
 			<key>Temperature</key>
@@ -2178,16 +2024,17 @@
 			</array>
 			<key>Shot</key>
 			<array>
-				<string>1</string>
-				<string>1</string>
-				<string>2</string>
-				<string>3</string>
+				<string>0</string>
+				<string>0</string>
+				<string>0</string>
+				<string>0</string>
 			</array>
 			<key>Base</key>
 			<array/>
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップなし</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -2195,7 +2042,6 @@
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
-				<string>シロップなし</string>
 			</array>
 			<key>Sauce</key>
 			<array>
@@ -2204,14 +2050,21 @@
 				<string>キャラメルソース</string>
 			</array>
 			<key>Powder</key>
-			<array/>
+			<array>
+				<string>追加なし</string>
+				<string>エクストラパウダー</string>
+			</array>
 			<key>Jelly</key>
 			<array/>
 			<key>WhippedCream</key>
 			<array>
-				<string>変更なし</string>
-				<string>ホイップ増量</string>
-				<string>ホイップなし</string>
+				<string>なし</string>
+				<string>ホイップ追加</string>
+			</array>
+			<key>MilkCustom</key>
+			<array>
+				<string>なし</string>
+				<string>オールミルク</string>
 			</array>
 			<key>Milk</key>
 			<array>
@@ -2223,8 +2076,8 @@
 			</array>
 			<key>Espresso</key>
 			<array>
-				<string>変更なし</string>
-				<string>ショット少なめ</string>
+				<string>なし</string>
+				<string>ショット少なめ追加</string>
 				<string>ショット追加</string>
 			</array>
 			<key>Recommend</key>
@@ -2277,9 +2130,9 @@
 		<string>2</string>
 		<key>ソイ ラテ</key>
 		<string>3</string>
-		<key>チョコレート プレッツェル モカ フラペチーノ</key>
+		<key>さくら チョコレート フラペチーノ</key>
 		<string>1</string>
-		<key>チョコレート プレッツェル モカ</key>
+		<key>さくら チョコレート ラテ</key>
 		<string>1</string>
 		<key>カフェミスト</key>
 		<string>1</string>
@@ -2330,9 +2183,9 @@
 		<string>1</string>
 		<key>ソイ ラテ</key>
 		<string>1</string>
-		<key>チョコレート プレッツェル モカ フラペチーノ</key>
+		<key>さくら チョコレート フラペチーノ</key>
 		<string>4</string>
-		<key>チョコレート プレッツェル モカ</key>
+		<key>さくら チョコレート ラテ</key>
 		<string>3</string>
 		<key>カフェミスト</key>
 		<string>1</string>
