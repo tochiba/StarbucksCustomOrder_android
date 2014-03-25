@@ -41,7 +41,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -168,7 +167,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -248,7 +246,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -316,7 +313,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -394,7 +390,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
 			</array>
@@ -470,7 +465,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>チャイシロップ</string>
 			</array>
@@ -544,7 +538,6 @@
 				<string>変更なし</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -622,7 +615,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -692,7 +684,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -747,7 +738,6 @@
 			</array>
 			<key>Size</key>
 			<array>
-				<string>Short</string>
 				<string>Tall</string>
 				<string>Grande</string>
 				<string>Venti</string>
@@ -767,7 +757,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -822,7 +811,6 @@
 			</array>
 			<key>Size</key>
 			<array>
-				<string>Short</string>
 				<string>Tall</string>
 				<string>Grande</string>
 				<string>Venti</string>
@@ -842,7 +830,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -905,7 +892,6 @@
 			</array>
 			<key>Size</key>
 			<array>
-				<string>Short</string>
 				<string>Tall</string>
 				<string>Grande</string>
 				<string>Venti</string>
@@ -923,7 +909,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1011,7 +996,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
 			</array>
@@ -1068,7 +1052,6 @@
 			</array>
 			<key>Size</key>
 			<array>
-				<string>Short</string>
 				<string>Tall</string>
 				<string>Grande</string>
 				<string>Venti</string>
@@ -1085,7 +1068,6 @@
 				<string>変更なし</string>
 				<string>バニラシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1153,7 +1135,6 @@
 			</array>
 			<key>Size</key>
 			<array>
-				<string>Short</string>
 				<string>Tall</string>
 				<string>Grande</string>
 				<string>Venti</string>
@@ -1172,7 +1153,6 @@
 				<string>変更なし</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1234,7 +1214,6 @@
 			</array>
 			<key>Size</key>
 			<array>
-				<string>Short</string>
 				<string>Tall</string>
 				<string>Grande</string>
 				<string>Venti</string>
@@ -1254,7 +1233,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1326,7 +1304,6 @@
 				<string>変更なし</string>
 				<string>バニラシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1405,7 +1382,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>シロップなし</string>
@@ -1488,7 +1464,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1571,7 +1546,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1651,7 +1625,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1695,6 +1668,73 @@
 		</dict>
 		<dict>
 			<key>Type</key>
+			<string>Espresso Beverages</string>
+			<key>Name</key>
+			<string>キャラメルホワイトモカ</string>
+			<key>Photo</key>
+			<string>CaramelWhiteMocha.jpg</string>
+			<key>Calorie</key>
+			<string>233</string>
+			<key>Price</key>
+			<string>430</string>
+			<key>Temperature</key>
+			<array>
+				<string>アイス</string>
+				<string>ホット</string>
+			</array>
+			<key>Size</key>
+			<array>
+				<string>Short</string>
+				<string>Tall</string>
+				<string>Grande</string>
+				<string>Venti</string>
+			</array>
+			<key>Shot</key>
+			<array>
+				<string>1</string>
+				<string>1</string>
+				<string>2</string>
+				<string>3</string>
+			</array>
+			<key>Base</key>
+			<array/>
+			<key>Syrup</key>
+			<array/>
+			<key>Sauce</key>
+			<array>
+				<string>なし</string>
+				<string>チョコレートソース</string>
+				<string>キャラメルソース</string>
+			</array>
+			<key>Powder</key>
+			<array/>
+			<key>Jelly</key>
+			<array/>
+			<key>WhippedCream</key>
+			<array>
+				<string>変更なし</string>
+				<string>ホイップ増量</string>
+				<string>ホイップなし</string>
+			</array>
+			<key>Milk</key>
+			<array>
+				<string>ミルク</string>
+				<string>ソイミルク</string>
+				<string>ノンファットミルク</string>
+				<string>低脂肪ミルク</string>
+				<string>ブラベミルク</string>
+			</array>
+			<key>Espresso</key>
+			<array>
+				<string>変更なし</string>
+				<string>ショット少なめ</string>
+				<string>ショット追加</string>
+			</array>
+			<key>Recommend</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>Type</key>
 			<string>Other Beverages</string>
 			<key>Name</key>
 			<string>ほうじ茶 ティー ラテ</string>
@@ -1731,7 +1771,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1811,7 +1850,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1858,80 +1896,13 @@
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>Espresso Beverages</string>
-			<key>Name</key>
-			<string>キャラメルホワイトモカ</string>
-			<key>Photo</key>
-			<string>CaramelWhiteMocha.jpg</string>
-			<key>Calorie</key>
-			<string>233</string>
-			<key>Price</key>
-			<string>430</string>
-			<key>Temperature</key>
-			<array>
-				<string>アイス</string>
-				<string>ホット</string>
-			</array>
-			<key>Size</key>
-			<array>
-				<string>Short</string>
-				<string>Tall</string>
-				<string>Grande</string>
-				<string>Venti</string>
-			</array>
-			<key>Shot</key>
-			<array>
-				<string>1</string>
-				<string>1</string>
-				<string>2</string>
-				<string>3</string>
-			</array>
-			<key>Base</key>
-			<array/>
-			<key>Syrup</key>
-			<array/>
-			<key>Sauce</key>
-			<array>
-				<string>なし</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
-			</array>
-			<key>Powder</key>
-			<array/>
-			<key>Jelly</key>
-			<array/>
-			<key>WhippedCream</key>
-			<array>
-				<string>変更なし</string>
-				<string>ホイップ増量</string>
-				<string>ホイップなし</string>
-			</array>
-			<key>Milk</key>
-			<array>
-				<string>ミルク</string>
-				<string>ソイミルク</string>
-				<string>ノンファットミルク</string>
-				<string>低脂肪ミルク</string>
-				<string>ブラベミルク</string>
-			</array>
-			<key>Espresso</key>
-			<array>
-				<string>変更なし</string>
-				<string>ショット少なめ</string>
-				<string>ショット追加</string>
-			</array>
-			<key>Recommend</key>
-			<array/>
-		</dict>
-		<dict>
-			<key>Type</key>
 			<string>Frappuccino</string>
 			<key>Name</key>
-			<string>さくら チョコレート フラペチーノ</string>
+			<string>クリーミー バニラ フラペチーノ with レモニー スワール</string>
 			<key>Photo</key>
-			<string>cherrychocolatefrappuccino.jpg</string>
+			<string>creamyvanillafrappuccinowithremoniswirl.jpg</string>
 			<key>Calorie</key>
-			<string>289</string>
+			<string>361</string>
 			<key>Price</key>
 			<string>510</string>
 			<key>Temperature</key>
@@ -1959,7 +1930,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -1993,7 +1963,7 @@
 			</array>
 			<key>Espresso</key>
 			<array>
-				<string>ショットなし</string>
+				<string>なし</string>
 				<string>ショット少なめ追加</string>
 				<string>ショット追加</string>
 			</array>
@@ -2004,11 +1974,11 @@
 			<key>Type</key>
 			<string>Other Beverages</string>
 			<key>Name</key>
-			<string>さくら チョコレート ラテ</string>
+			<string>クリーミー バニラ ラテ with レモニー スワール</string>
 			<key>Photo</key>
-			<string>cherrychocolatelatte.jpg</string>
+			<string>creamyvanillalattewithremoniswirl.jpg</string>
 			<key>Calorie</key>
-			<string>203</string>
+			<string>238</string>
 			<key>Price</key>
 			<string>430</string>
 			<key>Temperature</key>
@@ -2038,7 +2008,6 @@
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
-				<string>アーモンドシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
@@ -2130,9 +2099,9 @@
 		<string>2</string>
 		<key>ソイ ラテ</key>
 		<string>3</string>
-		<key>さくら チョコレート フラペチーノ</key>
+		<key>クリーミー バニラ フラペチーノ with レモニー スワール</key>
 		<string>1</string>
-		<key>さくら チョコレート ラテ</key>
+		<key>クリーミー バニラ ラテ with レモニー スワール</key>
 		<string>1</string>
 		<key>カフェミスト</key>
 		<string>1</string>
@@ -2183,9 +2152,9 @@
 		<string>1</string>
 		<key>ソイ ラテ</key>
 		<string>1</string>
-		<key>さくら チョコレート フラペチーノ</key>
+		<key>クリーミー バニラ フラペチーノ with レモニー スワール</key>
 		<string>4</string>
-		<key>さくら チョコレート ラテ</key>
+		<key>クリーミー バニラ ラテ with レモニー スワール</key>
 		<string>3</string>
 		<key>カフェミスト</key>
 		<string>1</string>
