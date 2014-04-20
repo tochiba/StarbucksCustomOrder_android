@@ -14,7 +14,7 @@
 			<key>Calorie</key>
 			<string>060</string>
 			<key>Price</key>
-			<string>340</string>
+			<string>310</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -37,7 +37,8 @@
 			<array/>
 			<key>Syrup</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -47,7 +48,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -87,7 +89,7 @@
 			<key>Calorie</key>
 			<string>038</string>
 			<key>Price</key>
-			<string>390</string>
+			<string>370</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -104,7 +106,8 @@
 			<array/>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -139,7 +142,7 @@
 			<key>Calorie</key>
 			<string>060</string>
 			<key>Price</key>
-			<string>340</string>
+			<string>320</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -163,7 +166,8 @@
 			<array/>
 			<key>Syrup</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -173,7 +177,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -218,7 +223,7 @@
 			<key>Calorie</key>
 			<string>101</string>
 			<key>Price</key>
-			<string>390</string>
+			<string>370</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -242,7 +247,8 @@
 			<array/>
 			<key>Syrup</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -252,7 +258,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -286,7 +293,7 @@
 			<key>Calorie</key>
 			<string>044</string>
 			<key>Price</key>
-			<string>340</string>
+			<string>320</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -309,7 +316,8 @@
 			<array/>
 			<key>Syrup</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -319,7 +327,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -362,7 +371,7 @@
 			<key>Calorie</key>
 			<string>118</string>
 			<key>Price</key>
-			<string>400</string>
+			<string>380</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -387,6 +396,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -395,7 +405,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -437,7 +448,7 @@
 			<key>Calorie</key>
 			<string>131</string>
 			<key>Price</key>
-			<string>400</string>
+			<string>380</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -462,6 +473,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -470,7 +482,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -511,7 +524,7 @@
 			<key>Calorie</key>
 			<string>100</string>
 			<key>Price</key>
-			<string>390</string>
+			<string>370</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -536,6 +549,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
 				<string>モカシロップ</string>
@@ -545,8 +559,8 @@
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
-				<string>ソースなし</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -587,7 +601,7 @@
 			<key>Calorie</key>
 			<string>005</string>
 			<key>Price</key>
-			<string>320</string>
+			<string>300</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -611,7 +625,8 @@
 			<array/>
 			<key>Syrup</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -621,7 +636,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -655,7 +671,7 @@
 			<key>Calorie</key>
 			<string>268</string>
 			<key>Price</key>
-			<string>490</string>
+			<string>470</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -680,7 +696,8 @@
 			</array>
 			<key>Syrup</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -690,7 +707,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -731,7 +749,7 @@
 			<key>Calorie</key>
 			<string>251</string>
 			<key>Price</key>
-			<string>490</string>
+			<string>470</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -753,7 +771,8 @@
 			<array/>
 			<key>Syrup</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -763,7 +782,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -804,7 +824,7 @@
 			<key>Calorie</key>
 			<string>256</string>
 			<key>Price</key>
-			<string>470</string>
+			<string>450</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -827,17 +847,18 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
-				<string>シロップなし</string>
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -885,7 +906,7 @@
 			<key>Calorie</key>
 			<string>118</string>
 			<key>Price</key>
-			<string>420</string>
+			<string>400</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -905,7 +926,8 @@
 			</array>
 			<key>Syrup</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -915,7 +937,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -968,7 +991,7 @@
 			<key>Calorie</key>
 			<string>140</string>
 			<key>Price</key>
-			<string>370</string>
+			<string>350</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -993,6 +1016,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -1001,7 +1025,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -1045,7 +1070,7 @@
 			<key>Calorie</key>
 			<string>223</string>
 			<key>Price</key>
-			<string>470</string>
+			<string>450</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -1066,18 +1091,18 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
-				<string>シロップなし</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
-				<string>ソースなし</string>
 			</array>
 			<key>Powder</key>
 			<array>
@@ -1128,7 +1153,7 @@
 			<key>Calorie</key>
 			<string>188</string>
 			<key>Price</key>
-			<string>470</string>
+			<string>450</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -1151,16 +1176,17 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
-				<string>シロップなし</string>
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -1207,7 +1233,7 @@
 			<key>Calorie</key>
 			<string>102</string>
 			<key>Price</key>
-			<string>470</string>
+			<string>450</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -1229,7 +1255,8 @@
 			<array/>
 			<key>Syrup</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -1239,7 +1266,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -1278,7 +1306,7 @@
 			<key>Calorie</key>
 			<string>175</string>
 			<key>Price</key>
-			<string>380</string>
+			<string>360</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -1302,6 +1330,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
 				<string>モカシロップ</string>
@@ -1311,8 +1340,8 @@
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
-				<string>ソースなし</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -1354,7 +1383,7 @@
 			<key>Calorie</key>
 			<string>090</string>
 			<key>Price</key>
-			<string>380</string>
+			<string>360</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -1379,16 +1408,17 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
-				<string>シロップなし</string>
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -1436,7 +1466,7 @@
 			<key>Calorie</key>
 			<string>129</string>
 			<key>Price</key>
-			<string>400</string>
+			<string>380</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -1460,7 +1490,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
-				<string>シロップなし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -1470,7 +1500,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -1518,7 +1549,7 @@
 			<key>Calorie</key>
 			<string>078</string>
 			<key>Price</key>
-			<string>380</string>
+			<string>360</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -1542,7 +1573,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
-				<string>シロップなし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -1552,7 +1583,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -1597,7 +1629,7 @@
 			<key>Calorie</key>
 			<string>076</string>
 			<key>Price</key>
-			<string>380</string>
+			<string>360</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -1621,7 +1653,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
-				<string>シロップなし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -1631,7 +1663,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -1676,7 +1709,7 @@
 			<key>Calorie</key>
 			<string>233</string>
 			<key>Price</key>
-			<string>430</string>
+			<string>410</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -1702,7 +1735,8 @@
 			<array/>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -1743,7 +1777,7 @@
 			<key>Calorie</key>
 			<string>064</string>
 			<key>Price</key>
-			<string>380</string>
+			<string>360</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -1767,7 +1801,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
-				<string>シロップなし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -1777,7 +1811,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -1822,7 +1857,7 @@
 			<key>Calorie</key>
 			<string>078</string>
 			<key>Price</key>
-			<string>380</string>
+			<string>360</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -1846,7 +1881,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
-				<string>シロップなし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -1856,7 +1891,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
 				<string>キャラメルソース</string>
 			</array>
@@ -1898,13 +1934,13 @@
 			<key>Type</key>
 			<string>Frappuccino</string>
 			<key>Name</key>
-			<string>クリーミー バニラ フラペチーノ with レモニー スワール</string>
+			<string>フレッシュ バナナ アンド キャラメル クリーム フラペチーノ</string>
 			<key>Photo</key>
-			<string>creamyvanillafrappuccinowithremoniswirl.jpg</string>
+			<string>freshbananaandcaramelcreamfrappuccino.jpg</string>
 			<key>Calorie</key>
-			<string>361</string>
+			<string>390</string>
 			<key>Price</key>
-			<string>510</string>
+			<string>610</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -1912,8 +1948,6 @@
 			<key>Size</key>
 			<array>
 				<string>Tall</string>
-				<string>Grande</string>
-				<string>Venti</string>
 			</array>
 			<key>Shot</key>
 			<array>
@@ -1927,19 +1961,19 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
 				<string>モカシロップ</string>
 				<string>ホワイトモカシロップ</string>
 				<string>チャイシロップ</string>
-				<string>シロップなし</string>
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
 			</array>
 			<key>Powder</key>
 			<array>
@@ -1972,25 +2006,22 @@
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>Other Beverages</string>
+			<string>Frappuccino</string>
 			<key>Name</key>
-			<string>クリーミー バニラ ラテ with レモニー スワール</string>
+			<string>フレッシュ バナナ アンド チョコレート クリーム フラペチーノ</string>
 			<key>Photo</key>
-			<string>creamyvanillalattewithremoniswirl.jpg</string>
+			<string>freshbananaandchocolatecreamfrappuccino.jpg</string>
 			<key>Calorie</key>
-			<string>238</string>
+			<string>407</string>
 			<key>Price</key>
-			<string>430</string>
+			<string>610</string>
 			<key>Temperature</key>
 			<array>
-				<string>ホット</string>
+				<string>アイス</string>
 			</array>
 			<key>Size</key>
 			<array>
-				<string>Short</string>
 				<string>Tall</string>
-				<string>Grande</string>
-				<string>Venti</string>
 			</array>
 			<key>Shot</key>
 			<array>
@@ -2004,7 +2035,7 @@
 			<key>Syrup</key>
 			<array>
 				<string>変更なし</string>
-				<string>シロップなし</string>
+				<string>シロップ抜き</string>
 				<string>バニラシロップ</string>
 				<string>キャラメルシロップ</string>
 				<string>ヘーゼルナッツシロップ</string>
@@ -2014,8 +2045,8 @@
 			</array>
 			<key>Sauce</key>
 			<array>
-				<string>なし</string>
-				<string>チョコレートソース</string>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
 				<string>キャラメルソース</string>
 			</array>
 			<key>Powder</key>
@@ -2099,9 +2130,9 @@
 		<string>2</string>
 		<key>ソイ ラテ</key>
 		<string>3</string>
-		<key>クリーミー バニラ フラペチーノ with レモニー スワール</key>
+		<key>フレッシュ バナナ アンド キャラメル クリーム フラペチーノ</key>
 		<string>1</string>
-		<key>クリーミー バニラ ラテ with レモニー スワール</key>
+		<key>フレッシュ バナナ アンド チョコレート クリーム フラペチーノ</key>
 		<string>1</string>
 		<key>カフェミスト</key>
 		<string>1</string>
@@ -2152,9 +2183,9 @@
 		<string>1</string>
 		<key>ソイ ラテ</key>
 		<string>1</string>
-		<key>クリーミー バニラ フラペチーノ with レモニー スワール</key>
+		<key>フレッシュ バナナ アンド キャラメル クリーム フラペチーノ</key>
 		<string>4</string>
-		<key>クリーミー バニラ ラテ with レモニー スワール</key>
+		<key>フレッシュ バナナ アンド チョコレート クリーム フラペチーノ</key>
 		<string>3</string>
 		<key>カフェミスト</key>
 		<string>1</string>
@@ -2167,9 +2198,13 @@
 		<string>0</string>
 		<key>ミルク</key>
 		<string>0</string>
+		<key>シロップ抜き</key>
+		<string>0</string>
 		<key>シロップなし</key>
 		<string>0</string>
 		<key>ソースなし</key>
+		<string>0</string>
+		<key>ソース抜き</key>
 		<string>0</string>
 		<key>ホイップなし</key>
 		<string>0</string>
@@ -2232,10 +2267,14 @@
 		<string>3</string>
 		<key>ミルク</key>
 		<string>0</string>
+		<key>シロップ抜き</key>
+		<string>-20</string>
 		<key>シロップなし</key>
 		<string>0</string>
 		<key>ソースなし</key>
 		<string>0</string>
+		<key>ソース抜き</key>
+		<string>-10</string>
 		<key>ホイップなし</key>
 		<string>0</string>
 		<key>変更なし</key>
@@ -2301,9 +2340,13 @@
 		<string>ソイ ラテ</string>
 		<key>ミルク</key>
 		<string></string>
-		<key>シロップなし</key>
+		<key>シロップ抜き</key>
 		<string>ノンシロップ</string>
+		<key>シロップなし</key>
+		<string></string>
 		<key>ソースなし</key>
+		<string></string>
+		<key>ソース抜き</key>
 		<string>ノンソース</string>
 		<key>ホイップなし</key>
 		<string>ノンホイップ</string>
