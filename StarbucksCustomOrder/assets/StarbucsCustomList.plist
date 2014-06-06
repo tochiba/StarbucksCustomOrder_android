@@ -2219,6 +2219,182 @@
 				<string>ヘーゼルナッツ + チョコレートチップ</string>
 			</array>
 		</dict>
+		<dict>
+			<key>Type</key>
+			<string>Frappuccino</string>
+			<key>Name</key>
+			<string>マーブル キャラメル コーヒー ジェリー フラペチーノ</string>
+			<key>Photo</key>
+			<string>marblecaramelcoffeejellyfrappuccino.jpg</string>
+			<key>Calorie</key>
+			<string>252</string>
+			<key>Price</key>
+			<string>570</string>
+			<key>Temperature</key>
+			<array>
+				<string>アイス</string>
+			</array>
+			<key>Size</key>
+			<array>
+				<string>Tall</string>
+				<string>Grande</string>
+				<string>Venti</string>
+			</array>
+			<key>Shot</key>
+			<array>
+				<string>0</string>
+				<string>0</string>
+				<string>0</string>
+				<string>0</string>
+			</array>
+			<key>Base</key>
+			<array/>
+			<key>Syrup</key>
+			<array>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
+			</array>
+			<key>Sauce</key>
+			<array>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
+			</array>
+			<key>Powder</key>
+			<array>
+				<string>追加なし</string>
+				<string>チョコレートチップ</string>
+			</array>
+			<key>Jelly</key>
+			<array/>
+			<key>WhippedCream</key>
+			<array>
+				<string>なし</string>
+				<string>ホイップ追加</string>
+			</array>
+			<key>Milk</key>
+			<array>
+				<string>ミルク</string>
+				<string>ソイミルク</string>
+				<string>ノンファットミルク</string>
+				<string>低脂肪ミルク</string>
+				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
+			</array>
+			<key>Espresso</key>
+			<array>
+				<string>ショットなし</string>
+				<string>ショット少なめ追加</string>
+				<string>ショット追加</string>
+			</array>
+			<key>Recommend</key>
+			<array>
+				<string>アーモンドシロップ</string>
+				<string>チョコレートチップ</string>
+				<string>ヘーゼルナッツ + チョコレートチップ</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>Frappuccino</string>
+			<key>Name</key>
+			<string>ダブル チョコレート コーヒー ジェリー フラペチーノ</string>
+			<key>Photo</key>
+			<string>dublechocolatecoffeejellyfrappuccino.jpg</string>
+			<key>Calorie</key>
+			<string>241</string>
+			<key>Price</key>
+			<string>570</string>
+			<key>Temperature</key>
+			<array>
+				<string>アイス</string>
+			</array>
+			<key>Size</key>
+			<array>
+				<string>Tall</string>
+				<string>Grande</string>
+				<string>Venti</string>
+			</array>
+			<key>Shot</key>
+			<array>
+				<string>0</string>
+				<string>0</string>
+				<string>0</string>
+				<string>0</string>
+			</array>
+			<key>Base</key>
+			<array/>
+			<key>Syrup</key>
+			<array>
+				<string>変更なし</string>
+				<string>シロップ抜き</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
+			</array>
+			<key>Sauce</key>
+			<array>
+				<string>変更なし</string>
+				<string>ソース抜き</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
+			</array>
+			<key>Powder</key>
+			<array>
+				<string>追加なし</string>
+				<string>チョコレートチップ</string>
+			</array>
+			<key>Jelly</key>
+			<array/>
+			<key>WhippedCream</key>
+			<array>
+				<string>なし</string>
+				<string>ホイップ追加</string>
+			</array>
+			<key>Milk</key>
+			<array>
+				<string>ミルク</string>
+				<string>ソイミルク</string>
+				<string>ノンファットミルク</string>
+				<string>低脂肪ミルク</string>
+				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
+			</array>
+			<key>Espresso</key>
+			<array>
+				<string>ショットなし</string>
+				<string>ショット少なめ追加</string>
+				<string>ショット追加</string>
+			</array>
+			<key>Recommend</key>
+			<array>
+				<string>アーモンドシロップ</string>
+				<string>チョコレートチップ</string>
+				<string>ヘーゼルナッツ + チョコレートチップ</string>
+			</array>
+		</dict>
 	</array>
 	<key>TemperatureDic</key>
 	<dict>
@@ -2268,7 +2444,7 @@
 		<string>3</string>
 		<key>キャラメルホワイトモカ</key>
 		<string>1</string>
-		<key>チャンキー クッキー フラペチーノ</key>
+		<key>マーブル キャラメル コーヒー ジェリー フラペチーノ</key>
 		<string>1</string>
 		<key>カフェミスト</key>
 		<string>1</string>
@@ -2321,7 +2497,7 @@
 		<string>1</string>
 		<key>キャラメルホワイトモカ</key>
 		<string>4</string>
-		<key>チャンキー クッキー フラペチーノ</key>
+		<key>マーブル キャラメル コーヒー ジェリー フラペチーノ</key>
 		<string>3</string>
 		<key>カフェミスト</key>
 		<string>1</string>
