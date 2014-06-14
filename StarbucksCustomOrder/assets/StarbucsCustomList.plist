@@ -39,19 +39,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -69,6 +77,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -108,8 +117,10 @@
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -168,19 +179,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -198,6 +217,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -249,19 +269,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -318,19 +346,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -343,6 +379,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>WhippedCream</key>
 			<array>
@@ -397,18 +434,25 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -426,6 +470,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -474,18 +519,25 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -504,6 +556,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -550,17 +603,23 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -578,6 +637,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -627,19 +687,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -698,19 +766,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -773,19 +849,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -798,6 +882,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>WhippedCream</key>
 			<array>
@@ -848,24 +933,36 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
+			</array>
+			<key>ExtraPowder</key>
+			<array>
+				<string>追加なし</string>
+				<string>エクストラパウダー</string>
 			</array>
 			<key>Powder</key>
 			<array>
 				<string>追加なし</string>
-				<string>エクストラパウダー</string>
 				<string>チョコレートチップ</string>
 			</array>
 			<key>Jelly</key>
@@ -877,6 +974,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>WhippedCream</key>
 			<array>
@@ -928,19 +1026,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array>
@@ -961,6 +1067,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>WhippedCream</key>
 			<array>
@@ -1017,18 +1124,25 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -1047,6 +1161,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -1092,17 +1207,23 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array>
@@ -1123,6 +1244,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>WhippedCream</key>
 			<array>
@@ -1177,18 +1299,25 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array>
@@ -1209,6 +1338,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -1257,19 +1387,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array>
@@ -1331,17 +1469,23 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -1360,6 +1504,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -1409,18 +1554,25 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -1443,6 +1595,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -1491,19 +1644,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array>
@@ -1529,6 +1690,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -1574,19 +1736,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -1609,6 +1779,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -1654,19 +1825,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -1689,6 +1868,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -1737,8 +1917,10 @@
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -1757,6 +1939,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -1802,19 +1985,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -1837,6 +2028,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -1882,19 +2074,27 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>バニラシロップ追加</string>
+				<string>バニラシロップに変更</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
-				<string>キャラメルソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array/>
@@ -1917,6 +2117,7 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
@@ -1934,13 +2135,13 @@
 			<key>Type</key>
 			<string>Frappuccino</string>
 			<key>Name</key>
-			<string>フレッシュ バナナ アンド キャラメル クリーム フラペチーノ</string>
+			<string>チャンキー クッキー フラペチーノ</string>
 			<key>Photo</key>
-			<string>freshbananaandcaramelcreamfrappuccino.jpg</string>
+			<string>chunkycookiesfrappuccino.jpg</string>
 			<key>Calorie</key>
-			<string>390</string>
+			<string>388</string>
 			<key>Price</key>
-			<string>610</string>
+			<string>540</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -1948,6 +2149,8 @@
 			<key>Size</key>
 			<array>
 				<string>Tall</string>
+				<string>Grande</string>
+				<string>Venti</string>
 			</array>
 			<key>Shot</key>
 			<array>
@@ -1962,18 +2165,25 @@
 			<array>
 				<string>変更なし</string>
 				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
+				<string>キャラメルシロップ追加</string>
+				<string>キャラメルシロップに変更</string>
+				<string>ヘーゼルナッツシロップ追加</string>
+				<string>ヘーゼルナッツシロップに変更</string>
+				<string>モカシロップ追加</string>
+				<string>モカシロップに変更</string>
+				<string>ホワイトモカシロップ追加</string>
+				<string>ホワイトモカシロップに変更</string>
+				<string>チャイシロップ追加</string>
+				<string>チャイシロップに変更</string>
 			</array>
 			<key>Sauce</key>
 			<array>
 				<string>変更なし</string>
 				<string>ソース抜き</string>
-				<string>チョコレートソース</string>
+				<string>チョコレートソース追加</string>
+				<string>チョコレートソースに変更</string>
+				<string>キャラメルソース追加</string>
+				<string>キャラメルソースに変更</string>
 			</array>
 			<key>Powder</key>
 			<array>
@@ -1994,94 +2204,20 @@
 				<string>ノンファットミルク</string>
 				<string>低脂肪ミルク</string>
 				<string>ブラベミルク</string>
+				<string>ノンフォーム</string>
 			</array>
 			<key>Espresso</key>
 			<array>
-				<string>なし</string>
+				<string>ショットなし</string>
 				<string>ショット少なめ追加</string>
 				<string>ショット追加</string>
 			</array>
 			<key>Recommend</key>
-			<array/>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>Frappuccino</string>
-			<key>Name</key>
-			<string>フレッシュ バナナ アンド チョコレート クリーム フラペチーノ</string>
-			<key>Photo</key>
-			<string>freshbananaandchocolatecreamfrappuccino.jpg</string>
-			<key>Calorie</key>
-			<string>407</string>
-			<key>Price</key>
-			<string>610</string>
-			<key>Temperature</key>
 			<array>
-				<string>アイス</string>
+				<string>アーモンドシロップ</string>
+				<string>チョコレートチップ</string>
+				<string>ヘーゼルナッツ + チョコレートチップ</string>
 			</array>
-			<key>Size</key>
-			<array>
-				<string>Tall</string>
-			</array>
-			<key>Shot</key>
-			<array>
-				<string>0</string>
-				<string>0</string>
-				<string>0</string>
-				<string>0</string>
-			</array>
-			<key>Base</key>
-			<array/>
-			<key>Syrup</key>
-			<array>
-				<string>変更なし</string>
-				<string>シロップ抜き</string>
-				<string>バニラシロップ</string>
-				<string>キャラメルシロップ</string>
-				<string>ヘーゼルナッツシロップ</string>
-				<string>モカシロップ</string>
-				<string>ホワイトモカシロップ</string>
-				<string>チャイシロップ</string>
-			</array>
-			<key>Sauce</key>
-			<array>
-				<string>変更なし</string>
-				<string>ソース抜き</string>
-				<string>キャラメルソース</string>
-			</array>
-			<key>Powder</key>
-			<array>
-				<string>追加なし</string>
-				<string>エクストラパウダー</string>
-			</array>
-			<key>Jelly</key>
-			<array/>
-			<key>WhippedCream</key>
-			<array>
-				<string>なし</string>
-				<string>ホイップ追加</string>
-			</array>
-			<key>MilkCustom</key>
-			<array>
-				<string>なし</string>
-				<string>オールミルク</string>
-			</array>
-			<key>Milk</key>
-			<array>
-				<string>ミルク</string>
-				<string>ソイミルク</string>
-				<string>ノンファットミルク</string>
-				<string>低脂肪ミルク</string>
-				<string>ブラベミルク</string>
-			</array>
-			<key>Espresso</key>
-			<array>
-				<string>なし</string>
-				<string>ショット少なめ追加</string>
-				<string>ショット追加</string>
-			</array>
-			<key>Recommend</key>
-			<array/>
 		</dict>
 	</array>
 	<key>TemperatureDic</key>
@@ -2130,9 +2266,9 @@
 		<string>2</string>
 		<key>ソイ ラテ</key>
 		<string>3</string>
-		<key>フレッシュ バナナ アンド キャラメル クリーム フラペチーノ</key>
+		<key>キャラメルホワイトモカ</key>
 		<string>1</string>
-		<key>フレッシュ バナナ アンド チョコレート クリーム フラペチーノ</key>
+		<key>チャンキー クッキー フラペチーノ</key>
 		<string>1</string>
 		<key>カフェミスト</key>
 		<string>1</string>
@@ -2183,9 +2319,9 @@
 		<string>1</string>
 		<key>ソイ ラテ</key>
 		<string>1</string>
-		<key>フレッシュ バナナ アンド キャラメル クリーム フラペチーノ</key>
+		<key>キャラメルホワイトモカ</key>
 		<string>4</string>
-		<key>フレッシュ バナナ アンド チョコレート クリーム フラペチーノ</key>
+		<key>チャンキー クッキー フラペチーノ</key>
 		<string>3</string>
 		<key>カフェミスト</key>
 		<string>1</string>
@@ -2200,9 +2336,13 @@
 		<string>0</string>
 		<key>シロップ抜き</key>
 		<string>0</string>
+		<key>シロップ変更</key>
+		<string>0</string>
 		<key>シロップなし</key>
 		<string>0</string>
 		<key>ソースなし</key>
+		<string>0</string>
+		<key>ソース変更</key>
 		<string>0</string>
 		<key>ソース抜き</key>
 		<string>0</string>
@@ -2228,28 +2368,48 @@
 		<string>50</string>
 		<key>コーヒーベース増量</key>
 		<string>50</string>
-		<key>チョコレートソース</key>
+		<key>チョコレートソース追加</key>
 		<string>0</string>
-		<key>キャラメルソース</key>
+		<key>チョコレートソースに変更</key>
+		<string>0</string>
+		<key>キャラメルソース追加</key>
+		<string>0</string>
+		<key>キャラメルソースに変更</key>
 		<string>0</string>
 		<key>コーヒージェリー</key>
 		<string>50</string>
-		<key>シンプルシロップ</key>
+		<key>シンプルシロップ追加</key>
 		<string>50</string>
-		<key>バニラシロップ</key>
+		<key>シンプルシロップに変更</key>
+		<string>0</string>
+		<key>バニラシロップ追加</key>
 		<string>50</string>
-		<key>キャラメルシロップ</key>
+		<key>バニラシロップに変更</key>
+		<string>0</string>
+		<key>キャラメルシロップ追加</key>
 		<string>50</string>
-		<key>ヘーゼルナッツシロップ</key>
+		<key>キャラメルシロップに変更</key>
+		<string>0</string>
+		<key>ヘーゼルナッツシロップ追加</key>
 		<string>50</string>
-		<key>アーモンドシロップ</key>
+		<key>ヘーゼルナッツシロップに変更</key>
+		<string>0</string>
+		<key>アーモンドシロップ追加</key>
 		<string>50</string>
-		<key>モカシロップ</key>
+		<key>アーモンドシロップに変更</key>
+		<string>0</string>
+		<key>モカシロップ追加</key>
 		<string>50</string>
-		<key>ホワイトモカシロップ</key>
+		<key>モカシロップに変更</key>
+		<string>0</string>
+		<key>ホワイトモカシロップ追加</key>
 		<string>50</string>
-		<key>チャイシロップ</key>
+		<key>ホワイトモカシロップに変更</key>
+		<string>0</string>
+		<key>チャイシロップ追加</key>
 		<string>50</string>
+		<key>チャイシロップに変更</key>
+		<string>0</string>
 		<key>ブラベミルク</key>
 		<string>0</string>
 		<key>低脂肪ミルク</key>
@@ -2258,6 +2418,8 @@
 		<string>0</string>
 		<key>ソイミルク</key>
 		<string>50</string>
+		<key>ノンフォーム</key>
+		<string>0</string>
 	</dict>
 	<key>CalorieDic</key>
 	<dict>
@@ -2269,9 +2431,13 @@
 		<string>0</string>
 		<key>シロップ抜き</key>
 		<string>-20</string>
+		<key>シロップ変更</key>
+		<string>0</string>
 		<key>シロップなし</key>
 		<string>0</string>
 		<key>ソースなし</key>
+		<string>0</string>
+		<key>ソース変更</key>
 		<string>0</string>
 		<key>ソース抜き</key>
 		<string>-10</string>
@@ -2297,28 +2463,48 @@
 		<string>30</string>
 		<key>コーヒーベース増量</key>
 		<string>10</string>
-		<key>チョコレートソース</key>
+		<key>チョコレートソース追加</key>
 		<string>8</string>
-		<key>キャラメルソース</key>
+		<key>チョコレートソースに変更</key>
+		<string>0</string>
+		<key>キャラメルソース追加</key>
 		<string>22</string>
+		<key>キャラメルソースに変更</key>
+		<string>0</string>
 		<key>コーヒージェリー</key>
 		<string>30</string>
-		<key>シンプルシロップ</key>
+		<key>シンプルシロップ追加</key>
 		<string>21</string>
-		<key>バニラシロップ</key>
+		<key>シンプルシロップに変更</key>
+		<string>0</string>
+		<key>バニラシロップ追加</key>
 		<string>19</string>
-		<key>キャラメルシロップ</key>
+		<key>バニラシロップに変更</key>
+		<string>0</string>
+		<key>キャラメルシロップ追加</key>
 		<string>21</string>
-		<key>ヘーゼルナッツシロップ</key>
+		<key>キャラメルシロップに変更</key>
+		<string>0</string>
+		<key>ヘーゼルナッツシロップ追加</key>
 		<string>20</string>
-		<key>アーモンドシロップ</key>
+		<key>ヘーゼルナッツシロップに変更</key>
+		<string>0</string>
+		<key>アーモンドシロップ追加</key>
 		<string>20</string>
-		<key>モカシロップ</key>
+		<key>アーモンドシロップに変更</key>
+		<string>0</string>
+		<key>モカシロップ追加</key>
 		<string>20</string>
-		<key>ホワイトモカシロップ</key>
+		<key>モカシロップに変更</key>
+		<string>0</string>
+		<key>ホワイトモカシロップ追加</key>
 		<string>41</string>
-		<key>チャイシロップ</key>
+		<key>ホワイトモカシロップに変更</key>
+		<string>0</string>
+		<key>チャイシロップ追加</key>
 		<string>23</string>
+		<key>チャイシロップに変更</key>
+		<string>0</string>
 		<key>ブラベミルク</key>
 		<string>0</string>
 		<key>低脂肪ミルク</key>
@@ -2327,11 +2513,15 @@
 		<string>0</string>
 		<key>ソイミルク</key>
 		<string>0</string>
+		<key>ノンフォーム</key>
+		<string>0</string>
 	</dict>
 	<key>ReadingDic</key>
 	<dict>
 		<key>オールミルク</key>
 		<string>オールミルク</string>
+		<key>ノンフォーム</key>
+		<string>ノンフォーム</string>
 		<key>エクストラパウダー</key>
 		<string>エクストラパウダー</string>
 		<key>カフェミスト</key>
@@ -2342,10 +2532,14 @@
 		<string></string>
 		<key>シロップ抜き</key>
 		<string>ノンシロップ</string>
+		<key>シロップ変更</key>
+		<string>チェンジシロップ</string>
 		<key>シロップなし</key>
 		<string></string>
 		<key>ソースなし</key>
 		<string></string>
+		<key>ソース変更</key>
+		<string>チェンジソース</string>
 		<key>ソース抜き</key>
 		<string>ノンソース</string>
 		<key>ホイップなし</key>
@@ -2370,28 +2564,46 @@
 		<string>アドチョコレートチップ</string>
 		<key>コーヒーベース増量</key>
 		<string>エクストラコーヒー</string>
-		<key>チョコレートソース</key>
+		<key>チョコレートソース追加</key>
 		<string>チョコレートソース</string>
-		<key>キャラメルソース</key>
+		<key>チョコレートソースに変更</key>
+		<string>チェンジチョコレートソース</string>
+		<key>キャラメルソース追加</key>
 		<string>キャラメルソース</string>
+		<key>キャラメルソースに変更</key>
+		<string>チェンジキャラメルソース</string>
 		<key>コーヒージェリー</key>
 		<string>アドジェリー</string>
 		<key>シンプルシロップ</key>
 		<string></string>
-		<key>バニラシロップ</key>
+		<key>バニラシロップ追加</key>
 		<string>バニラ</string>
-		<key>キャラメルシロップ</key>
+		<key>バニラシロップに変更</key>
+		<string>チェンジバニラ</string>
+		<key>キャラメルシロップ追加</key>
 		<string>キャラメル</string>
-		<key>ヘーゼルナッツシロップ</key>
+		<key>キャラメルシロップに変更</key>
+		<string>チェンジキャラメル</string>
+		<key>ヘーゼルナッツシロップ追加</key>
 		<string>ヘーゼルナッツ</string>
-		<key>アーモンドシロップ</key>
+		<key>ヘーゼルナッツシロップに変更</key>
+		<string>チェンジヘーゼルナッツ</string>
+		<key>アーモンドシロップ追加</key>
 		<string>アーモンド</string>
-		<key>モカシロップ</key>
+		<key>アーモンドシロップに変更</key>
+		<string>チェンジアーモンド</string>
+		<key>モカシロップ追加</key>
 		<string>モカ</string>
-		<key>ホワイトモカしロップ</key>
+		<key>モカシロップに変更</key>
+		<string>チェンジモカ</string>
+		<key>ホワイトモカシロップ追加</key>
 		<string>ホワイトモカ</string>
-		<key>チャイシロップ</key>
+		<key>ホワイトモカシロップに変更</key>
+		<string>チェンジホワイトモカ</string>
+		<key>チャイシロップ追加</key>
 		<string>チャイ</string>
+		<key>チャイシロップに変更</key>
+		<string>チェンジチャイ</string>
 		<key>ブラベミルク</key>
 		<string>ブラベ</string>
 		<key>低脂肪ミルク</key>
