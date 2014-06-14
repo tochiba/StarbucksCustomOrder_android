@@ -3,13 +3,13 @@ package com.koganepj.starbuckscustomorder.admob;
 import android.app.Activity;
 import android.view.View;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
 public class AdmobWrapper {
     
-	private static final String PUB_ID = "a152d1d922985f8";
+	private static final String PUB_ID = "ca-app-pub-8704720300499162/2816107414";
 	
 	private Activity mActivity;
 	private AdView mAdView;
@@ -20,7 +20,9 @@ public class AdmobWrapper {
 	
 	public View getAdView() {
 		if (mAdView == null) {
-			mAdView = new AdView(mActivity, AdSize.BANNER, PUB_ID);
+			mAdView = new AdView(mActivity);
+			mAdView.setAdUnitId(PUB_ID);
+			mAdView.setAdSize(AdSize.BANNER);
 		}
 		
 		return mAdView;
@@ -31,7 +33,7 @@ public class AdmobWrapper {
 			return;
 		}
 		
-		mAdView.loadAd(new AdRequest());
+		mAdView.loadAd(new AdRequest.Builder().build());
 	}
 	
 	public void destroy() {
