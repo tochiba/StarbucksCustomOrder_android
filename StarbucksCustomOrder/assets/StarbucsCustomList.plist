@@ -14,7 +14,7 @@
 			<key>Calorie</key>
 			<string>060</string>
 			<key>Price</key>
-			<string>310</string>
+			<string>320</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -153,7 +153,7 @@
 			<key>Calorie</key>
 			<string>060</string>
 			<key>Price</key>
-			<string>320</string>
+			<string>330</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -243,7 +243,7 @@
 			<key>Calorie</key>
 			<string>101</string>
 			<key>Price</key>
-			<string>370</string>
+			<string>380</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -321,7 +321,7 @@
 			<key>Calorie</key>
 			<string>044</string>
 			<key>Price</key>
-			<string>320</string>
+			<string>330</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -408,7 +408,7 @@
 			<key>Calorie</key>
 			<string>118</string>
 			<key>Price</key>
-			<string>380</string>
+			<string>390</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -493,7 +493,7 @@
 			<key>Calorie</key>
 			<string>131</string>
 			<key>Price</key>
-			<string>380</string>
+			<string>390</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -577,7 +577,7 @@
 			<key>Calorie</key>
 			<string>100</string>
 			<key>Price</key>
-			<string>370</string>
+			<string>380</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -1098,7 +1098,7 @@
 			<key>Calorie</key>
 			<string>140</string>
 			<key>Price</key>
-			<string>350</string>
+			<string>360</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -1528,7 +1528,7 @@
 			<key>Calorie</key>
 			<string>090</string>
 			<key>Price</key>
-			<string>360</string>
+			<string>370</string>
 			<key>Temperature</key>
 			<array>
 				<string>アイス</string>
@@ -1711,7 +1711,7 @@
 			<key>Calorie</key>
 			<string>078</string>
 			<key>Price</key>
-			<string>360</string>
+			<string>370</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -1800,7 +1800,7 @@
 			<key>Calorie</key>
 			<string>076</string>
 			<key>Price</key>
-			<string>360</string>
+			<string>370</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -1960,7 +1960,7 @@
 			<key>Calorie</key>
 			<string>064</string>
 			<key>Price</key>
-			<string>360</string>
+			<string>370</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -2049,7 +2049,7 @@
 			<key>Calorie</key>
 			<string>078</string>
 			<key>Price</key>
-			<string>360</string>
+			<string>370</string>
 			<key>Temperature</key>
 			<array>
 				<string>ホット</string>
@@ -2424,8 +2424,6 @@
 		<key>カフェ モカ</key>
 		<string>4</string>
 		<key>カプチーノ</key>
-		<string>3</string>
-		<key>フォーム ドピオ エスプレッソ</key>
 		<string>3</string>
 		<key>スターバックス ラテ</key>
 		<string>2</string>
