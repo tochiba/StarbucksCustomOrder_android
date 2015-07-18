@@ -8,12 +8,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.custom.animation.OnShowSelectToppingViewListener;
 import com.koganepj.starbuckscustomorder.custom.view.CustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.SizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.SizeSelectView.OnChangeSizeListener;
 import com.koganepj.starbuckscustomorder.custom.view.TempuretureSelectView;
+import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.CoffeeName;

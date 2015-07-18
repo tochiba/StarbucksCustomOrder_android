@@ -1,6 +1,6 @@
 package com.koganepj.starbuckscustomorder.view.like.matrix;
 
-import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.free.R;
 
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;

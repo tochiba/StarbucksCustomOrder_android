@@ -25,7 +25,8 @@ public class NSDictionaryHelper {
 	public static NSDictionary returnRootDictionary(Context context) {
 		try {
 			final AssetManager manager = context.getAssets();
-			return (NSDictionary) PropertyListParser.parse(manager.open(PLIST_NAME));
+			return (NSDictionary) PropertyListParser.parse(manager
+					.open(PLIST_NAME));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

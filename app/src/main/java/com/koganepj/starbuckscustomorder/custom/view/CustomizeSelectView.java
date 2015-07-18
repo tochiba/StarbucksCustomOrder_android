@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.koganepj.starbuckscustomorder.R;
 import com.koganepj.starbuckscustomorder.custom.view.base.BaseCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.espresso.EspressoCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.jelly.JellyCustomizeSelectView;
@@ -17,6 +16,7 @@ import com.koganepj.starbuckscustomorder.custom.view.powder.PowderCustomizeSelec
 import com.koganepj.starbuckscustomorder.custom.view.sauce.SauceCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.syrup.SyrupCustomizeSelectView;
 import com.koganepj.starbuckscustomorder.custom.view.whippedCream.WhippedCreamCustomizeSelectView;
+import com.koganepj.starbuckscustomorder.free.R;
 import com.koganepj.starbuckscustomorder.model.Base;
 import com.koganepj.starbuckscustomorder.model.Coffee;
 import com.koganepj.starbuckscustomorder.model.Espresso;

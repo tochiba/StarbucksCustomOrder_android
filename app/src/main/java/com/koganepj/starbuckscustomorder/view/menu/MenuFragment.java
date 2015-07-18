@@ -8,9 +8,12 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.RadioGroup;
 
-import com.koganepj.starbuckscustomorder.R;
+import com.koganepj.starbuckscustomorder.admob.AdmobWrapper;
+import com.koganepj.starbuckscustomorder.free.R;
 
 public class MenuFragment extends Fragment {
+	AdmobWrapper mHeaderAdWrapper;
+	AdmobWrapper mFooterAdWrapper;
     
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -19,12 +22,33 @@ public class MenuFragment extends Fragment {
         FrameLayout frameLayout = (FrameLayout)view.findViewById(R.id.ListFrame);
         RadioGroup modeRadioGroup = (RadioGroup)view.findViewById(R.id.RadioGroupMenuShowType);
         
-        modeRadioGroup.setOnCheckedChangeListener(new ModeChangeListener(getActivity(), frameLayout));
+        //広告
+        mHeaderAdWrapper = new AdmobWrapper(getActivity());
+        mFooterAdWrapper = new AdmobWrapper(getActivity());
+        
+        modeRadioGroup.setOnCheckedChangeListener(new ModeChangeListener(getActivity(), frameLayout, mHeaderAdWrapper, mFooterAdWrapper));
+        mHeaderAdWrapper.loadAd();
+        mFooterAdWrapper.loadAd();
         
         //初期表示
         modeRadioGroup.check(R.id.RadioSimple);
         
         return view;
+    }
+    
+    @Override
+    public void onResume() {
+    	super.onResume();
+    	
+    	mHeaderAdWrapper.loadAd();
+    	mFooterAdWrapper.loadAd();
+    }
+    
+    @Override
+    public void onDestroy() {
+    	mHeaderAdWrapper.destroy();
+    	mFooterAdWrapper.destroy();
+    	super.onDestroy();
     }
     
 }
