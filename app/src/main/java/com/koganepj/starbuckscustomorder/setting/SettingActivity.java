@@ -4,11 +4,14 @@ import java.util.HashMap;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
 
 import com.koganepj.starbuckscustomorder.flurry.FlurryWrapper;
 import com.koganepj.starbuckscustomorder.free.R;
@@ -38,6 +41,15 @@ public class SettingActivity extends Activity implements OnClickListener {
         findViewById(R.id.TextDevTeam).setOnClickListener(this);
         findViewById(R.id.TextMail).setOnClickListener(this);
         findViewById(R.id.TextSupportPage).setOnClickListener(this);
+
+        //バージョン表示
+        try {
+            String versionName = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
+            String textAppVersion = getString(R.string.setting_version, versionName);
+            ((TextView)findViewById(R.id.TextAppVersion)).setText(textAppVersion);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
