@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+    
+    <!-- ヘッダ -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/starbucks_green"
+        >
+        <TextView
+            android:id="@+id/TextBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brown"
+            android:layout_alignParentLeft="true"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:text="@string/setting_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:text="@string/setting_title"
+            android:padding="8dip"
+            />
+    </RelativeLayout>
+    
+    <!-- 上のすき間 -->
+    <View android:layout_height="50dip" android:layout_width="match_parent" />
+
+    <include layout="@layout/layout_horizontal_border"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        >
+        
+        <TextView
+            android:id="@+id/TextSupportPage"
+            style="@style/Setting.Item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_support_page"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
+            />
+        
+        <include layout="@layout/layout_horizontal_border"/>
+        
+        <TextView
+            android:id="@+id/TextMail"
+            style="@style/Setting.Item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_mail"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
+            />
+        
+        <include layout="@layout/layout_horizontal_border"/>
+        
+        <TextView
+            android:id="@+id/TextDevTeam"
+            style="@style/Setting.Item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_dev_team"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
+            />
+
+        <include layout="@layout/layout_horizontal_border"/>
+
+        <TextView
+            android:id="@+id/TextAppVersion"
+            style="@style/Setting.Item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_version"
+            android:paddingRight="10dip"
+            android:paddingLeft="10dip"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_horizontal_border"/>
+    
+</LinearLayout>
